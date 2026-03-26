@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+    /* Your Custom KMCT Fonts */
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+    --font-serif: "Fraunces", serif;
+
+    /* Your Custom KMCT Colors */
+    --color-kmct-navy: #0F3A68;
+    --color-kmct-light: #F8F9FA;
+    --color-kmct-engineering: #1E3A8A;
+    --color-kmct-business: #7F1D1D;
+    --color-kmct-teacher: #DC2626;
+    --color-kmct-training: #EC4899;
+    --color-kmct-womens: #BE185D;
+    --color-kmct-architecture: #2563EB;
+    --color-kmct-polytechnic: #16A34A;
+    --color-kmct-pharma: #3B82F6;
+}
+
+@keyframes drawStroke {
+  0% { stroke-dashoffset: 2000; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.animate-draw-stroke {
+  stroke-dasharray: 2000;
+  animation: drawStroke 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #F8F9FA;
+}
+
+/* ─── Scroll-triggered reveal animation ─── */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keep the old animate-fade-up for the hero (fires immediately on load) */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+    animation: fadeUp 0.7s ease forwards;
+}
+
+/* ─── Utility: hide scrollbar while keeping scroll functionality ─── */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* ─── Infinite marquee for hero gallery ─── */
+@keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.marquee-track {
+    animation: marquee 35s linear infinite;
+}
+.marquee-track:hover {
+    animation-play-state: paused;
+}

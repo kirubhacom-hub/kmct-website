@@ -1,0 +1,386 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions 2026–27 | KMCT Kozhikode — Engineering, Nursing, Pharmacy & More</title>
+  <meta name="description" content="Apply to KMCT Kallanthode or Pooladikunnu — B.Tech, Nursing, Pharmacy, Architecture, BBA, MBA, B.Ed. Both KEAM and management quota seats available. Call +91 974 52 99 888." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @keyframes heroSlide {
+      0%   { opacity: 0; }
+      4%   { opacity: 0.2; }
+      20%  { opacity: 0.2; }
+      24%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .hero-slide {
+      opacity: 0;
+      animation: heroSlide 25s infinite;
+    }
+  </style>
+</head>
+<body class="bg-kmct-light font-sans text-kmct-navy overflow-x-hidden">
+
+  <Header activePage="admissions" />
+
+  <!-- ════════════════════════════════════════
+       HERO — same style as home/about
+  ════════════════════════════════════════ -->
+  <section class="relative overflow-hidden bg-white" style="padding-top: 120px;">
+
+    <!-- Hero image slider — crossfade at 20% opacity -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+      <!-- Campus building / entrance -->
+      <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1400&h=900&q=70" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 0s;" alt="" />
+      <!-- Lush green campus grounds -->
+      <img src="https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=1400&h=900&q=70" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 5s;" alt="" />
+      <!-- Engineering / science lecture hall -->
+      <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1400&h=900&q=70" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 10s;" alt="" />
+      <!-- Students on campus steps / common area -->
+      <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1400&h=900&q=70" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 15s;" alt="" />
+      <!-- College corridor / walkway -->
+      <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=1400&h=900&q=70" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 20s;" alt="" />
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-b from-white/65 via-white/55 to-white/70 pointer-events-none"></div>
+
+    <div class="relative z-10 flex flex-col items-center text-center px-6 pt-20 pb-16 max-w-4xl mx-auto animate-fade-up">
+
+      <!-- Pill badge -->
+      <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-teal-50/90 text-teal-800 border border-teal-200 font-bold text-xs tracking-widest uppercase shadow-sm mb-8 backdrop-blur-sm">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Admissions Open 2026–27 &middot; KEAM &amp; Management Quota
+      </div>
+
+      <h1 class="font-serif text-5xl sm:text-6xl lg:text-[5.5rem] font-bold leading-[1.05] text-[#0a2542] tracking-tight mb-6">
+        Start Your Journey<br/>at KMCT.
+      </h1>
+
+      <p class="text-lg sm:text-xl text-gray-600 max-w-2xl leading-relaxed font-medium mb-4">
+        Kerala's most complete professional campus. Engineering, Nursing, Pharmacy, Architecture, Business, Teaching — all under one group, one standard, one call.
+      </p>
+      <p class="text-sm font-semibold text-gray-600 mb-10">
+        AICTE approved &middot; KTU affiliated &middot; INC recognised &middot; 9 colleges &middot; 2 campuses
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#enquiry" class="inline-flex items-center gap-2 px-10 py-4 bg-[#0a2542] text-white rounded-full font-bold text-lg hover:bg-teal-700 transition-all duration-300 shadow-2xl shadow-kmct-navy/20 hover:-translate-y-1">
+          Register Interest
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+        </a>
+        <a href="tel:+919745299888" class="inline-flex items-center gap-2 px-8 py-4 border-2 border-kmct-navy text-kmct-navy rounded-full font-bold text-lg hover:bg-kmct-navy hover:text-white transition-all duration-300">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.08-7.076-6.975l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          Call Admissions
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       HOW IT WORKS — 4-step process
+  ════════════════════════════════════════ -->
+  <section class="py-20 bg-kmct-navy relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-teal-800 via-teal-400 to-teal-800"></div>
+    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+
+      <div class="text-center mb-14 reveal-on-scroll">
+        <p class="text-xs font-bold text-teal-300 uppercase tracking-[0.3em] mb-3">One Call. That's It.</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">How Admissions Works at KMCT</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { step: "01", title: "Fill this form", desc: "Tell us your name, mobile, district, and which programme you're interested in. Takes 60 seconds." },
+          { step: "02", title: "We call you back", desc: "Our admissions team calls within one working day. We confirm seat availability, quota type, and fee details." },
+          { step: "03", title: "Visit the campus", desc: "Come see the labs, hostels, and meet the faculty. We show you everything — no sales pitch, just the actual campus." },
+          { step: "04", title: "Confirm your seat", desc: "Submit required documents and the first instalment. Your seat is held from that day." },
+        ].map((s, i) => (
+          <div
+            class="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 transition-colors reveal-on-scroll"
+            style={`transition-delay: ${i * 100}ms;`}
+          >
+            <p class="font-serif text-5xl font-bold text-teal-400/30 mb-4 leading-none pt-2">{s.step}</p>
+            <h3 class="font-serif text-xl font-bold text-white mb-3">{s.title}</h3>
+            <p class="text-white/60 text-sm leading-relaxed font-medium">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       ENQUIRY FORM — main conversion block
+  ════════════════════════════════════════ -->
+  <section id="enquiry" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+        <!-- Left — context -->
+        <div class="reveal-on-scroll">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-10 h-px bg-teal-500"></div>
+            <p class="text-xs font-bold uppercase tracking-[0.3em] text-teal-600">Enquiry Form</p>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-kmct-navy mb-6 leading-tight">
+            Register Your Interest.<br/>We'll Handle the Rest.
+          </h2>
+          <p class="text-gray-600 leading-relaxed font-medium mb-8 text-lg">
+            Admissions open for 2026–27. Both KEAM and management quota seats available across all programmes.
+          </p>
+
+          <!-- What happens next -->
+          <div class="space-y-5 mb-10">
+            {[
+              { icon: "📞", text: "We call you back within one working day" },
+              { icon: "✅", text: "Seat availability confirmed on the same call" },
+              { icon: "🏫", text: "Campus visit arranged at a time that suits you" },
+              { icon: "📋", text: "Document checklist sent over WhatsApp" },
+            ].map(item => (
+              <div class="flex items-start gap-4">
+                <span class="text-xl mt-0.5">{item.icon}</span>
+                <p class="text-gray-700 font-medium">{item.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <!-- Programmes quick-list -->
+          <div class="bg-kmct-light rounded-2xl p-6 border border-gray-100">
+            <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Programmes Available</p>
+            <div class="grid grid-cols-2 gap-2 text-sm font-medium text-kmct-navy">
+              {["B.Tech (8 branches)","B.Sc Nursing","GNM","B.Pharm / D.Pharm / M.Pharm","B.Arch","BBA / MBA / MCA","B.Ed","D.Ed (TTI)","Polytechnic Diploma"].map(p => (
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-teal-500 rounded-full shrink-0"></span>
+                  {p}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Right — form card -->
+        <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 lg:p-10 reveal-on-scroll" style="transition-delay: 150ms;">
+          <h3 class="font-serif text-2xl font-bold text-kmct-navy mb-2">Admission Enquiry</h3>
+          <p class="text-sm text-gray-400 font-medium mb-8">All fields help us give you accurate information faster.</p>
+
+          <form class="space-y-5" action="#" method="POST">
+
+            <!-- Name -->
+            <div>
+              <label class="block text-xs font-bold text-grayct-navy uppercase tracking-widest mb-2">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Full name"
+                required
+                class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-kmct-navy font-medium placeholder-gray-300 transition"
+              />
+            </div>
+
+            <!-- Mobile -->
+            <div>
+              <label class="block text-xs font-bold text-kmct-navy uppercase tracking-widest mb-2">Mobile Number</label>
+              <div class="flex gap-2">
+                <span class="px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-bold text-gray-500">+91</span>
+                <input
+                  type="tel"
+                  name="mobile"
+                  placeholder="WhatsApp preferred"
+                  required
+                  class="flex-1 px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-kmct-navy font-medium placeholder-gray-300 transition"
+                />
+              </div>
+            </div>
+
+            <!-- District -->
+            <div>
+              <label class="block text-xs font-bold text-kmct-navy uppercase tracking-widest mb-2">Your District</label>
+              <select name="district" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-kmct-navy font-medium bg-white appearance-none transition">
+                <option value="">Select district</option>
+                {["Kozhikode","Malappuram","Kannur","Wayanad","Kasaragod","Palakkad","Thrissur","Other Kerala","Outside Kerala"].map(d => <option value={d}>{d}</option>)}
+              </select>
+            </div>
+
+            <!-- Programme -->
+            <div>
+              <label class="block text-xs font-bold text-kmct-navy uppercase tracking-widest mb-2">Programme You Are Considering</label>
+              <select name="programme" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-kmct-navy font-medium bg-white appearance-none transition">
+                <option value="">Select programme</option>
+                <optgroup label="Engineering — Kallanthode">
+                  {["B.Tech (Co-Ed)","B.Tech (Women's College)","Lateral Entry B.Tech","M.Tech"].map(p => <option value={p}>{p}</option>)}
+                </optgroup>
+                <optgroup label="Nursing — Pooladikunnu">
+                  {["B.Sc Nursing","GNM","Post Basic B.Sc Nursing"].map(p => <option value={p}>{p}</option>)}
+                </optgroup>
+                <optgroup label="Other Programmes">
+                  {["B.Pharm","D.Pharm","M.Pharm","B.Arch","BBA","MBA","MCA","B.Ed","D.Ed (TTI)","Polytechnic Diploma"].map(p => <option value={p}>{p}</option>)}
+                </optgroup>
+              </select>
+            </div>
+
+            <!-- KEAM Rank -->
+            <div>
+              <label class="block text-xs font-bold text-kmct-navy uppercase tracking-widest mb-2">
+                KEAM Rank <span class="text-gray-400 normal-case font-medium">(optional)</span>
+              </label>
+              <input
+                type="text"
+                name="keam"
+                placeholder="Leave blank if not yet / not applicable"
+                class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-kmct-navy font-medium placeholder-gray-300 transition"
+              />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label class="block text-xs font-bold text-kmct-navy uppercase tracking-widest mb-2">
+                Anything on Your Mind <span class="text-gray-400 normal-case font-medium">(optional)</span>
+              </label>
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Fees, hostel, management quota, which branch — whatever you want to know first"
+                class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-kmct-navy font-medium placeholder-gray-300 transition resize-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-teal-600 text-white font-bold text-lg py-4 rounded-xl hover:bg-teal-500 transition-colors shadow-lg shadow-teal-900/20 flex items-center justify-center gap-2"
+            >
+              Send My Enquiry →
+            </button>
+            <p class="text-center text-xs text-gray-400 font-medium">
+              We will call within one working day. No spam. No pressure.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CAMPUS FACILITIES — 5 feature cards
+  ════════════════════════════════════════ -->
+  <section class="py-24 bg-kmct-light">
+    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+
+      <div class="flex items-center gap-4 mb-4 reveal-on-scroll">
+        <div class="w-10 h-px bg-teal-500"></div>
+        <p class="text-xs font-bold uppercase tracking-[0.3em] text-teal-600">Infrastructure</p>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-kmct-navy mb-4 reveal-on-scroll">
+        Campus Facilities Every Student Dreams Of.
+      </h2>
+      <p class="text-lg text-gray-500 font-medium mb-16 reveal-on-scroll max-w-2xl">
+        Built for daily use, not accreditation visits. Here is what the campus actually looks like on a regular Tuesday.
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+        {[
+          {
+            icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714a2.25 2.25 0 001.357 2.059l.257.145a2.25 2.25 0 012.137-.001l.248-.144a2.25 2.25 0 001.357-2.059V3.104M13.5 4.5a24.35 24.35 0 01-3 .064" /></svg>`,
+            label: "Smart Classrooms",
+            title: "Smart Classrooms Across All Departments",
+            desc: "LCD projectors, digital boards, and internet-connected learning environments in every classroom. Not added for accreditation visits — used every day.",
+            img: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&h=340&q=70",
+          },
+          {
+            icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3" /></svg>`,
+            label: "Dedicated Labs",
+            title: "Dedicated Labs for Every Programme",
+            desc: "CSE and IT have separate computing labs with current software stacks. ECE, EEE, Mechanical, Civil, Biomedical, Pharmacy and Architecture each have department-specific practical labs. Nursing students train at National Hospital, Kozhikode from year one.",
+            img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&h=340&q=70",
+          },
+          {
+            icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.091zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" /></svg>`,
+            label: "AI & Emerging Tech",
+            title: "AI and Emerging Tech in the Curriculum",
+            desc: "CSE and IT programmes include machine learning, data science and AI electives aligned with KTU 2024 curriculum updates. TinkerHub and IEDC run regular AI and full-stack workshops open to all branches.",
+            img: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=600&h=340&q=70",
+          },
+          {
+            icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" /></svg>`,
+            label: "Faculty",
+            title: "Faculty with Industry & Research Experience",
+            desc: "Departments are staffed by faculty with postgraduate qualifications. Several faculty members are PhD holders or pursuing active research. Guest lectures from industry professionals are part of the academic calendar — not a one-off event.",
+            img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&h=340&q=70",
+          },
+          {
+            icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" /></svg>`,
+            label: "KEAM & Mgmt Quota",
+            title: "Both KEAM and Management Quota Available",
+            desc: "Government allotment through CEE Kerala and direct management quota admissions are open for all B.Tech, Nursing, Pharmacy and Architecture programmes. One form, one call — we confirm availability the same day.",
+            img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&h=340&q=70",
+          },
+        ].map((f, i) => (
+          <div
+            class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden group reveal-on-scroll flex flex-col"
+            style={`transition-delay: ${i * 100}ms;`}
+          >
+            <div class="relative h-44 overflow-hidden">
+              <img src={f.img} alt={f.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-kmct-navy/70 to-transparent"></div>
+              <div class="absolute top-4 left-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center text-white" set:html={f.icon}></div>
+              <span class="absolute bottom-3 left-4 text-[10px] font-bold uppercase tracking-widest text-teal-300">{f.label}</span>
+            </div>
+            <div class="p-7 flex flex-col flex-1">
+              <h3 class="font-serif text-lg font-bold text-kmct-navy mb-3 leading-snug">{f.title}</h3>
+              <p class="text-gray-500 text-sm leading-relaxed font-medium flex-1">{f.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CTA STRIP — phone number
+  ════════════════════════════════════════ -->
+  <section class="py-20 bg-white border-t border-gray-100">
+    <div class="max-w-3xl mx-auto px-6 text-center reveal-on-scroll">
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-kmct-navy mb-4">
+        Have a Specific Question? Just Call.
+      </h2>
+      <p class="text-lg text-gray-500 font-medium mb-10">
+        Admissions, fees, hostel, KEAM rank eligibility, management quota — one number handles all of it for all nine colleges across both campuses.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="tel:+919745299888" class="inline-flex items-center gap-3 bg-teal-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-teal-700 transition-colors shadow-xl shadow-teal-900/20 hover:-translate-y-0.5">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.08-7.076-6.975l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          +91 974 52 99 888
+        </a>
+        <a href="#enquiry" class="inline-flex items-center gap-2 border-2 border-kmct-navy text-kmct-navy px-8 py-4 rounded-full font-bold text-lg hover:bg-kmct-navy hover:text-white transition-all duration-300">
+          Fill Enquiry Form
+        </a>
+      </div>
+      <p class="text-sm text-gray-400 mt-8 font-medium">
+        Nursing enquiries: <a href="mailto:collegeofnursing2001@gmail.com" class="text-teal-600 hover:underline">collegeofnursing2001@gmail.com</a> &nbsp;|&nbsp;
+        General: <a href="mailto:mail@kmct.edu.in" class="text-teal-600 hover:underline">mail@kmct.edu.in</a>
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+
+  <script is:inline>
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>

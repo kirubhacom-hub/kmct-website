@@ -21,36 +21,35 @@ import Footer from '../../components/Footer.astro';
     
     <Header />
 
-    <!-- HERO SECTION (Navy Blue Brand Color + Image) -->
-    <section class="relative pt-32 pb-24 overflow-hidden bg-kmct-navy flex flex-col items-center justify-center text-center px-6 isolate min-h-[85vh]">
-      <!-- Background Image -->
-      <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Students Hero" class="w-full h-full object-cover opacity-30 mix-blend-overlay" />
-        <div class="absolute inset-0 bg-gradient-to-b from-kmct-navy/80 via-kmct-navy/90 to-kmct-navy mix-blend-normal"></div>
+    <!-- HERO SECTION (Light Theme + Image Slider) -->
+    <section class="relative pt-32 pb-24 overflow-hidden bg-white flex flex-col items-center justify-center text-center px-6 isolate min-h-[85vh]">
+      <!-- Background Image Slider -->
+      <div class="absolute inset-0 z-0 bg-white overflow-hidden pointer-events-none">
+        <div id="hero-bg-slider" class="absolute inset-0 z-10 transition-opacity duration-1000 ease-in-out bg-cover bg-center" style="opacity: 0.2; background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1920&h=1080'); transform: scale(1.05);"></div>
       </div>
       
-      <div class="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center mt-auto mb-auto">
+      <div class="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center mt-auto mb-auto animate-fade-up">
         <!-- Pill badge -->
-        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 text-teal-300 border border-white/20 font-bold text-xs tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-teal-50/90 text-teal-800 border border-teal-200 font-bold text-xs tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
           <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           KTU Affiliated &middot; AICTE Approved
         </div>
 
-        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] text-white tracking-tight mb-4 max-w-5xl drop-shadow-md">
-          KMCT College of <span class="text-teal-400">Engineering</span>
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-[#0a2542] tracking-tight mb-4 max-w-5xl drop-shadow-sm">
+          KMCT College of <span class="text-teal-600">Engineering</span>
         </h1>
         
-        <p class="text-xl sm:text-2xl font-serif text-teal-300 italic mb-8 drop-shadow-sm">The Original Legacy of Innovation</p>
+        <p class="text-xl sm:text-2xl font-serif text-teal-600 italic mb-8 drop-shadow-sm">The Original Legacy of Innovation</p>
         
-        <p class="text-lg sm:text-xl text-white/90 max-w-4xl leading-relaxed font-medium mb-12">
+        <p class="text-lg sm:text-xl text-gray-600 max-w-4xl leading-relaxed font-medium mb-12">
           Celebrating 25 Years of Engineering Excellence, Globally Recognized. Established in 2001, built for students who are serious about their future. Under the leadership of Dr. K Moidu (Founder Chairman) and Dr. K M Mehboob (Managing Trustee), we have evolved into a high-tech hub that prepares students for global careers.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-teal-500 text-white rounded-full font-bold text-sm lg:text-base hover:bg-teal-400 transition-all duration-300 shadow-[0_0_20px_rgba(20,184,166,0.4)] hover:-translate-y-1">
+          <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#0a2542] text-white rounded-full font-bold text-sm lg:text-base hover:bg-teal-700 transition-all duration-300 shadow-[0_0_20px_rgba(10,37,66,0.2)] hover:-translate-y-1">
             SECURE YOUR SEAT IN THE 2026 SILVER JUBILEE BATCH
           </a>
-          <a href="https://wa.me/919745299888" target="_blank" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent border-2 border-white/30 text-white rounded-full font-bold text-sm lg:text-base hover:bg-white/10 transition-all duration-300">
+          <a href="https://wa.me/919745299888" target="_blank" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#0a2542] border-2 border-[#0a2542]/10 rounded-full font-bold text-sm lg:text-base hover:border-[#0a2542]/30 hover:bg-gray-50 transition-all duration-300">
             TALK TO A COUNSELOR ON WHATSAPP
           </a>
         </div>
@@ -58,44 +57,63 @@ import Footer from '../../components/Footer.astro';
     </section>
 
     <!-- HIGHLIGHTS SECTION -->
-    <section class="py-24 bg-white relative z-20">
-      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
-        <div class="text-center mb-16 max-w-4xl mx-auto">
-          <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">A Quarter Century of Engineering Excellence</h2>
-          <div class="w-24 h-1 bg-teal-500 mx-auto rounded-full mb-8"></div>
-          <p class="text-lg text-gray-600 font-medium">
-            Since 2001, KMCT College of Engineering has shaped thousands of engineers who now lead in industry across India and beyond. Our Silver Jubilee year marks 25 years of unwavering commitment to academic rigor and student success.
-          </p>
-        </div>
+    <section class="py-24 bg-white relative z-20 overflow-hidden">
+      <!-- Decorative background blur -->
+      <div class="absolute -right-64 top-0 w-[500px] h-[500px] bg-teal-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <h3 class="font-serif text-4xl font-bold text-kmct-navy mb-3">5000+</h3>
-            <p class="font-bold text-teal-600 text-sm tracking-wide uppercase mb-2">Graduates placed globally</p>
-            <p class="text-gray-500 text-sm leading-relaxed">Engineers working across Middle East, Europe, and India.</p>
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">A Quarter Century of Engineering Excellence</h2>
+            <div class="w-16 h-1 bg-teal-500 rounded-full mb-8"></div>
+            <p class="text-lg text-gray-600 font-medium mb-12 leading-relaxed">
+              Since 2001, KMCT College of Engineering has shaped thousands of engineers who now lead in industry across India and beyond. Our Silver Jubilee year marks 25 years of unwavering commitment to academic rigor and student success.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div class="bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <h3 class="font-serif text-4xl font-bold text-kmct-navy mb-3">5000+</h3>
+                <p class="font-bold text-teal-600 text-xs tracking-wide uppercase mb-2">Graduates globally</p>
+                <p class="text-gray-500 text-sm leading-relaxed">Engineers across Middle East, Europe, and India.</p>
+              </div>
+              <div class="bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <h3 class="font-serif text-4xl font-bold text-kmct-navy mb-3">50+</h3>
+                <p class="font-bold text-teal-600 text-xs tracking-wide uppercase mb-2">Top recruiters</p>
+                <p class="text-gray-500 text-sm leading-relaxed">From Infosys, TCS, WIPRO, and emerging tech firms.</p>
+              </div>
+              <div class="bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <h3 class="font-serif text-4xl font-bold text-kmct-navy mb-3">25</h3>
+                <p class="font-bold text-teal-600 text-xs tracking-wide uppercase mb-2">Years of excellence</p>
+                <p class="text-gray-500 text-sm leading-relaxed">Continuous legacy building careers since 2001.</p>
+              </div>
+              <div class="bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <h3 class="font-serif text-4xl font-bold text-kmct-navy mb-3">90%</h3>
+                <p class="font-bold text-teal-600 text-xs tracking-wide uppercase mb-2">Advanced faculty</p>
+                <p class="text-gray-500 text-sm leading-relaxed">Ph.D. holders researching functional departments.</p>
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <h3 class="font-serif text-4xl font-bold text-kmct-navy mb-3">50+</h3>
-            <p class="font-bold text-teal-600 text-sm tracking-wide uppercase mb-2">Top recruiters on campus</p>
-            <p class="text-gray-500 text-sm leading-relaxed">From Infosys, TCS, WIPRO, Adani, and emerging tech firms.</p>
-          </div>
-          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <h3 class="font-serif text-4xl font-bold text-kmct-navy mb-3">25</h3>
-            <p class="font-bold text-teal-600 text-sm tracking-wide uppercase mb-2">Years of excellence</p>
-            <p class="text-gray-500 text-sm leading-relaxed">Continuous legacy building careers since our founding in 2001.</p>
-          </div>
-          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <h3 class="font-serif text-4xl font-bold text-kmct-navy mb-3">90%</h3>
-            <p class="font-bold text-teal-600 text-sm tracking-wide uppercase mb-2">Advanced faculty</p>
-            <p class="text-gray-500 text-sm leading-relaxed">Ph.D. holders and industry researchers leading functional departments.</p>
+          
+          <div class="relative h-[600px] rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+            <div class="absolute inset-0 grid grid-cols-2 gap-4 p-4 bg-gray-50">
+              <div class="flex flex-col gap-4 pt-12">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600&h=800" alt="Robotics Lab" class="w-full h-64 object-cover rounded-2xl shadow-sm hover:scale-[1.02] transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Students" class="w-full h-80 object-cover rounded-2xl shadow-sm hover:scale-[1.02] transition-transform duration-500">
+              </div>
+              <div class="flex flex-col gap-4">
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=600&h=800" alt="Campus" class="w-full h-80 object-cover rounded-2xl shadow-sm hover:scale-[1.02] transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=600&h=800" alt="Engineering" class="w-full h-64 object-cover rounded-2xl shadow-sm hover:scale-[1.02] transition-transform duration-500">
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-kmct-navy/10 to-transparent pointer-events-none"></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- TABLES & PROGRAMS -->
-    <section class="py-24 bg-kmct-light relative border-y border-gray-200" id="programs">
-      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+    <section class="py-24 relative border-y border-gray-200" id="programs" style="background-image: linear-gradient(rgba(249, 250, 251, 0.95), rgba(249, 250, 251, 0.95)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1920&h=1080'); background-size: cover; background-attachment: fixed; background-position: center;">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
         <div class="text-center mb-16">
           <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">Choose Your Path to a Global Career</h2>
           <p class="text-lg text-gray-600 font-medium max-w-2xl mx-auto">
@@ -254,22 +272,27 @@ import Footer from '../../components/Footer.astro';
     </section>
 
     <!-- ADMISSIONS & CONTACT (CTA) -->
-    <section class="py-24 bg-teal-50 text-center relative" id="admissions">
-      <div class="max-w-4xl mx-auto px-6">
-        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">Take The Next Step.</h2>
-        <p class="text-lg text-gray-600 mb-6 font-medium">Not sure which course fits you? Talk to our admission team today.</p>
+    <section class="py-32 text-center relative overflow-hidden" id="admissions">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-kmct-navy/90 mix-blend-multiply"></div>
+      </div>
+      
+      <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <h2 class="font-serif text-4xl lg:text-6xl font-bold text-white mb-6">Take The Next Step.</h2>
+        <p class="text-xl text-teal-100 mb-8 font-medium">Not sure which course fits you? Talk to our admission team today.</p>
         
-        <div class="flex flex-col gap-3 font-semibold text-kmct-navy mb-12">
-          <p><span class="text-teal-600">Location:</span> KMCT College of Engineering, Kallanthode, NIT Campus P.O., Kozhikode, Kerala.</p>
-          <p><span class="text-teal-600">Email:</span> <a href="mailto:admissions@kmct.edu.in" class="hover:underline">admissions@kmct.edu.in</a></p>
+        <div class="inline-flex flex-col gap-3 font-medium text-white/90 mb-12 bg-white/10 backdrop-blur-md px-8 py-6 rounded-2xl border border-white/20">
+          <p><span class="text-teal-400 font-bold tracking-wider uppercase text-sm">Location:</span> KMCT College of Engineering, Kallanthode, NIT Campus P.O., Kozhikode.</p>
+          <p><span class="text-teal-400 font-bold tracking-wider uppercase text-sm">Email:</span> <a href="mailto:admissions@kmct.edu.in" class="hover:underline text-white">admissions@kmct.edu.in</a></p>
         </div>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:+919745299888" class="inline-flex items-center justify-center gap-3 bg-kmct-navy text-white px-8 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-gray-800 transition-colors shadow-xl hover:-translate-y-1">
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="tel:+919745299888" class="inline-flex items-center justify-center gap-3 bg-teal-500 text-white px-8 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-teal-400 transition-colors shadow-[0_0_30px_rgba(20,184,166,0.3)] hover:-translate-y-1">
             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span class="whitespace-nowrap">Admissions Hotline: +91 974 52 99 888</span>
           </a>
-          <a href="#admissions" class="inline-flex items-center justify-center gap-3 bg-teal-600 text-white px-8 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-teal-500 transition-colors shadow-xl hover:-translate-y-1">
+          <a href="https://wa.me/919745299888" target="_blank" class="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white/30 text-white px-8 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-white/10 transition-colors shadow-xl hover:-translate-y-1">
             SECURE YOUR SEAT FOR 2026
           </a>
         </div>
@@ -278,5 +301,28 @@ import Footer from '../../components/Footer.astro';
 
     <Footer />
     
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+        const images = [
+          "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1920&h=1080",
+          "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+          "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920&h=1080",
+          "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=1920&h=1080"
+        ];
+        let currentIndex = 0;
+        const slider = document.getElementById('hero-bg-slider');
+        
+        if (slider) {
+          setInterval(() => {
+            slider.style.opacity = '0';
+            setTimeout(() => {
+              currentIndex = (currentIndex + 1) % images.length;
+              slider.style.backgroundImage = `url('${images[currentIndex]}')`;
+              slider.style.opacity = '0.2';
+            }, 1000);
+          }, 5000);
+        }
+      });
+    </script>
   </body>
 </html>

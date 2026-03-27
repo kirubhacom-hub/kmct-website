@@ -21,6 +21,11 @@ Since 2001, KMCT College of Engineering has shaped thousands of engineers who no
 **Choose Your Path to a Global Career**
 Six B.Tech specializations and multiple M.Tech streams designed to match your ambitions.
 
+**Featured Program Cards:**
+* **Undergraduate | B.Tech Computer Science and IT:** Four-year programs with merit fees starting at ₹50,000 annually for IT.
+* **Emerging Fields | Robotics and AI Specialization:** Lead the future with our cutting-edge four-year program at ₹25,000 annual merit fee.
+* **Core Engineering | Mechanical, Civil, and Electronics:** Traditional disciplines with modern applications, each at ₹35,000 annual merit fee.
+
 | Course | Duration | Eligibility |
 | :--- | :--- | :--- |
 | B.Tech Computer Science (CSE) | 4 Years | KEAM Rank + 10+2 (PCM) |

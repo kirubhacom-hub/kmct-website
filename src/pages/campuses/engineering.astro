@@ -23,9 +23,9 @@ import Footer from '../../components/Footer.astro';
 
     <!-- HERO SECTION (Light Theme + Image Slider) -->
     <section class="relative pt-32 pb-24 overflow-hidden bg-white flex flex-col items-center justify-center text-center px-6 isolate min-h-[85vh]">
-      <!-- Background Image Slider -->
+      <!-- Background Image -->
       <div class="absolute inset-0 z-0 bg-white overflow-hidden pointer-events-none">
-        <div id="hero-bg-slider" class="absolute inset-0 z-10 transition-opacity duration-1000 ease-in-out bg-cover bg-center" style="opacity: 0.2; background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1920&h=1080'); transform: scale(1.05);"></div>
+        <div class="absolute inset-0 z-10 bg-cover bg-center" style="opacity: 0.2; background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1920&h=1080');"></div>
       </div>
       
       <div class="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center mt-auto mb-auto animate-fade-up">
@@ -52,6 +52,44 @@ import Footer from '../../components/Footer.astro';
           <a href="https://wa.me/919745299888" target="_blank" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#0a2542] border-2 border-[#0a2542]/10 rounded-full font-bold text-sm lg:text-base hover:border-[#0a2542]/30 hover:bg-gray-50 transition-all duration-300">
             TALK TO A COUNSELOR ON WHATSAPP
           </a>
+        </div>
+      </div>
+
+      <!-- Infinite auto-scroll image marquee -->
+      <div class="relative z-10 overflow-hidden w-full mt-16 max-w-[100vw] mx-auto pb-6" style="mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);">
+        <div class="marquee-track flex gap-4 w-max">
+          <!-- Set 1 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600&h=400" alt="Robotics" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600&h=400" alt="Students" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600&h=400" alt="Architecture" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=600&h=400" alt="Tech" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=600&h=400" alt="Workshop" class="w-full h-full object-cover" />
+          </div>
+          <!-- Set 2 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600&h=400" alt="Robotics" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600&h=400" alt="Students" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600&h=400" alt="Architecture" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=600&h=400" alt="Tech" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=600&h=400" alt="Workshop" class="w-full h-full object-cover" />
+          </div>
         </div>
       </div>
     </section>
@@ -344,30 +382,6 @@ import Footer from '../../components/Footer.astro';
       </div>
     </section>
 
-    <Footer />
-    
-    <script is:inline>
-      document.addEventListener('DOMContentLoaded', () => {
-        const images = [
-          "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1920&h=1080",
-          "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
-          "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920&h=1080",
-          "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=1920&h=1080"
-        ];
-        let currentIndex = 0;
-        const slider = document.getElementById('hero-bg-slider');
-        
-        if (slider) {
-          setInterval(() => {
-            slider.style.opacity = '0';
-            setTimeout(() => {
-              currentIndex = (currentIndex + 1) % images.length;
-              slider.style.backgroundImage = `url('${images[currentIndex]}')`;
-              slider.style.opacity = '0.2';
-            }, 1000);
-          }, 5000);
-        }
-      });
-    </script>
   </body>
 </html>
+```

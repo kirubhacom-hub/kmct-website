@@ -4,15 +4,56 @@ Note to AI: Apply the specific brand color mentioned for each college to its her
 ---
 ## 1. KMCT College of Engineering (Kallanthode)
 Brand Color: Navy Blue
-Content:
-Celebrating 25 Years of Engineering Excellence, Globally Recognized. The Original Legacy of Innovation. Established in 2001, built for students who are serious about their future with 25+ years of academic experience. Affiliated to KTU and approved by AICTE. 
-Highlights: 5000+ Graduates placed globally across Middle East, Europe, and India. 50+ Top recruiters (Infosys, TCS, WIPRO, Adani). 25 Years of continuous excellence. 90% Faculty with advanced degrees/PhD.
-Programs:
-- B.Tech Computer Science (CSE) / B.Tech IT / B.Tech Robotics & AI (4 Years)
-- B.Tech Electronics & Communication / B.Tech Mechanical / B.Tech Civil (4 Years)
-- M.Tech Programs (Multiple Streams - 2 Years)
-Features: Industry 4.0 Labs, Global Alumni Network, Karma 2026 Tech Festival.
-Admissions Hotline: +91 974 52 99 888 | admissions@kmct.edu.in
+
+**Hero Section**
+[Image: Campus/Students Hero Image]
+Celebrating 25 Years of Engineering Excellence, Globally Recognized.
+The Original Legacy of Innovation
+KMCT College of Engineering (COE), established in 2001, is built for students who are serious about their future with 25+ years of academic experience. Affiliated to KTU and approved by AICTE. Under the leadership of Dr. K Moidu (Founder Chairman) and Dr. K M Mehboob (Managing Trustee), we have evolved into a high-tech hub that prepares students for global careers.
+
+**A quarter century of engineering excellence**
+Since 2001, KMCT College of Engineering has shaped thousands of engineers who now lead in industry across India and beyond. Our Silver Jubilee year marks 25 years of unwavering commitment to academic rigor and student success.
+* **5000+** Graduates placed globally (Engineers working across Middle East, Europe, and India)
+* **50+** Top recruiters on campus (From Infosys, TCS, WIPRO, Adani, and emerging tech firms)
+* **25** Years of continuous excellence (Building careers since our founding in 2001)
+* **90%** Faculty with advanced degrees (Ph.D. holders and industry researchers leading departments)
+
+**Choose Your Path to a Global Career**
+Six B.Tech specializations and multiple M.Tech streams designed to match your ambitions.
+
+| Course | Duration | Eligibility |
+| :--- | :--- | :--- |
+| B.Tech Computer Science (CSE) | 4 Years | KEAM Rank + 10+2 (PCM) |
+| B.Tech Information Technology (IT) | 4 Years | KEAM Rank + 10+2 (PCM) |
+| B.Tech Robotics & AI | 4 Years | KEAM Rank + 10+2 (PCM) |
+| B.Tech Electronics & Communication | 4 Years | KEAM Rank + 10+2 (PCM) |
+| B.Tech Mechanical Engineering | 4 Years | KEAM Rank + 10+2 (PCM) |
+| B.Tech Civil Engineering | 4 Years | KEAM Rank + 10+2 (PCM) |
+| M.Tech Programs (Multiple Streams) | 2 Years | GATE/B.Tech Aggregate |
+
+**Global Mentors, Not Just Teachers**
+[Image: Mentors Group Image]
+Learn from mentors who are closely aligned with industry standards, a team of PhD holders, researchers, and experts who are recognised for their excellence in their fields.
+
+**The Tech Ecosystem**
+Experience a campus designed for the modern engineer. At Kallanthode, the environment is as smart as the students.
+* **Industry 4.0 Labs:** Advanced setups for AI, Robotics, and IoT.
+* **The Knowledge Hub:** A digital-first library with global resource access.
+* **Campus Life:** Modern Wi-Fi enabled hostels and world-class sports turf.
+
+**A Global Alumni Network**
+With 25 years of graduates, our network spans the world's leading tech hubs. We don't just place you; we launch you. Trusted by Industry Giants: Recruiters include Adani Cement, Infosys, TCS, Wipro, and 6D Technologies. [Image: Recruiter Logos]
+
+**Karma 2026 | The Legend Goes Global**
+[Image: Karma Banner]
+Karma is the biggest student-run spectacle in the region. For 2026, we are dialling it up to eleven.
+
+**Admissions & Contact**
+Not sure which course fits you? Talk to our admission team.
+* **Admissions Hotline:** +91 974 52 99 888
+* **Email:** admissions@kmct.edu.in
+* **Location:** KMCT College of Engineering, Kallanthode, NIT Campus P.O., Kozhikode, Kerala.
+* **CTAs:** [SECURE YOUR SEAT IN THE 2026 SILVER JUBILEE BATCH - APPLY NOW], [TALK TO A COUNSELOR ON WHATSAPP]
 
 ---
 ## 2. KMCT School of Business

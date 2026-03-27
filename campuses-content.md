@@ -92,13 +92,63 @@ Features: Real classroom practice, extensive school internships. Prepares you di
 
 ---
 ## 5. KMCT College of Engineering for Women (COEW)
-Brand Color: Deep Pink / Magenta
-Content:
-Creating the Next Gen Female Tech Leaders. Kerala's Premier Women-Only Engineering Campus. Designed for Women. Built for the World. Best NSS unit in Kerala two years running.
-Programs:
-- B.Tech Biomedical Engineering / B.Tech Computer Science (CSE) / B.Tech Civil Engineering (4 Years)
-- B.Tech Lateral Entry (3 Years)
-Features: 62% placement rate. Specialized Healthcare Labs. Mentors include Dr. Sameera V Mohd. Sagheer and Aparna S. Hosts 'Pravah' Tech Fest and 'Spark' Cultural Fest. Safe campus with wardens.
+Brand Color: Deep Pink / Magenta (Note to AI: Extract and strictly use the exact Hex code from the COEW logo)
+
+**Hero Section**
+[Image: Campus/Students Hero Image]
+Creating the Next Gen Female Tech Leaders. Kerala's Premier Women-Only Engineering Campus.
+Designed for Women. Built for the World.
+Under the leadership of Dr. K Moidu and Dr. KM Mehboob, and the academic guidance of Dr. Sabiq P V, COEW has emerged as a premier destination for students who want to lead in specialized fields like Biomedical Engineering and CSE.
+
+**Highlights**
+* **Best NSS unit in Kerala two years running:** Our award-winning NSS unit earned top honors for two consecutive years, proving our commitment to social impact and community leadership.
+
+**Our B.Tech Programs**
+Choose from four specialized engineering tracks with transparent fees and high-demand industry focus.
+
+| Course | Duration | Eligibility |
+| :--- | :--- | :--- |
+| B.Tech Biomedical Engineering | 4 Years | KEAM Rank + 10+2 (PCM) |
+| B.Tech Computer Science (CSE) | 4 Years | KEAM Rank + 10+2 (PCM) |
+| B.Tech Civil Engineering | 4 Years | KEAM Rank + 10+2 (PCM) |
+| B.Tech Lateral Entry (LET) | 3 Years | Merit/KMCT Poly |
+
+**Global Mentors: Learn from the Architects of Tech**
+Learn in an environment where mentors are approachable, supportive, and aligned with industry expectations. Real expertise. Real mentorship. Real impact.
+
+**Faculty Feature Cards:**
+* **Biomedical | Dr. Sameera V Mohd. Sagheer:** PhD-led research in medical devices and health innovation. (Focusing on the intersection of tech and life sciences.)
+* **Software | Minilal M:** Architecture and AI expertise shaping the next generation. (Focusing on software architecture and AI.)
+* **Infrastructure | Aparna S:** Leads civil engineering with global standards. Sustainable design principles applied in every project. (Emphasizing sustainable infrastructure and global design standards.)
+
+**A Safe Campus. A Strong Future.**
+A 25km scenic drive from Kozhikode brings you to a campus that is as smart as its students.
+* **Specialized Healthcare Labs:** Industry-standard equipment for Biomedical and Electronics research.
+* **Dedicated women's campus environment:** Faculty and wardens available on campus.
+* **Smart classrooms:** Project-based learning environment.
+* **Library:** Digital learning resources.
+
+**Career-Focused Training & Placements**
+With a 62% placement rate in the latest cycle, our women are proving their mettle in top-tier global firms.
+* **The Payoff:** Graduates secured roles with salaries up to 3 LPA, starting their journey with industry giants.
+* **Top Recruiters:** Our students are preferred hires for Infosys, TCS, Wipro, and Adani Cement. [Image: Recruiter Logos]
+
+**A Growing Alumni Network**
+Our graduates are building careers across industries and continuing higher studies in India and abroad. You become part of a network that supports your journey.
+
+**Tech, Talent, and "Pravah"**
+While our students lead the charge at the massive **Karma 2026** festival, COEW hosts its own signature celebrations:
+* **Pravah:** Our flagship technical fest held every February. Where code meets creativity.
+* **Spark:** The annual cultural extravaganza in March that showcases the artistic power of our students.
+
+**Admissions 2026-27 Open Now**
+Registrations are officially OPEN for the 2026 - 27 Batch. Start Your Engineering Journey with Confidence to lead the industry.
+
+**Personalized Career Counseling**
+Confused between branches? Our senior counselors can help you map your skills to the right course.
+
+**CTAs:** * [SECURE YOUR SEAT IN THE 2026 BATCH - APPLY NOW]
+* [TALK TO A COUNSELOR ON WHATSAPP]
 
 ---
 ## 6. KMCT College of Architecture (CAK)

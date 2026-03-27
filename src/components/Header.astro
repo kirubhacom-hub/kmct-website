@@ -23,6 +23,25 @@ const { activePage } = Astro.props;
       href="/about"
       class={`hidden md:flex font-bold text-sm transition-colors ${activePage === 'about' ? 'text-teal-600' : 'text-kmct-navy hover:text-teal-600'}`}
     >About Us</a>
+
+    <div class="relative group hidden md:flex items-center h-full py-2">
+      <button class="font-bold text-sm transition-colors text-kmct-navy group-hover:text-teal-600 flex items-center gap-1 focus:outline-none">
+        Kallanthode Campuses
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3 group-hover:rotate-180 transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+      </button>
+      <div class="absolute top-full left-0 mt-0 pt-2 w-72 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+        <div class="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden flex flex-col">
+          <a href="/campuses/engineering" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors border-b border-gray-50 last:border-0">KMCT College of Engineering</a>
+          <a href="/campuses/business" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors border-b border-gray-50 last:border-0">KMCT School of Business</a>
+          <a href="/campuses/teacher-education" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors border-b border-gray-50 last:border-0">KMCT College of Teacher Education</a>
+          <a href="/campuses/tti" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors border-b border-gray-50 last:border-0">KMCT Teacher Training Institute</a>
+          <a href="/campuses/womens-engineering" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors border-b border-gray-50 last:border-0">KMCT College of Engineering for Women</a>
+          <a href="/campuses/architecture" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors border-b border-gray-50 last:border-0">KMCT College of Architecture</a>
+          <a href="/campuses/polytechnic" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors border-b border-gray-50 last:border-0">KMCT Polytechnic College</a>
+          <a href="/campuses/pharmacy" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors border-b border-gray-50 last:border-0">KMCT College of Pharmaceutical Sciences</a>
+        </div>
+      </div>
+    </div>
     <a
       href="/admissions"
       class={`hidden md:flex font-bold text-sm transition-colors ${activePage === 'admissions' ? 'text-teal-600' : 'text-kmct-navy hover:text-teal-600'}`}
@@ -41,13 +60,31 @@ const { activePage } = Astro.props;
 </header>
 
 <!-- Fullscreen Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-md z-[55] flex flex-col justify-center items-center opacity-0 pointer-events-none transition-all duration-500 pb-20 md:hidden">
-  <nav class="flex flex-col gap-8 text-center mt-12 w-full px-6">
-    <a href="/"          class="mobile-link text-3xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">Home</a>
-    <a href="/about"     class="mobile-link text-3xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">About Us</a>
-    <a href="/admissions" class="mobile-link text-3xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">Admissions</a>
+<div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-md z-[55] flex flex-col justify-start items-center opacity-0 pointer-events-none transition-all duration-500 pb-20 md:hidden overflow-y-auto pt-24">
+  <nav class="flex flex-col gap-6 text-center w-full px-6">
+    <a href="/" class="mobile-link text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">Home</a>
+    <a href="/about" class="mobile-link text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">About Us</a>
+    
+    <div class="flex flex-col items-center w-full">
+      <button id="mobile-campuses-btn" class="flex items-center justify-center gap-2 text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors w-full focus:outline-none">
+        Kallanthode Campuses
+        <svg id="mobile-campuses-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+      </button>
+      <div id="mobile-campuses-menu" class="hidden flex-col gap-4 mt-4 w-full bg-gray-50/80 rounded-2xl p-5 border border-gray-100 shadow-inner">
+        <a href="/campuses/engineering" class="mobile-link text-base font-bold text-gray-600 hover:text-teal-600 transition-colors">College of Engineering</a>
+        <a href="/campuses/business" class="mobile-link text-base font-bold text-gray-600 hover:text-teal-600 transition-colors">School of Business</a>
+        <a href="/campuses/teacher-education" class="mobile-link text-base font-bold text-gray-600 hover:text-teal-600 transition-colors">College of Teacher Education</a>
+        <a href="/campuses/tti" class="mobile-link text-base font-bold text-gray-600 hover:text-teal-600 transition-colors">Teacher Training Institute</a>
+        <a href="/campuses/womens-engineering" class="mobile-link text-base font-bold text-gray-600 hover:text-teal-600 transition-colors">Engineering for Women</a>
+        <a href="/campuses/architecture" class="mobile-link text-base font-bold text-gray-600 hover:text-teal-600 transition-colors">College of Architecture</a>
+        <a href="/campuses/polytechnic" class="mobile-link text-base font-bold text-gray-600 hover:text-teal-600 transition-colors">Polytechnic College</a>
+        <a href="/campuses/pharmacy" class="mobile-link text-base font-bold text-gray-600 hover:text-teal-600 transition-colors">College of Pharmacy</a>
+      </div>
+    </div>
+
+    <a href="/admissions" class="mobile-link text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">Admissions</a>
   </nav>
-  <div class="mt-16 text-center w-full px-8">
+  <div class="mt-12 text-center w-full px-8 pb-8">
     <p class="text-xs text-gray-500 mb-4 uppercase tracking-widest font-bold">Contact Admissions</p>
     <a href="tel:+919745299888" class="inline-flex w-full items-center justify-center gap-2 bg-teal-600 text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-teal-900/50">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.08-7.076-6.975l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
@@ -92,6 +129,18 @@ const { activePage } = Astro.props;
           menuBtn.innerHTML = '<svg class="w-5 h-5 text-kmct-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>';
         }
       };
+      const mobileCampusesBtn = document.getElementById('mobile-campuses-btn');
+      const mobileCampusesMenu = document.getElementById('mobile-campuses-menu');
+      const mobileCampusesIcon = document.getElementById('mobile-campuses-icon');
+
+      if (mobileCampusesBtn && mobileCampusesMenu && mobileCampusesIcon) {
+        mobileCampusesBtn.addEventListener('click', () => {
+          mobileCampusesMenu.classList.toggle('hidden');
+          mobileCampusesMenu.classList.toggle('flex');
+          mobileCampusesIcon.classList.toggle('rotate-180');
+        });
+      }
+
       menuBtn.addEventListener('click', toggleMenu);
       mobileLinks.forEach(link => link.addEventListener('click', () => {
         if (menuBtn.getAttribute('aria-expanded') === 'true') toggleMenu();

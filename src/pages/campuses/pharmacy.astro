@@ -1,0 +1,273 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>KMCT College of Pharmaceutical Sciences</title>
+    <meta name="description" content="Build a Globally Aligned Career in Pharmaceutical Sciences at KMCT CPS. B.Pharm, D.Pharm and M.Pharm degrees." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-kmct-light font-sans text-kmct-navy overflow-x-hidden">
+    
+    <Header />
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-24 overflow-hidden bg-white flex flex-col items-center justify-center text-center px-6 isolate min-h-[85vh]">
+      <!-- Background Image with 20% opacity -->
+      <div class="absolute inset-0 z-0 bg-white overflow-hidden pointer-events-none">
+        <div class="absolute inset-0 z-10 bg-cover bg-center" style="opacity: 0.15; background-image: url('https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=1920&h=1080');"></div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center mt-auto mb-auto animate-fade-up">
+        <!-- Pill badge -->
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-50/90 text-[#4169E1] border border-[#4169E1]/20 font-bold text-xs tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          PCI Approved Institution
+        </div>
+
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-[#0a2542] tracking-tight mb-4 max-w-5xl drop-shadow-sm">
+          KMCT College of <span class="text-[#4169E1]">Pharmaceutical Sciences</span>
+        </h1>
+        
+        <p class="text-xl sm:text-2xl font-serif text-[#4169E1] italic mb-8 drop-shadow-sm">Build a Globally Aligned Career</p>
+        
+        <p class="text-lg sm:text-xl text-gray-600 max-w-4xl leading-relaxed font-medium mb-12">
+          Grounded in real-world clinical excellence. Under the leadership of Dr. K Moidu and Managing Trustee Dr. KM Mehboob (a renowned Neurologist), our standards are set by medical professionals.
+        </p>
+
+        <!-- Stats row -->
+        <div class="flex flex-wrap gap-8 justify-center mb-10 text-kmct-navy font-bold">
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#4169E1]">B.Pharm</span> <span>Degree</span>
+           </div>
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#4169E1]">D.Pharm</span> <span>Diploma</span>
+           </div>
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#4169E1]">M.Pharm</span> <span>Postgrad</span>
+           </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#4169E1] text-white rounded-full font-bold text-sm lg:text-base hover:bg-blue-700 transition-all duration-300 shadow-[0_0_20px_rgba(65,105,225,0.3)] hover:-translate-y-1">
+            APPLY FOR 2026-27 ADMISSIONS
+          </a>
+          <a href="#programs" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#0a2542] border-2 border-[#0a2542]/10 rounded-full font-bold text-sm lg:text-base hover:border-[#0a2542]/30 hover:bg-gray-50 transition-all duration-300">
+            EXPLORE PHARMACY PROGRAMS
+          </a>
+        </div>
+      </div>
+
+      <!-- Infinite auto-scroll image marquee -->
+      <div class="relative z-10 overflow-hidden w-full mt-16 max-w-[100vw] mx-auto pb-6" style="mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);">
+        <div class="marquee-track flex gap-4 w-max">
+          <!-- Set 1 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=600&h=400" alt="Lab Research" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=600&h=400" alt="Microscope" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=600&h=400" alt="Pharmaceuticals" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5e16541f7?auto=format&fit=crop&q=80&w=600&h=400" alt="Medicine" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=600&h=400" alt="Chemistry" class="w-full h-full object-cover" />
+          </div>
+          <!-- Set 2 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=600&h=400" alt="Lab Research" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=600&h=400" alt="Microscope" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=600&h=400" alt="Pharmaceuticals" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5e16541f7?auto=format&fit=crop&q=80&w=600&h=400" alt="Medicine" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=600&h=400" alt="Chemistry" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVIDENCE-BASED EDUCATION -->
+    <section class="py-24 relative bg-gray-50 border-y border-gray-100">
+      <div class="absolute left-0 top-0 w-64 h-64 bg-[#4169E1]/10 rounded-br-full opacity-50 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">Evidence-Based Education</h2>
+          <p class="text-lg text-gray-600 font-medium max-w-2xl mx-auto">
+            We bridge the gap between drug manufacturing and patient care with intensive hospital-linked training.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div class="w-12 h-12 bg-blue-50 text-[#4169E1] rounded-xl flex items-center justify-center mb-6"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div>
+            <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">Clinical-First</h4>
+            <p class="text-gray-600 font-medium text-sm">We provide intensive hospital-linked training, bridging theory and patient care.</p>
+          </div>
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div class="w-12 h-12 bg-blue-50 text-[#4169E1] rounded-xl flex items-center justify-center mb-6"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg></div>
+            <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">Research Hub</h4>
+            <p class="text-gray-600 font-medium text-sm">Dedicated zones for drug discovery, pharmacology, and advanced pharmaceutics.</p>
+          </div>
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div class="w-12 h-12 bg-blue-50 text-[#4169E1] rounded-xl flex items-center justify-center mb-6"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+            <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">Global Pipeline</h4>
+            <p class="text-gray-600 font-medium text-sm">A 25-year network of alumni working in top pharmaceutical MNCs across the world.</p>
+          </div>
+          <div class="bg-kmct-navy p-8 rounded-3xl shadow-lg hover:-translate-y-1 transition-all text-white">
+            <div class="w-12 h-12 bg-white/10 text-[#4169E1] rounded-xl flex items-center justify-center mb-6"><svg class="w-6 h-6 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg></div>
+            <h4 class="font-serif text-2xl font-bold mb-3">The Merit Advantage</h4>
+            <p class="text-white/80 font-medium text-sm">High-ranking seats intentionally reserved for students serious about academic performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS TABLE & MENTORS -->
+    <section class="py-24 relative bg-white" id="programs">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+        
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-12 text-center">Your Future: B.Pharm & Beyond</h2>
+        
+        <div class="bg-white rounded-3xl shadow-[0_20px_40px_-15px_rgba(65,105,225,0.1)] border border-gray-100 overflow-hidden mb-24">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-gray-50 border-b border-gray-100 text-[#4169E1] font-bold tracking-widest uppercase text-xs">
+                  <th class="p-6">Program</th>
+                  <th class="p-6">Duration</th>
+                  <th class="p-6">Qualifications Required</th>
+                  <th class="p-6">Intake</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100 font-medium text-gray-700">
+                <tr class="hover:bg-blue-50/30 transition-colors">
+                  <td class="p-6 font-bold text-kmct-navy text-lg text-[#4169E1]">B.Pharm</td>
+                  <td class="p-6">4 Years</td>
+                  <td class="p-6 text-sm">10+2 (PCM/PCB) 50%</td>
+                  <td class="p-6 font-bold">60 Seats</td>
+                </tr>
+                <tr class="hover:bg-blue-50/30 transition-colors">
+                  <td class="p-6 font-bold text-kmct-navy text-lg text-[#4169E1]">D.Pharm</td>
+                  <td class="p-6">2 Years</td>
+                  <td class="p-6 text-sm">10+2 (PCM/PCB)</td>
+                  <td class="p-6 font-bold">60 Seats</td>
+                </tr>
+                <tr class="hover:bg-blue-50/30 transition-colors">
+                  <td class="p-6 font-bold text-kmct-navy text-lg text-[#4169E1]">M.Pharm</td>
+                  <td class="p-6">2 Years</td>
+                  <td class="p-6 text-sm italic">B.Pharm Aggregate</td>
+                  <td class="p-6 font-bold text-gray-400">Varies</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center flex-col-reverse">
+          <div>
+            <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">Learning From the Experts</h2>
+            <div class="w-16 h-1 bg-[#4169E1] rounded-full mb-8"></div>
+            <p class="text-lg text-gray-600 font-medium leading-relaxed mb-6">
+              Your learning is guided by experienced faculty including PhD holders and subject specialists across Pharmaceutics, Pharmacology, Analysis & Chemistry.
+            </p>
+            <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 flex gap-4 items-center">
+               <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm text-[#4169E1]"><svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg></div>
+               <div>
+                 <p class="font-bold text-kmct-navy text-lg">Dr. Sujith Abraham</p>
+                 <p class="text-sm text-[#4169E1] font-medium">M.Pharm, PhD</p>
+               </div>
+            </div>
+          </div>
+          <div class="relative h-[400px] rounded-[2rem] overflow-hidden shadow-2xl group border border-gray-100">
+             <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=800" alt="Professors" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+             <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-kmct-navy to-transparent h-1/2 p-8 flex flex-col justify-end">
+               <span class="text-white text-sm uppercase tracking-widest font-bold">Expert Faculty</span>
+             </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REAL LABS. REAL LEARNING. -->
+    <section class="py-24 bg-kmct-navy text-white relative overflow-hidden">
+      <div class="absolute right-0 top-0 w-1/3 h-full">
+         <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800" alt="Lab Research" class="w-full h-full object-cover opacity-20 mix-blend-screen" style="mask-image: linear-gradient(to right, transparent, black);">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold mb-12">Real Labs. Real Learning.</h2>
+        
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+             <h4 class="font-serif text-2xl font-bold mb-4 flex items-center gap-3"><span class="text-blue-300">▹</span> Practical Pharmacy</h4>
+             <ul class="space-y-4 text-white/80 font-medium">
+               <li>Well-equipped pharmaceutical labs.</li>
+               <li>Hands-on experiments and formulation work.</li>
+               <li>Training in drug analysis, testing, and handling protocols.</li>
+               <li>Exposure to real-world applications within medical sectors.</li>
+             </ul>
+          </div>
+          <div class="bg-[#4169E1]/80 backdrop-blur-md p-8 rounded-3xl border border-blue-400">
+             <h4 class="font-serif text-2xl font-bold mb-4 flex items-center gap-3 text-white"><span class="text-blue-200">▹</span> Industry Exposure</h4>
+             <ul class="space-y-4 text-white/90 font-medium">
+               <li>Guaranteed internship opportunities in reputed organisations.</li>
+               <li>Industry-oriented training aligning with current drug safety standards.</li>
+               <li>Strong career support & guidance for higher studies (M.Pharm/PhD).</li>
+               <li>Direct pipelines to pharmaceutical placement drives.</li>
+             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMISSIONS (CTA) -->
+    <section class="py-32 text-center relative overflow-hidden" id="admissions">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1920&q=80" alt="Pharmacy Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-white/95 mix-blend-screen"></div>
+      </div>
+      
+      <div class="max-w-4xl mx-auto px-6 relative z-10 text-kmct-navy">
+        <h2 class="font-serif text-4xl lg:text-6xl font-bold mb-6">Admissions 2026-27 Open Now</h2>
+        <p class="text-xl text-[#4169E1] font-medium mb-12">Confused about the entrance process or eligibility?</p>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mb-12">
+          Registrations for the B.Pharm and D.Pharm academic year are officially open. Our senior counselors are just a message away.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="#" class="inline-flex items-center justify-center gap-3 bg-[#4169E1] text-white px-10 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-blue-700 transition-colors shadow-[0_0_30px_rgba(65,105,225,0.4)] hover:-translate-y-1">
+            APPLY NOW
+          </a>
+          <a href="https://wa.me/919745299888" target="_blank" class="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-kmct-navy/20 text-kmct-navy px-10 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-gray-50 transition-colors shadow-lg hover:-translate-y-1">
+            <svg class="w-5 h-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp Counselor
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

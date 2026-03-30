@@ -140,6 +140,45 @@ import Footer from '../../components/Footer.astro';
       </div>
     </section>
 
+    <!-- STATS SECTION -->
+    <section class="w-full bg-kmct-navy py-16 relative z-10 overflow-hidden shadow-2xl" id="campus-stats">
+      <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#C2185B] via-pink-400 to-[#C2185B]"></div>
+      <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image: radial-gradient(circle at 50% 50%, #ffffff 0%, transparent 70%);"></div>
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-20">
+        <div class="flex items-center justify-center gap-4 sm:gap-8 mb-12">
+          <div class="h-[1px] bg-gradient-to-r from-transparent to-pink-500 w-16 sm:w-32 opacity-50"></div>
+          <p class="text-center text-xs sm:text-sm font-bold uppercase tracking-[0.3em] text-pink-300 m-0">KMCT College of Engineering for Women — By The Numbers</p>
+          <div class="h-[1px] bg-gradient-to-l from-transparent to-pink-500 w-16 sm:w-32 opacity-50"></div>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-4 lg:gap-x-0 items-center lg:divide-x lg:divide-white/10">
+          <div class="flex flex-col items-center text-center stat-item px-4" style="transition-delay: 0ms;">
+            <div class="relative mb-4 flex items-baseline justify-center">
+              <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="62" data-suffix="%">62%</span>
+            </div>
+            <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Placement<br/>Rate</span>
+          </div>
+          <div class="flex flex-col items-center text-center stat-item px-4" style="transition-delay: 150ms;">
+            <div class="relative mb-4 flex items-baseline justify-center">
+              <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="4" data-suffix="">4</span>
+            </div>
+            <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">B.Tech<br/>Programs</span>
+          </div>
+          <div class="flex flex-col items-center text-center stat-item px-4" style="transition-delay: 300ms;">
+            <div class="relative mb-4 flex items-baseline justify-center">
+              <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="2" data-suffix="x">2x</span>
+            </div>
+            <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Best NSS<br/>Award Kerala</span>
+          </div>
+          <div class="flex flex-col items-center text-center stat-item px-4" style="transition-delay: 450ms;">
+            <div class="relative mb-4 flex items-baseline justify-center">
+              <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="100" data-suffix="%">100%</span>
+            </div>
+            <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Women-Only<br/>Campus</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- HIGHLIGHTS -->
     <section class="py-24 bg-white relative z-20 overflow-hidden">
       <!-- Decorative background blur -->
@@ -467,6 +506,32 @@ import Footer from '../../components/Footer.astro';
     </section>
 
     <Footer />
+    <script>
+      const statsEl = document.querySelector('[data-count]')?.closest('section');
+      if (statsEl) {
+        const counters = statsEl.querySelectorAll('[data-count]');
+        function easeOutExpo(t) { return t === 1 ? 1 : 1 - Math.pow(2, -10 * t); }
+        function animateCounter(el) {
+          const target = parseInt(el.getAttribute('data-count'), 10);
+          const suffix = el.getAttribute('data-suffix') || '';
+          const duration = 1800;
+          const delay = parseInt(el.closest('.stat-item')?.style.transitionDelay || '0', 10);
+          let start = null;
+          setTimeout(() => {
+            function step(ts) {
+              if (!start) start = ts;
+              const p = Math.min((ts - start) / duration, 1);
+              el.textContent = Math.floor(easeOutExpo(p) * target) + suffix;
+              if (p < 1) requestAnimationFrame(step); else el.textContent = target + suffix;
+            }
+            requestAnimationFrame(step);
+          }, delay);
+        }
+        new IntersectionObserver((entries) => {
+          entries.forEach(e => { if (e.isIntersecting) { counters.forEach(animateCounter); } });
+        }, { threshold: 0.3 }).observe(statsEl);
+      }
+    </script>
 
 
   </body>

@@ -22,86 +22,83 @@ import Footer from '../../components/Footer.astro';
     <Header />
 
     <!-- HERO SECTION -->
-    <section class="relative pt-32 pb-24 overflow-hidden bg-[#059669] flex flex-col items-center justify-center text-center px-6 isolate min-h-[85vh]">
-      <!-- Background Image with multiply blend mode -->
-      <div class="absolute inset-0 z-0 bg-[#059669] overflow-hidden pointer-events-none">
-        <div class="absolute inset-0 z-10 bg-cover bg-center mix-blend-multiply" style="opacity: 0.8; background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920&h=1080');"></div>
-      </div>
+    <section class="relative overflow-hidden" style="padding-top: 120px; background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920&h=1080'); background-size: cover; background-position: center top; background-color: white;">
       
-      <div class="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center mt-auto mb-auto animate-fade-up text-white">
+      <!-- Centered hero content -->
+      <div class="relative z-10 flex flex-col items-center text-center px-6 pt-20 flex-1 lg:pb-16 max-w-5xl mx-auto animate-fade-up">
         <!-- Pill badge -->
-        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-emerald-400/20 text-emerald-100 border border-emerald-300/30 font-bold text-xs tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-emerald-50/90 text-[#059669] border border-[#059669]/20 font-bold text-xs tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
           <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           AICTE Approved Polytechnic Institution
         </div>
 
-        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-white tracking-tight mb-4 max-w-5xl drop-shadow-sm">
-           KMCT <span class="text-emerald-300">Polytechnic College</span>
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-[#0a2542] tracking-tight mb-4 max-w-5xl drop-shadow-sm">
+           KMCT <span class="text-[#059669]">Polytechnic College</span>
         </h1>
         
-        <p class="text-xl sm:text-2xl font-serif text-emerald-200 italic mb-8 drop-shadow-sm">The Smarter Route After SSLC</p>
+        <p class="text-xl sm:text-2xl font-serif text-[#059669] italic mb-8 drop-shadow-sm">The Smarter Route After SSLC</p>
         
-        <p class="text-lg sm:text-xl text-emerald-50/90 max-w-4xl leading-relaxed font-medium mb-12">
+        <p class="text-lg sm:text-xl text-gray-600 max-w-4xl leading-relaxed font-medium mb-12">
           Kerala's Most Complete Diploma Engineering Campus. Established in 2004, KMCT Polytechnic College is one of Kerala's largest AICTE-approved institutions with 10 diploma branches, 1,450+ enrolled students, and an 11,000+ strong alumni network working globally.
         </p>
 
         <!-- Stats row -->
-        <div class="flex flex-wrap gap-8 justify-center mb-10 text-emerald-900 font-bold transform -rotate-1 hover:rotate-0 transition-transform">
-           <div class="flex items-center gap-2 bg-white/95 px-5 py-3 rounded-xl shadow-xl border border-emerald-100">
-             <span class="text-3xl text-[#059669]">10</span> <span class="uppercase tracking-widest text-xs">Branches</span>
+        <div class="flex flex-wrap gap-8 justify-center mb-10 text-kmct-navy font-bold">
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#059669]">10</span> <span class="uppercase tracking-widest text-xs">Branches</span>
            </div>
-           <div class="flex items-center gap-2 bg-white/95 px-5 py-3 rounded-xl shadow-xl border border-emerald-100">
-             <span class="text-3xl text-[#059669]">20</span> <span class="uppercase tracking-widest text-xs">Years</span>
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#059669]">20</span> <span class="uppercase tracking-widest text-xs">Years</span>
            </div>
-           <div class="flex items-center gap-2 bg-white/95 px-5 py-3 rounded-xl shadow-xl border border-emerald-100">
-             <span class="text-3xl text-[#059669]">1450+</span> <span class="uppercase tracking-widest text-xs">Students</span>
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#059669]">1450+</span> <span class="uppercase tracking-widest text-xs">Students</span>
            </div>
         </div>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#059669] rounded-full font-bold text-sm lg:text-base hover:bg-emerald-50 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:-translate-y-1">
+          <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#059669] text-white rounded-full font-bold text-sm lg:text-base hover:bg-[#047857] transition-all duration-300 shadow-[0_0_20px_rgba(5,150,105,0.3)] hover:-translate-y-1">
             SECURE YOUR DIPLOMA SEAT
           </a>
-          <a href="#branches" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#059669] text-white border-2 border-white/20 rounded-full font-bold text-sm lg:text-base hover:border-white/50 hover:bg-white/10 transition-all duration-300">
+          <a href="#branches" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#0a2542] border-2 border-[#0a2542]/10 rounded-full font-bold text-sm lg:text-base hover:border-[#0a2542]/30 hover:bg-gray-50 transition-all duration-300">
             EXPLORE 10 BRANCHES
           </a>
         </div>
       </div>
 
       <!-- Infinite auto-scroll image marquee overlay -->
-      <div class="relative z-10 overflow-hidden w-full mt-16 max-w-[100vw] mx-auto pb-6" style="mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);">
+      <div class="relative z-10 overflow-hidden pb-0" style="mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);">
         <div class="marquee-track flex gap-4 w-max">
           <!-- Set 1 -->
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=600&h=400" alt="Workshop" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=600&h=400" alt="Workshop" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600&h=400" alt="Machining" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600&h=400" alt="Machining" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=600&h=400" alt="Tech" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=600&h=400" alt="Tech" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1523309375637-b3f4f2347f2d?auto=format&fit=crop&q=80&w=600&h=400" alt="Working" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1523309375637-b3f4f2347f2d?auto=format&fit=crop&q=80&w=600&h=400" alt="Working" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1502444330042-d1a1ddf971b1?auto=format&fit=crop&q=80&w=600&h=400" alt="Electronics" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1502444330042-d1a1ddf971b1?auto=format&fit=crop&q=80&w=600&h=400" alt="Electronics" class="w-full h-full object-cover" />
           </div>
           <!-- Set 2 -->
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=600&h=400" alt="Workshop" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=600&h=400" alt="Workshop" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600&h=400" alt="Machining" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600&h=400" alt="Machining" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=600&h=400" alt="Tech" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=600&h=400" alt="Tech" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1523309375637-b3f4f2347f2d?auto=format&fit=crop&q=80&w=600&h=400" alt="Working" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1523309375637-b3f4f2347f2d?auto=format&fit=crop&q=80&w=600&h=400" alt="Working" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
-            <img src="https://images.unsplash.com/photo-1502444330042-d1a1ddf971b1?auto=format&fit=crop&q=80&w=600&h=400" alt="Electronics" class="w-full h-full object-cover opacity-90" />
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1502444330042-d1a1ddf971b1?auto=format&fit=crop&q=80&w=600&h=400" alt="Electronics" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>

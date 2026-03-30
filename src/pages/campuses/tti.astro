@@ -22,13 +22,10 @@ import Footer from '../../components/Footer.astro';
     <Header />
 
     <!-- HERO SECTION -->
-    <section class="relative pt-32 pb-24 overflow-hidden bg-white flex flex-col items-center justify-center text-center px-6 isolate min-h-[85vh]">
-      <!-- Background Image with 20% opacity -->
-      <div class="absolute inset-0 z-0 bg-white overflow-hidden pointer-events-none">
-        <div class="absolute inset-0 z-10 bg-cover bg-center" style="opacity: 0.2; background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=1920&h=1080');"></div>
-      </div>
+    <section class="relative overflow-hidden" style="padding-top: 120px; background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=1920&h=1080'); background-size: cover; background-position: center top; background-color: white;">
       
-      <div class="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center mt-auto mb-auto animate-fade-up">
+      <!-- Centered hero content -->
+      <div class="relative z-10 flex flex-col items-center text-center px-6 pt-20 flex-1 lg:pb-16 max-w-5xl mx-auto animate-fade-up">
         <!-- Pill badge -->
         <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-pink-50/90 text-[#D81B60] border border-[#D81B60]/20 font-bold text-xs tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
           <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
@@ -69,38 +66,38 @@ import Footer from '../../components/Footer.astro';
       </div>
 
       <!-- Infinite auto-scroll image marquee -->
-      <div class="relative z-10 overflow-hidden w-full mt-16 max-w-[100vw] mx-auto pb-6" style="mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);">
+      <div class="relative z-10 overflow-hidden pb-0" style="mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);">
         <div class="marquee-track flex gap-4 w-max">
           <!-- Set 1 -->
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=600&h=400" alt="Students in class" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?auto=format&fit=crop&q=80&w=600&h=400" alt="Teacher reading" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1531545514251-b159e38c31ce?auto=format&fit=crop&q=80&w=600&h=400" alt="Teaching" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1580894732444-8ecbef79bd1d?auto=format&fit=crop&q=80&w=600&h=400" alt="School" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600&h=400" alt="Education" class="w-full h-full object-cover" />
           </div>
           <!-- Set 2 -->
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=600&h=400" alt="Students in class" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?auto=format&fit=crop&q=80&w=600&h=400" alt="Teacher reading" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1531545514251-b159e38c31ce?auto=format&fit=crop&q=80&w=600&h=400" alt="Teaching" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1580894732444-8ecbef79bd1d?auto=format&fit=crop&q=80&w=600&h=400" alt="School" class="w-full h-full object-cover" />
           </div>
-          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600&h=400" alt="Education" class="w-full h-full object-cover" />
           </div>
         </div>

@@ -1,0 +1,331 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>KMCT Polytechnic College</title>
+    <meta name="description" content="Kerala's Most Complete Diploma Engineering Campus. Established in 2004, offering 10 branches." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-kmct-light font-sans text-kmct-navy overflow-x-hidden">
+    
+    <Header />
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-24 overflow-hidden bg-[#059669] flex flex-col items-center justify-center text-center px-6 isolate min-h-[85vh]">
+      <!-- Background Image with multiply blend mode -->
+      <div class="absolute inset-0 z-0 bg-[#059669] overflow-hidden pointer-events-none">
+        <div class="absolute inset-0 z-10 bg-cover bg-center mix-blend-multiply" style="opacity: 0.8; background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920&h=1080');"></div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center mt-auto mb-auto animate-fade-up text-white">
+        <!-- Pill badge -->
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-emerald-400/20 text-emerald-100 border border-emerald-300/30 font-bold text-xs tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          AICTE Approved Polytechnic Institution
+        </div>
+
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-white tracking-tight mb-4 max-w-5xl drop-shadow-sm">
+           KMCT <span class="text-emerald-300">Polytechnic College</span>
+        </h1>
+        
+        <p class="text-xl sm:text-2xl font-serif text-emerald-200 italic mb-8 drop-shadow-sm">The Smarter Route After SSLC</p>
+        
+        <p class="text-lg sm:text-xl text-emerald-50/90 max-w-4xl leading-relaxed font-medium mb-12">
+          Kerala's Most Complete Diploma Engineering Campus. Established in 2004, KMCT Polytechnic College is one of Kerala's largest AICTE-approved institutions with 10 diploma branches, 1,450+ enrolled students, and an 11,000+ strong alumni network working globally.
+        </p>
+
+        <!-- Stats row -->
+        <div class="flex flex-wrap gap-8 justify-center mb-10 text-emerald-900 font-bold transform -rotate-1 hover:rotate-0 transition-transform">
+           <div class="flex items-center gap-2 bg-white/95 px-5 py-3 rounded-xl shadow-xl border border-emerald-100">
+             <span class="text-3xl text-[#059669]">10</span> <span class="uppercase tracking-widest text-xs">Branches</span>
+           </div>
+           <div class="flex items-center gap-2 bg-white/95 px-5 py-3 rounded-xl shadow-xl border border-emerald-100">
+             <span class="text-3xl text-[#059669]">20</span> <span class="uppercase tracking-widest text-xs">Years</span>
+           </div>
+           <div class="flex items-center gap-2 bg-white/95 px-5 py-3 rounded-xl shadow-xl border border-emerald-100">
+             <span class="text-3xl text-[#059669]">1450+</span> <span class="uppercase tracking-widest text-xs">Students</span>
+           </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#059669] rounded-full font-bold text-sm lg:text-base hover:bg-emerald-50 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:-translate-y-1">
+            SECURE YOUR DIPLOMA SEAT
+          </a>
+          <a href="#branches" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#059669] text-white border-2 border-white/20 rounded-full font-bold text-sm lg:text-base hover:border-white/50 hover:bg-white/10 transition-all duration-300">
+            EXPLORE 10 BRANCHES
+          </a>
+        </div>
+      </div>
+
+      <!-- Infinite auto-scroll image marquee overlay -->
+      <div class="relative z-10 overflow-hidden w-full mt-16 max-w-[100vw] mx-auto pb-6" style="mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);">
+        <div class="marquee-track flex gap-4 w-max">
+          <!-- Set 1 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=600&h=400" alt="Workshop" class="w-full h-full object-cover opacity-90" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600&h=400" alt="Machining" class="w-full h-full object-cover opacity-90" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=600&h=400" alt="Tech" class="w-full h-full object-cover opacity-90" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1523309375637-b3f4f2347f2d?auto=format&fit=crop&q=80&w=600&h=400" alt="Working" class="w-full h-full object-cover opacity-90" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1502444330042-d1a1ddf971b1?auto=format&fit=crop&q=80&w=600&h=400" alt="Electronics" class="w-full h-full object-cover opacity-90" />
+          </div>
+          <!-- Set 2 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=600&h=400" alt="Workshop" class="w-full h-full object-cover opacity-90" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600&h=400" alt="Machining" class="w-full h-full object-cover opacity-90" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=600&h=400" alt="Tech" class="w-full h-full object-cover opacity-90" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1523309375637-b3f4f2347f2d?auto=format&fit=crop&q=80&w=600&h=400" alt="Working" class="w-full h-full object-cover opacity-90" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-2 ring-white/10 bg-white">
+            <img src="https://images.unsplash.com/photo-1502444330042-d1a1ddf971b1?auto=format&fit=crop&q=80&w=600&h=400" alt="Electronics" class="w-full h-full object-cover opacity-90" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY DIPLOMA NARRATIVE -->
+    <section class="py-24 relative bg-gray-50 border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+        
+        <div class="bg-white rounded-[2.5rem] p-10 lg:p-16 shadow-[0_20px_40px_-20px_rgba(5,150,105,0.15)] border border-gray-100 flex flex-col lg:flex-row gap-16 items-center">
+          <div class="lg:w-1/2">
+            <h2 class="font-serif text-3xl lg:text-5xl font-bold text-kmct-navy mb-8">Why not just do B.Tech?</h2>
+            <div class="w-16 h-1 bg-[#059669] rounded-full mb-8"></div>
+            <p class="text-lg text-gray-600 font-bold mb-6 italic border-l-4 border-[#059669] pl-4">
+              After SSLC, most students pick the longest route. Here's the smarter one.
+            </p>
+            <p class="text-gray-600 leading-relaxed font-medium mb-6">
+              A normal B.Tech takes 4 years... and still sends most graduates into the job market without touching a real machine once. A Diploma from KMCT Polytechnic takes <strong>3 years</strong>. You spend those 3 years in labs, workshops, and on actual equipment. 
+            </p>
+            <p class="text-gray-600 leading-relaxed font-medium mb-6">
+               <span class="bg-emerald-50 text-[#059669] px-2 py-1 rounded font-bold">Direct Hiring:</span> Companies like Ashok Leyland, Hanon Systems, and Bridco hire diploma holders directly. Our last batch had <strong>341 students placed</strong>.
+            </p>
+            <div class="bg-emerald-50/50 p-6 rounded-2xl border border-emerald-100">
+               <h4 class="font-bold text-[#059669] flex items-center gap-2 mb-2">
+                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
+                 Upgrade to B.Tech via Lateral Entry
+               </h4>
+               <p class="text-sm text-gray-600 font-medium">Your diploma gets you straight into B.Tech Year 2 at any KTU college. You skip the foundation year entirely. Full degree. Less time. Less money.</p>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2 w-full grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22731c77ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Students in Lab" class="w-full h-64 object-cover rounded-3xl mt-12 shadow-md">
+            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Workshop" class="w-full h-64 object-cover rounded-3xl shadow-md">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DIPLOMA BRANCHES -->
+    <section class="py-24 bg-white relative" id="branches">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+
+      <div class="max-w-5xl mx-auto px-6 sm:px-12 relative z-10 text-center mb-16">
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">10 Diploma Branches. Find Yours.</h2>
+        <p class="text-lg text-gray-600 font-medium max-w-2xl mx-auto">
+          KMCT Polytechnic is one of the few polytechnic colleges in Kerala offering this many specialisations under one roof giving you real choice, not a forced decision. All branches are 3 Years Duration.
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-6 relative z-10 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <!-- Branch Cards instead of a boring table -->
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group">
+           <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></div>
+           <h3 class="font-serif text-xl font-bold text-kmct-navy mb-2">Mechanical Engineering</h3>
+           <p class="text-gray-500 font-medium text-sm mb-4">120 Seats &middot; 3 Years</p>
+        </div>
+        
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group">
+           <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z"/></svg></div>
+           <h3 class="font-serif text-xl font-bold text-kmct-navy mb-2">Civil Engineering</h3>
+           <p class="text-gray-500 font-medium text-sm mb-4">60 Seats &middot; 3 Years</p>
+        </div>
+
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group">
+           <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+           <h3 class="font-serif text-xl font-bold text-kmct-navy mb-2">Electrical & Electronics</h3>
+           <p class="text-gray-500 font-medium text-sm mb-4">60 Seats &middot; 3 Years</p>
+        </div>
+
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group">
+           <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+           <h3 class="font-serif text-xl font-bold text-kmct-navy mb-2">Electronics & Communication</h3>
+           <p class="text-gray-500 font-medium text-sm mb-4">60 Seats &middot; 3 Years</p>
+        </div>
+
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group">
+           <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
+           <h3 class="font-serif text-xl font-bold text-kmct-navy mb-2">Automobile Engineering</h3>
+           <p class="text-gray-500 font-medium text-sm mb-4">60 Seats &middot; 3 Years</p>
+        </div>
+
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group">
+           <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+           <h3 class="font-serif text-xl font-bold text-kmct-navy mb-2">Computer Science & Tech</h3>
+           <p class="text-gray-500 font-medium text-sm mb-4">60 Seats &middot; 3 Years</p>
+        </div>
+
+        <!-- Extra rows for Bio, Inst, Arch, Tool & Die -->
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group">
+           <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg></div>
+           <h3 class="font-serif text-xl font-bold text-kmct-navy mb-2">Biomedical Engineering</h3>
+           <p class="text-gray-500 font-medium text-sm">60 Seats &middot; 3 Years</p>
+        </div>
+        
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group">
+           <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg></div>
+           <h3 class="font-serif text-xl font-bold text-kmct-navy mb-2">Instrumentation</h3>
+           <p class="text-gray-500 font-medium text-sm">60 Seats &middot; 3 Years</p>
+        </div>
+
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group">
+           <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg></div>
+           <h3 class="font-serif text-xl font-bold text-kmct-navy mb-2">Architecture Engineering</h3>
+           <p class="text-gray-500 font-medium text-sm">60 Seats &middot; 3 Years</p>
+        </div>
+
+        <div class="bg-gray-50 border border-emerald-100 hover:border-[#059669] rounded-2xl p-8 hover:-translate-y-2 transition-all shadow-sm group md:col-span-2 xl:col-span-3">
+           <div class="md:flex gap-8 items-center">
+             <div class="w-16 h-16 shrink-0 bg-white rounded-full flex items-center justify-center text-[#059669] mb-6 md:mb-0 shadow-sm group-hover:bg-[#059669] group-hover:text-white transition-colors"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div>
+             <div>
+               <h3 class="font-serif text-2xl font-bold text-kmct-navy mb-2">Tool & Die Engineering</h3>
+               <p class="text-gray-500 font-medium text-sm">60 Seats &middot; 3 Years. Specialized precision machining and mold fabrication.</p>
+             </div>
+             <div class="ml-auto mt-4 md:mt-0">
+               <a href="#" class="px-6 py-3 bg-white border border-gray-200 shadow-sm rounded-lg font-bold text-kmct-navy text-sm hover:border-[#059669] hover:text-[#059669]">View Details</a>
+             </div>
+           </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRACTICAL TRAINING & CAMPUS LIFE -->
+    <section class="py-24 bg-[#0a2542] text-white relative">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+        
+        <!-- Practical -->
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold mb-12">Practical Training That Actually Prepares You</h2>
+        
+        <div class="grid lg:grid-cols-3 gap-8 mb-24">
+          <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:-translate-y-2 transition-all">
+            <h4 class="text-xl font-bold text-emerald-400 mb-4">1. Central Workshop</h4>
+            <p class="text-white/80 font-medium mb-4 leading-relaxed">
+              Machining, welding, fitting, carpentry, fabrication. Instructors with 24-49 years of trade experience. When a workshop instructor has been doing this for 49 years, you pick things up fast.
+            </p>
+          </div>
+          <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:-translate-y-2 transition-all">
+             <h4 class="text-xl font-bold text-emerald-400 mb-4">2. Branch-specific Labs</h4>
+             <p class="text-white/80 font-medium mb-4 leading-relaxed">
+               Each department has industry-standard labs setup. The machines you learn on here are the exact same machines you'll operate in your first job. No outdated tech.
+             </p>
+          </div>
+          <div class="bg-[#059669] p-8 rounded-3xl hover:-translate-y-2 transition-all shadow-xl shadow-emerald-500/20">
+             <h4 class="text-xl font-bold text-white mb-4">3. Mandatory Internship</h4>
+             <p class="text-emerald-50 font-medium mb-4 leading-relaxed">
+               Industry attachment is built into the programme as per AICTE guidelines. You leave with real site or workshop experience, not just a certificate.
+             </p>
+          </div>
+        </div>
+
+        <div class="w-full h-px bg-white/10 mb-24"></div>
+
+        <!-- Campus Life -->
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="font-serif text-4xl lg:text-5xl font-bold mb-6">Polytechnic Campus Life</h2>
+            <div class="w-16 h-1 bg-emerald-500 rounded-full mb-8"></div>
+            
+            <ul class="space-y-8">
+              <li class="flex gap-6">
+                <div class="w-14 h-14 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-emerald-300 font-bold border border-white/20">01</div>
+                <div>
+                  <h4 class="font-bold text-2xl mb-2">TECHBLAST</h4>
+                  <p class="text-white/70">The annual inter-college technical festival. Projects, competitions, skill challenges. Where classroom learning competes on the real stage.</p>
+                </div>
+              </li>
+              <li class="flex gap-6">
+                <div class="w-14 h-14 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-emerald-300 font-bold border border-white/20">02</div>
+                <div>
+                  <h4 class="font-bold text-2xl mb-2">KHAJRA</h4>
+                  <p class="text-white/70">The annual cultural arts fest held in February. Music, dance, drama, and the kind of memories that last.</p>
+                </div>
+              </li>
+              <li class="flex gap-6">
+                <div class="w-14 h-14 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-emerald-300 font-bold border border-white/20">03</div>
+                <div>
+                  <h4 class="font-bold text-2xl mb-2">SPORTS, NSS & NCC</h4>
+                  <p class="text-white/70">Gold medals at Inter-Polytechnic Sports. Active NSS & NCC units for discipline, service, and leadership skills.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+             <img src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?auto=format&fit=crop&q=80&w=400&h=600" class="w-full h-full object-cover rounded-3xl" alt="Festival">
+             <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=400&h=600" class="w-full h-full object-cover rounded-3xl mt-12" alt="Sports">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADMISSIONS (CTA) -->
+    <section class="py-32 text-center relative overflow-hidden" id="admissions">
+      <div class="absolute inset-0 z-0 bg-[#059669]">
+        <img src="https://images.unsplash.com/photo-1523309375637-b3f4f2347f2d?auto=format&fit=crop&w=1920&q=80" alt="Background" class="w-full h-full object-cover opacity-50 mix-blend-overlay">
+      </div>
+      
+      <div class="max-w-4xl mx-auto px-6 relative z-10 text-white">
+        <h2 class="font-serif text-4xl lg:text-6xl font-bold mb-6 drop-shadow-lg">Admissions 2026-27</h2>
+        <p class="text-xl text-emerald-100 font-medium mb-12 drop-shadow-md">SSLC Results Out? Apply Now.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 text-left mb-12">
+           <div>
+             <h4 class="font-bold text-emerald-300 mb-2 uppercase tracking-wide text-sm">Eligibility</h4>
+             <p class="font-medium text-white/90">SSLC (10th standard) pass.<br/>No entrance exam. Merit based.</p>
+           </div>
+           <div>
+             <h4 class="font-bold text-emerald-300 mb-2 uppercase tracking-wide text-sm">Lateral Entry</h4>
+             <p class="font-medium text-white/90">Plus 2 or ITI holders join directly in Year 2. Management & Merit quota available.</p>
+           </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="#" class="inline-flex items-center justify-center gap-3 bg-white text-[#059669] px-10 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-emerald-50 transition-colors shadow-2xl hover:-translate-y-1">
+            APPLY NOW - SECURE YOUR SEAT
+          </a>
+          <a href="https://wa.me/919349545888" target="_blank" class="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white/40 text-white px-10 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-white/10 transition-colors shadow-lg hover:-translate-y-1">
+            WhatsApp Coordinator: 9349545888
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

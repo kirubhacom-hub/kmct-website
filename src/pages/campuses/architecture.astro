@@ -1,0 +1,281 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>KMCT College of Architecture</title>
+    <meta name="description" content="Design the Future. Build a Globally Relevant Architecture Career at KMCT College of Architecture (CAK)." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-kmct-light font-sans text-kmct-navy overflow-x-hidden">
+    
+    <Header />
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-24 overflow-hidden bg-white flex flex-col items-center justify-center text-center px-6 isolate min-h-[85vh]">
+      <!-- Background Image with 20% opacity -->
+      <div class="absolute inset-0 z-0 bg-white overflow-hidden pointer-events-none">
+        <div class="absolute inset-0 z-10 bg-cover bg-center" style="opacity: 0.2; background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1920&h=1080');"></div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center mt-auto mb-auto animate-fade-up">
+        <!-- Pill badge -->
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#007BA7]/10 text-[#007BA7] border border-[#007BA7]/20 font-bold text-xs tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Council of Architecture Approved
+        </div>
+
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-[#0a2542] tracking-tight mb-4 max-w-5xl drop-shadow-sm">
+          KMCT College of <span class="text-[#007BA7]">Architecture</span>
+        </h1>
+        
+        <p class="text-xl sm:text-2xl font-serif text-[#007BA7] italic mb-8 drop-shadow-sm">Design the Future. Build a Global Career.</p>
+        
+        <p class="text-lg sm:text-xl text-gray-600 max-w-4xl leading-relaxed font-medium mb-12">
+          Located at the scenic Kallanthode campus, our environment is designed to inspire the designer in you. A campus that feels like an art studio, surrounded by natural beauty.
+        </p>
+
+        <!-- Stats row -->
+        <div class="flex flex-wrap gap-8 justify-center mb-10 text-kmct-navy font-bold">
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#007BA7]">5</span> <span>Years</span> <span class="text-gray-500 text-sm ml-1 font-medium">B.Arch</span>
+           </div>
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#007BA7]">40</span> <span>Seats</span>
+           </div>
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#007BA7]">NATA</span> <span class="text-gray-500 text-sm ml-1 font-medium">Qualified</span>
+           </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#007BA7] text-white rounded-full font-bold text-sm lg:text-base hover:bg-[#005c7d] transition-all duration-300 shadow-[0_0_20px_rgba(0,123,167,0.3)] hover:-translate-y-1">
+            SECURE YOUR STUDIO SPACE - APPLY NOW
+          </a>
+          <a href="#details" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#0a2542] border-2 border-[#0a2542]/10 rounded-full font-bold text-sm lg:text-base hover:border-[#0a2542]/30 hover:bg-gray-50 transition-all duration-300">
+            CONSULT OUR ARCHITECTURE MENTORS
+          </a>
+        </div>
+      </div>
+
+      <!-- Infinite auto-scroll image marquee -->
+      <div class="relative z-10 overflow-hidden w-full mt-16 max-w-[100vw] mx-auto pb-6" style="mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);">
+        <div class="marquee-track flex gap-4 w-max">
+          <!-- Set 1 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1541888086925-920a0f443916?auto=format&fit=crop&q=80&w=600&h=400" alt="Building Model" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&q=80&w=600&h=400" alt="Drafting tools" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600&h=400" alt="Modern Architecture" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600&h=400" alt="Blueprints" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600&h=400" alt="Architecture" class="w-full h-full object-cover" />
+          </div>
+          <!-- Set 2 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1541888086925-920a0f443916?auto=format&fit=crop&q=80&w=600&h=400" alt="Building Model" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&q=80&w=600&h=400" alt="Drafting tools" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600&h=400" alt="Modern Architecture" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600&h=400" alt="Blueprints" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600&h=400" alt="Architecture" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS SECTION -->
+    <section class="py-24 relative bg-gray-50 border-y border-gray-100" id="details">
+      <!-- Decor -->
+      <div class="absolute -left-32 top-0 w-[500px] h-[500px] bg-[#007BA7]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6 text-center">Design Foundations</h2>
+        <div class="w-16 h-1 bg-[#007BA7] rounded-full mb-16 mx-auto"></div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">The 30-Year Trust</h4>
+            <p class="text-gray-600 font-medium text-sm leading-relaxed">Join a community backed by decades of stability and academic success in the KMCT network.</p>
+          </div>
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">Studio-Centric</h4>
+            <p class="text-gray-600 font-medium text-sm leading-relaxed">Your desk is your kingdom. We prioritize hands-on drafting, model-making, & digital design.</p>
+          </div>
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">NASA Participation</h4>
+            <p class="text-gray-600 font-medium text-sm leading-relaxed">Be part of the National Association of Students of Architecture and showcase talent nationally.</p>
+          </div>
+          <div class="bg-kmct-navy p-8 rounded-3xl shadow-lg hover:-translate-y-1 transition-all text-white">
+            <h4 class="font-serif text-2xl font-bold mb-3">Transparent Future</h4>
+            <p class="text-white/80 font-medium text-sm leading-relaxed">Clear fee structures and a direct, guided path to professional architectural practice.</p>
+          </div>
+        </div>
+
+        <!-- B.Arch Program Details -->
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+          <div class="grid lg:grid-cols-3">
+            <div class="lg:col-span-1 bg-[#007BA7] text-white p-10 flex flex-col justify-center relative overflow-hidden">
+               <div class="absolute right-0 bottom-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+               <p class="text-teal-100 font-bold uppercase tracking-widest text-xs mb-3 relative z-10">B.Arch Degree</p>
+               <h3 class="font-serif text-4xl font-bold mb-4 relative z-10">Build Your Foundation</h3>
+               <p class="text-white/80 font-medium relative z-10">
+                 A comprehensive 5-year journey merging art, engineering, and sustainable design.
+               </p>
+            </div>
+            <div class="lg:col-span-2 p-10">
+               <table class="w-full text-left border-collapse">
+                 <tbody class="divide-y divide-gray-100 font-medium">
+                   <tr>
+                     <td class="py-4 text-[#007BA7] font-bold uppercase text-xs tracking-wider w-1/3">Course</td>
+                     <td class="py-4 text-kmct-navy text-lg font-bold">Bachelor of Architecture (B.Arch)</td>
+                   </tr>
+                   <tr>
+                     <td class="py-4 text-[#007BA7] font-bold uppercase text-xs tracking-wider w-1/3">Duration</td>
+                     <td class="py-4 text-gray-600">5 Years</td>
+                   </tr>
+                   <tr>
+                     <td class="py-4 text-[#007BA7] font-bold uppercase text-xs tracking-wider w-1/3">Eligibility</td>
+                     <td class="py-4 text-gray-600">NATA Score + 10+2 (PCM)</td>
+                   </tr>
+                   <tr>
+                     <td class="py-4 text-[#007BA7] font-bold uppercase text-xs tracking-wider w-1/3">Intake</td>
+                     <td class="py-4 text-kmct-navy font-bold">40 Seats</td>
+                   </tr>
+                 </tbody>
+               </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MENTORS & THE STUDIOS -->
+    <section class="py-24 bg-white relative">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+        
+        <div class="grid lg:grid-cols-2 gap-16 items-center flex-col-reverse mb-24">
+          <div class="relative h-[600px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 group">
+             <img src="https://images.unsplash.com/photo-1541888086925-920a0f443916?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Mentorship" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+             <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white">
+               <h4 class="font-bold text-xl text-kmct-navy mb-1">Led by Ar. Prakash Babu</h4>
+               <p class="text-sm text-gray-600 font-medium">B.Arch, M.Arch, MBA.</p>
+             </div>
+          </div>
+          <div>
+            <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">Mentors Who Are Practicing Architects</h2>
+            <div class="w-16 h-1 bg-[#007BA7] rounded-full mb-8"></div>
+            <p class="text-lg text-gray-600 font-medium leading-relaxed mb-6">
+              Learn from professionals who understand both design and industry expectations. We believe architecture is best taught by those actively shaping the skyline.
+            </p>
+            <p class="text-lg text-gray-600 font-medium leading-relaxed">
+              Our experienced faculty brings years of diverse design and academic expertise right to your drafting table.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-[3rem] p-10 lg:p-16 border border-gray-100 shadow-sm relative overflow-hidden">
+          <div class="absolute -right-32 -bottom-32 w-96 h-96 bg-[#007BA7]/10 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <h2 class="font-serif text-4xl font-bold text-kmct-navy mb-12 text-center">Dive into a Campus That Fuels Creativity</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8 relative z-10">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex gap-6">
+              <div class="w-12 h-12 shrink-0 bg-[#007BA7]/10 text-[#007BA7] rounded-xl flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">The Studios</h4>
+                <p class="text-gray-600 font-medium text-sm">Open-plan drafting studios where ideas flow freely between seniors, juniors, and mentors.</p>
+              </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex gap-6">
+              <div class="w-12 h-12 shrink-0 bg-[#007BA7]/10 text-[#007BA7] rounded-xl flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">Model Making Workshop</h4>
+                <p class="text-gray-600 font-medium text-sm">Specialized zones equipped for woodworking, precise clay modeling, and 3D prototyping.</p>
+              </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex gap-6">
+              <div class="w-12 h-12 shrink-0 bg-[#007BA7]/10 text-[#007BA7] rounded-xl flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" /></svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">Material Museum</h4>
+                <p class="text-gray-600 font-medium text-sm">A curated physical collection of building materials to touch, feel, and understand the soul of construction.</p>
+              </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex gap-6">
+              <div class="w-12 h-12 shrink-0 bg-[#007BA7]/10 text-[#007BA7] rounded-xl flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">Vibrant Campus Life</h4>
+                <p class="text-gray-600 font-medium text-sm">Wi-Fi enabled studios, a massive architectural library, & premium sports facilities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADMISSIONS (CTA) -->
+    <section class="py-32 text-center relative overflow-hidden" id="admissions">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80" alt="Architecture Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-[#0a2542]/95 mix-blend-multiply"></div>
+      </div>
+      
+      <div class="max-w-4xl mx-auto px-6 relative z-10 text-white">
+        <h2 class="font-serif text-4xl lg:text-6xl font-bold mb-6">Start Your Journey as an Architect</h2>
+        <p class="text-xl text-[#007BA7] font-medium mb-8">Admissions 2026-27: Registration Now Open</p>
+        <p class="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed mb-12">
+          Unsure about NATA eligibility or your architectural portfolio? Our senior counselors are here to help you navigate your first steps into architecture.
+        </p>
+        
+        <div class="inline-flex flex-col gap-3 font-medium text-white/90 mb-12 bg-white/10 backdrop-blur-md px-8 py-6 rounded-2xl border border-white/20">
+          <p><span class="text-[#007BA7] font-bold tracking-wider uppercase text-sm">Location:</span> KMCT College of Architecture, Kallanthode, NITC P.O., Kozhikode.</p>
+          <p><span class="text-[#007BA7] font-bold tracking-wider uppercase text-sm">Email:</span> <a href="mailto:admissions@kmct.edu.in" class="hover:underline text-white">admissions@kmct.edu.in</a></p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="tel:+919745299888" class="inline-flex items-center justify-center gap-3 bg-[#007BA7] text-white px-8 py-4 rounded-full font-bold text-sm lg:text-base hover:bg-[#005c7d] transition-colors shadow-[0_0_30px_rgba(0,123,167,0.4)] hover:-translate-y-1">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            Hotline: +91 974 52 99 888
+          </a>
+          <a href="https://wa.me/919745299888" target="_blank" class="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold text-sm lg:text-base hover:bg-white/10 transition-colors shadow-lg hover:-translate-y-1">
+            TALK TO A COUNSELOR ON WHATSAPP
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,316 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>KMCT School of Business</title>
+    <meta name="description" content="Your Management Career Begins at KMCT School of Business. MBA & MCA Admissions 2026." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-kmct-light font-sans text-kmct-navy overflow-x-hidden">
+    
+    <Header />
+
+    <!-- HERO SECTION (Light Theme + Continuous Slider) -->
+    <section class="relative pt-32 pb-24 overflow-hidden bg-white flex flex-col items-center justify-center text-center px-6 isolate min-h-[85vh]">
+      <!-- Background Image with 20% opacity -->
+      <div class="absolute inset-0 z-0 bg-white overflow-hidden pointer-events-none">
+        <div class="absolute inset-0 z-10 bg-cover bg-center" style="opacity: 0.2; background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1920&h=1080');"></div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center mt-auto mb-auto animate-fade-up">
+        <!-- Pill badge -->
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-rose-50/90 text-[#8A1538] border border-[#8A1538]/20 font-bold text-xs tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          KTU Affiliated &middot; AICTE Approved
+        </div>
+
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-[#0a2542] tracking-tight mb-4 max-w-5xl drop-shadow-sm">
+          KMCT School of <span class="text-[#8A1538]">Business</span>
+        </h1>
+        
+        <p class="text-xl sm:text-2xl font-serif text-[#8A1538] italic mb-8 drop-shadow-sm">Your Management Career Begins Here</p>
+        
+        <p class="text-lg sm:text-xl text-gray-600 max-w-4xl leading-relaxed font-medium mb-12">
+          KMCT School of Business has been running full-time postgraduate programmes since 2004. Two degrees and both KTU affiliated & AICTE approved. The placement cell understands what companies are looking for, maintaining relationships with recruiters across logistics, healthcare, technology, and retail.
+        </p>
+
+        <!-- Stats row -->
+        <div class="flex flex-wrap gap-8 justify-center mb-10 text-kmct-navy font-bold">
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#8A1538]">900+</span> <span>MBA Alumni</span>
+           </div>
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#8A1538]">350+</span> <span>MCA Alumni</span>
+           </div>
+           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
+             <span class="text-2xl text-[#8A1538]">74%</span> <span>Placement Rate</span>
+           </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#8A1538] text-white rounded-full font-bold text-sm lg:text-base hover:bg-[#6b0f2a] transition-all duration-300 shadow-[0_0_20px_rgba(138,21,56,0.3)] hover:-translate-y-1">
+            APPLY FOR MBA & MCA 2026 BATCH
+          </a>
+          <a href="#programs" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#0a2542] border-2 border-[#0a2542]/10 rounded-full font-bold text-sm lg:text-base hover:border-[#0a2542]/30 hover:bg-gray-50 transition-all duration-300">
+            CHECK YOUR ELIGIBILITY
+          </a>
+        </div>
+      </div>
+
+      <!-- Infinite auto-scroll image marquee -->
+      <div class="relative z-10 overflow-hidden w-full mt-16 max-w-[100vw] mx-auto pb-6" style="mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);">
+        <div class="marquee-track flex gap-4 w-max">
+          <!-- Set 1 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&q=80&w=600&h=400" alt="Business Strategy" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3cb130dd22a?auto=format&fit=crop&q=80&w=600&h=400" alt="Students Meeting" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600&h=400" alt="Presentation" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1542744094-24638ea0b3b5?auto=format&fit=crop&q=80&w=600&h=400" alt="Networking" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=600&h=400" alt="Executive" class="w-full h-full object-cover" />
+          </div>
+          <!-- Set 2 -->
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&q=80&w=600&h=400" alt="Business Strategy" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3cb130dd22a?auto=format&fit=crop&q=80&w=600&h=400" alt="Students Meeting" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600&h=400" alt="Presentation" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1542744094-24638ea0b3b5?auto=format&fit=crop&q=80&w=600&h=400" alt="Networking" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=600&h=400" alt="Executive" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PG PROGRAMS SECTION -->
+    <section class="py-24 relative border-y border-gray-200" id="programs" style="background-image: linear-gradient(rgba(249, 250, 251, 0.95), rgba(249, 250, 251, 0.95)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&q=80&w=1920&h=1080'); background-size: cover; background-attachment: fixed; background-position: center;">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">Choose your path. Own your future.</h2>
+          <p class="text-lg text-gray-600 font-medium max-w-2xl mx-auto">
+            Our specialized MBA and MCA degree programs are tailored to produce industry-ready graduates.
+          </p>
+        </div>
+
+        <!-- PROGRAM CARDS -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-16">
+          
+          <!-- MBA Card -->
+          <div class="bg-white rounded-3xl p-10 border border-gray-100 shadow-xl hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full group">
+            <div class="w-16 h-16 bg-rose-50 text-[#8A1538] rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            </div>
+            <p class="text-[#8A1538] font-bold text-xs tracking-widest uppercase mb-3">Master of Business Administration</p>
+            <h3 class="font-serif text-4xl font-bold text-kmct-navy mb-6 leading-tight">MBA Program</h3>
+            
+            <ul class="space-y-4 text-gray-600 font-medium mb-10 flex-1">
+              <li class="flex items-start gap-3"><span class="text-[#8A1538] font-bold uppercase w-32 tracking-wider text-xs pt-1">Duration</span><span>2 Years</span></li>
+              <li class="flex items-start gap-3"><span class="text-[#8A1538] font-bold uppercase w-32 tracking-wider text-xs pt-1">Seats</span><span>60 Seats</span></li>
+              <li class="flex items-start gap-3"><span class="text-[#8A1538] font-bold uppercase w-32 tracking-wider text-xs pt-1">Eligibility</span><span>Any Graduate</span></li>
+              <li class="flex items-start gap-3"><span class="text-[#8A1538] font-bold uppercase w-32 tracking-wider text-xs pt-1">Entrance</span><span>KMAT / CMAT / CAT</span></li>
+              <li class="flex items-start gap-3"><span class="text-[#8A1538] font-bold uppercase w-32 tracking-wider text-xs pt-1">University</span><span>KTU</span></li>
+              <li class="flex items-start gap-3"><span class="text-[#8A1538] font-bold uppercase w-32 tracking-wider text-xs pt-1">Specializations</span><span>Marketing, Finance, HR, Operations, Systems — or pick two.</span></li>
+            </ul>
+            
+            <a href="#admissions" class="block text-center px-8 py-4 bg-[#8A1538] text-white rounded-xl font-bold hover:bg-[#6b0f2a] transition-all shadow-md hover:shadow-lg">APPLY FOR MBA</a>
+          </div>
+
+          <!-- MCA Card -->
+          <div class="bg-kmct-navy text-white rounded-3xl p-10 border border-white/10 shadow-xl hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full group relative overflow-hidden">
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-blue-500 opacity-20 rounded-full blur-3xl group-hover:opacity-30 transition-opacity"></div>
+            
+            <div class="w-16 h-16 bg-white/10 text-white rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform relative z-10">
+              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+            </div>
+            <p class="text-blue-300 font-bold text-xs tracking-widest uppercase mb-3 relative z-10">Master of Computer Applications</p>
+            <h3 class="font-serif text-4xl font-bold text-white mb-6 leading-tight relative z-10">MCA Program</h3>
+            
+            <ul class="space-y-4 text-white/80 font-medium mb-10 flex-1 relative z-10">
+              <li class="flex items-start gap-3"><span class="text-blue-300 font-bold uppercase w-32 tracking-wider text-xs pt-1">Duration</span><span>2 Years</span></li>
+              <li class="flex items-start gap-3"><span class="text-blue-300 font-bold uppercase w-32 tracking-wider text-xs pt-1">Seats</span><span>60 Seats</span></li>
+              <li class="flex items-start gap-3"><span class="text-blue-300 font-bold uppercase w-32 tracking-wider text-xs pt-1">Eligibility</span><span>Any Graduate</span></li>
+              <li class="flex items-start gap-3"><span class="text-blue-300 font-bold uppercase w-32 tracking-wider text-xs pt-1">Entrance</span><span>LBS Qualifying Exam</span></li>
+              <li class="flex items-start gap-3"><span class="text-blue-300 font-bold uppercase w-32 tracking-wider text-xs pt-1">University</span><span>KTU</span></li>
+            </ul>
+            
+            <a href="#admissions" class="block text-center px-8 py-4 bg-white/10 text-white border border-white/20 rounded-xl font-bold hover:bg-white/20 transition-all shadow-md hover:shadow-lg relative z-10">APPLY FOR MCA</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FACULTY SECTION -->
+    <section class="py-24 bg-white relative">
+      <!-- Decorative element -->
+      <div class="absolute -left-32 top-10 w-96 h-96 bg-rose-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">Faculty Grounded in Industry</h2>
+          <div class="w-16 h-1 bg-[#8A1538] rounded-full mb-8"></div>
+          <p class="text-lg text-gray-600 font-medium mb-8 leading-relaxed">
+            The people teaching here have spent years in marketing, finance, HR, and operations before entering academics. That experience shapes how every subject is taught.
+          </p>
+          
+          <!-- Faculty List -->
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-all">
+              <h4 class="font-bold text-xl text-kmct-navy mb-1">Dr. Shamla N.K <span class="text-[#8A1538] text-sm ml-2 font-semibold">Dean</span></h4>
+              <p class="text-gray-500 text-sm mb-2">PhD, MBA, M.Com.</p>
+              <div class="inline-flex items-center gap-1 bg-white border border-gray-200 px-3 py-1 rounded-full text-xs font-bold text-gray-600"><svg class="w-3 h-3 text-[#8A1538]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" /></svg> 21 years experience</div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-all">
+              <h4 class="font-bold text-xl text-kmct-navy mb-1">Dr. Shyni P <span class="text-gray-500 text-sm ml-2 font-normal">Associate Professor</span></h4>
+              <p class="text-gray-500 text-sm mb-2">PhD, MBA.</p>
+              <div class="inline-flex items-center gap-1 bg-white border border-gray-200 px-3 py-1 rounded-full text-xs font-bold text-gray-600"><svg class="w-3 h-3 text-[#8A1538]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" /></svg> 13 yrs academics + 6 yrs industry</div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-all">
+              <h4 class="font-bold text-xl text-kmct-navy mb-1">Mr. Hareesh H.G <span class="text-gray-500 text-sm ml-2 font-normal">Assistant Professor</span></h4>
+              <p class="text-gray-500 text-sm mb-2">MBA.</p>
+              <div class="inline-flex items-center gap-1 bg-white border border-gray-200 px-3 py-1 rounded-full text-xs font-bold text-gray-600"><svg class="w-3 h-3 text-[#8A1538]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" /></svg> 12 yrs academics + 8 yrs industry</div>
+            </div>
+            
+            <p class="text-sm font-medium text-gray-500 pl-2">
+              + Supported by Ms. Shirin K.C (15 yrs exp), Mr. Adharsh P, Ms. Jasmin M, Ms. Binisha K.P, and Mr. Kevin S Chittilappilly.
+            </p>
+          </div>
+        </div>
+
+        <div class="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl border border-gray-200 group">
+          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1000&h=1200" alt="Professors" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#8A1538]/80 to-transparent flex items-end p-8">
+            <h3 class="text-white font-serif text-3xl font-bold leading-tight drop-shadow-md">Industry Leaders,<br/>Academic Mentors.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLACEMENTS & ESPERANZA -->
+    <section class="py-24 bg-gray-50 relative overflow-hidden">
+      <!-- Decor -->
+      <div class="absolute right-0 bottom-0 w-1/2 h-1/2 bg-white skew-y-12 translate-y-24 shadow-xl z-0"></div>
+
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
+        
+        <!-- Placements -->
+        <div class="grid lg:grid-cols-2 gap-16 mb-24 items-center">
+          <div class="order-2 lg:order-1 relative p-8">
+             <div class="absolute top-0 left-0 w-32 h-32 bg-rose-100 rounded-tl-3xl -z-10"></div>
+             <div class="absolute bottom-0 right-0 w-32 h-32 bg-[#8A1538]/10 rounded-br-3xl -z-10"></div>
+             <div class="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
+               <h3 class="font-serif text-3xl font-bold text-kmct-navy mb-8 border-b border-gray-100 pb-4">74% Got Placed in 2024</h3>
+               <div class="flex gap-8 mb-8">
+                 <div>
+                   <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">Highest Package</p>
+                   <p class="text-3xl font-bold text-[#8A1538]">₹6 LPA</p>
+                 </div>
+                 <div>
+                   <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">Average Package</p>
+                   <p class="text-3xl font-bold text-kmct-navy">₹3.6 LPA</p>
+                 </div>
+               </div>
+               <p class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">Top Recruiting Companies</p>
+               <div class="flex flex-wrap gap-3">
+                 <span class="px-4 py-2 bg-gray-50 rounded-lg text-sm font-semibold border border-gray-200">Calicut Bio Medicals</span>
+                 <span class="px-4 py-2 bg-gray-50 rounded-lg text-sm font-semibold border border-gray-200">Tokyo Freight LLP</span>
+                 <span class="px-4 py-2 bg-gray-50 rounded-lg text-sm font-semibold border border-gray-200">IQ JITA</span>
+                 <span class="px-4 py-2 bg-gray-50 rounded-lg text-sm font-semibold border border-gray-200">Malabar Group</span>
+               </div>
+             </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">A Network Inside the Industry</h2>
+            <div class="w-16 h-1 bg-[#8A1538] rounded-full mb-6"></div>
+            <p class="text-lg text-gray-600 font-medium mb-6">
+              The cross-discipline environment at KMCT Kallanthode means your MBA cohort doesn't exist in a vacuum. Group projects pull in engineering perspectives.
+            </p>
+            <p class="text-lg text-gray-600 font-medium">
+              Placements connect you to technical firms as well as management roles. The network you build here cuts across multiple industries including logistics, healthcare, technology, and retail.
+            </p>
+          </div>
+        </div>
+
+        <!-- ESPERANZA Section -->
+        <div class="bg-[#8A1538] rounded-[2.5rem] p-10 lg:p-16 text-white shadow-2xl relative overflow-hidden">
+          <div class="absolute inset-0 z-0">
+             <img src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?auto=format&fit=crop&q=80&w=1200&h=800" class="w-full h-full object-cover mix-blend-overlay opacity-30">
+          </div>
+          <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p class="text-rose-200 font-bold tracking-widest uppercase text-sm mb-4">National Management Fest</p>
+              <h2 class="font-serif text-5xl lg:text-6xl font-bold mb-6 italic tracking-tight">ESPERANZA</h2>
+              <p class="text-xl font-medium text-white/90 mb-6 leading-relaxed">
+                Organised by KSB Students. Drawing student teams from B-schools across India to compete in business simulations, case study challenges, and finance competitions.
+              </p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
+              <p class="text-white font-medium leading-relaxed">
+                Running ESPERANZA develops capabilities that no MBA module formally teaches: team leadership under pressure, event execution at scale, stakeholder management, and public performance. Recruiters consistently notice students who have delivered this kind of real-world responsibility.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADMISSIONS & CONTACT (CTA) -->
+    <section class="py-32 text-center relative overflow-hidden" id="admissions">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-[#0a2542]/95 mix-blend-multiply"></div>
+      </div>
+      
+      <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <h2 class="font-serif text-4xl lg:text-6xl font-bold text-white mb-6">Your Seat is One Step Away.</h2>
+        <p class="text-xl text-rose-100 mb-8 font-medium">
+          Admissions are open for the 2026 - 28 batch. 60 MBA seats. 60 MCA seats.<br/> KMAT, CMAT, or CAT qualified? Any graduate eligible.
+        </p>
+        
+        <div class="inline-flex flex-col gap-3 font-medium text-white/90 mb-12 bg-white/10 backdrop-blur-md px-8 py-6 rounded-2xl border border-white/20">
+          <p><span class="text-rose-300 font-bold tracking-wider uppercase text-sm">Location:</span> KMCT School of Business, Kallanthode, Kozhikode.</p>
+          <p><span class="text-rose-300 font-bold tracking-wider uppercase text-sm">Email:</span> <a href="mailto:ksb@kmct.edu.in" class="hover:underline text-white">ksb@kmct.edu.in</a></p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="https://wa.me/919745766888" target="_blank" class="inline-flex items-center justify-center gap-3 bg-[#8A1538] text-white px-8 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-[#6b0f2a] transition-colors shadow-[0_0_30px_rgba(138,21,56,0.5)] hover:-translate-y-1">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <span class="whitespace-nowrap">WhatsApp Admission Desk: 9745766888</span>
+          </a>
+          <a href="#" class="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white/30 text-white px-8 py-5 rounded-full font-bold text-sm lg:text-base hover:bg-white/10 transition-colors shadow-xl hover:-translate-y-1">
+            CHECK YOUR ELIGIBILITY
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -335,11 +335,16 @@ import Footer from '../../components/Footer.astro';
             </div>
           </div>
 
-          <div class="bg-white/5 border border-white/10 rounded-3xl p-8 relative overflow-hidden backdrop-blur-md">
+          <div class="bg-white/5 border border-white/10 rounded-3xl relative overflow-hidden backdrop-blur-md">
+            <!-- Video background -->
             <div class="absolute inset-0 z-0">
-               <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Karma Banner" class="w-full h-full object-cover opacity-20 mix-blend-overlay">
+              <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-40">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-crowd-of-people-in-a-concert-4692-large.mp4" type="video/mp4">
+                <source src="https://assets.mixkit.co/videos/4692/mixkit-crowd-of-people-in-a-concert-4692-large.mp4" type="video/mp4">
+              </video>
+              <div class="absolute inset-0 bg-gradient-to-t from-kmct-navy via-kmct-navy/50 to-transparent"></div>
             </div>
-            <div class="relative z-10 text-center py-12">
+            <div class="relative z-10 text-center py-16 px-8">
               <p class="text-teal-400 font-bold uppercase tracking-widest text-sm mb-4">Tech Festival</p>
               <h3 class="font-serif text-5xl font-bold mb-4">Karma 2026</h3>
               <p class="text-2xl font-serif italic text-white/90 mb-6 drop-shadow">The Legend Goes Global</p>

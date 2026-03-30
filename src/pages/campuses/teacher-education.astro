@@ -42,18 +42,7 @@ import Footer from '../../components/Footer.astro';
           If you are searching for a B.Ed college in Kozhikode that is NCTE recognised, University of Calicut affiliated, and valid for Kerala PSC, KTET, and TET, your search ends here. KMCT College of Teacher Education has been producing qualified teachers since 2005. A campus environment no standalone B.Ed college in Kerala can replicate.
         </p>
 
-        <!-- Stats row -->
-        <div class="flex flex-wrap gap-8 justify-center mb-10 text-kmct-navy font-bold">
-           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
-             <span class="text-2xl text-[#E31837]">20</span> <span>Years of Trust</span>
-           </div>
-           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
-             <span class="text-2xl text-[#E31837]">2,100+</span> <span>Alumni</span>
-           </div>
-           <div class="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-lg shadow-sm border border-gray-100 backdrop-blur-md">
-             <span class="text-2xl text-[#E31837]">200</span> <span>Current Students</span>
-           </div>
-        </div>
+
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#E31837] text-white rounded-full font-bold text-sm lg:text-base hover:bg-[#c1152f] transition-all duration-300 shadow-[0_0_20px_rgba(227,24,55,0.3)] hover:-translate-y-1">
@@ -99,6 +88,45 @@ import Footer from '../../components/Footer.astro';
           </div>
           <div class="shrink-0 w-[240px] md:w-[280px] h-[160px] md:h-[180px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
             <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600&h=400" alt="Education" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="w-full bg-kmct-navy py-16 relative z-10 overflow-hidden shadow-2xl">
+      <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#E31837] via-red-400 to-[#E31837]"></div>
+      <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image: radial-gradient(circle at 50% 50%, #ffffff 0%, transparent 70%);"></div>
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-20">
+        <div class="flex items-center justify-center gap-4 sm:gap-8 mb-12">
+          <div class="h-[1px] bg-gradient-to-r from-transparent to-red-500 w-16 sm:w-32 opacity-50"></div>
+          <p class="text-center text-xs sm:text-sm font-bold uppercase tracking-[0.3em] text-red-300 m-0">KMCT College of Teacher Education — By The Numbers</p>
+          <div class="h-[1px] bg-gradient-to-l from-transparent to-red-500 w-16 sm:w-32 opacity-50"></div>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-4 lg:gap-x-0 items-center lg:divide-x lg:divide-white/10">
+          <div class="flex flex-col items-center text-center stat-item px-4 reveal-on-scroll" style="transition-delay: 0ms;">
+            <div class="relative mb-4 flex items-baseline justify-center">
+              <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="20" data-suffix="">0</span>
+            </div>
+            <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Years<br/>of Trust</span>
+          </div>
+          <div class="flex flex-col items-center text-center stat-item px-4 reveal-on-scroll" style="transition-delay: 150ms;">
+            <div class="relative mb-4 flex items-baseline justify-center">
+              <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="2100" data-suffix="+">0</span>
+            </div>
+            <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Alumni<br/>Placed</span>
+          </div>
+          <div class="flex flex-col items-center text-center stat-item px-4 reveal-on-scroll" style="transition-delay: 300ms;">
+            <div class="relative mb-4 flex items-baseline justify-center">
+              <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="200" data-suffix="">0</span>
+            </div>
+            <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Current<br/>Students</span>
+          </div>
+          <div class="flex flex-col items-center text-center stat-item px-4 reveal-on-scroll" style="transition-delay: 450ms;">
+            <div class="relative mb-4 flex items-baseline justify-center">
+              <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="5" data-suffix="">0</span>
+            </div>
+            <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Teaching<br/>Subjects</span>
           </div>
         </div>
       </div>

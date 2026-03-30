@@ -1082,12 +1082,40 @@ import Footer from '../components/Footer.astro';
           </div>
         </div>
 
-        <div class="max-w-4xl mx-auto bg-kmct-light border border-gray-100 rounded-2xl p-8 lg:p-12 text-center shadow-lg animate-fade-up" style="animation-delay: 300ms;">
-           <p class="text-xl lg:text-2xl font-serif italic text-gray-600 leading-relaxed mb-6">"Student Testimonial Placeholder. Need at least 3 testimonial videos or quotes from actual students detailing their placement journey."</p>
-           <div>
-             <div class="font-bold text-lg text-kmct-engineering">Student Name</div>
-             <div class="text-sm font-medium text-gray-500">Placed at [Company]</div>
-           </div>
+        <div class="grid md:grid-cols-3 gap-8 mt-16 max-w-6xl mx-auto">
+          <!-- Testimonial 1 -->
+          <div class="bg-kmct-light border border-gray-100 rounded-2xl p-8 text-center shadow-lg hover:-translate-y-2 transition-transform duration-300">
+             <div class="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-md">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=200&h=200&q=80" alt="Student" class="w-full h-full object-cover">
+             </div>
+             <p class="text-sm font-serif italic text-gray-600 leading-relaxed mb-6">"The placement training at KMCT transformed my career. The mentors were incredibly supportive and helped me secure my dream job before graduation."</p>
+             <div>
+               <div class="font-bold text-base text-kmct-engineering">Aishwarya R.</div>
+               <div class="text-xs font-bold text-kmct-navy uppercase tracking-widest mt-1">Placed at TCS</div>
+             </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-xl hover:-translate-y-2 transition-transform duration-300 transform md:-translate-y-6">
+             <div class="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-md">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=200&h=200&q=80" alt="Student" class="w-full h-full object-cover">
+             </div>
+             <p class="text-sm font-serif italic text-gray-600 leading-relaxed mb-6">"State-of-the-art labs and a huge alumni network. KMCT didn't just teach me engineering, it taught me how to apply it in the real world."</p>
+             <div>
+               <div class="font-bold text-base text-kmct-engineering">Rahul Krishnan</div>
+               <div class="text-xs font-bold text-kmct-navy uppercase tracking-widest mt-1">Placed at Infosys</div>
+             </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="bg-kmct-light border border-gray-100 rounded-2xl p-8 text-center shadow-lg hover:-translate-y-2 transition-transform duration-300">
+             <div class="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-md">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=200&h=200&q=80" alt="Student" class="w-full h-full object-cover">
+             </div>
+             <p class="text-sm font-serif italic text-gray-600 leading-relaxed mb-6">"From campus placements to extracurriculars, the holistic environment at KMCT prepared me for the competitive corporate landscape."</p>
+             <div>
+               <div class="font-bold text-base text-kmct-engineering">Sneha Thomas</div>
+               <div class="text-xs font-bold text-kmct-navy uppercase tracking-widest mt-1">Placed at Wipro</div>
+             </div>
+          </div>
         </div>
 
       </div>

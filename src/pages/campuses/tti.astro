@@ -373,6 +373,32 @@ import Footer from '../../components/Footer.astro';
       </div>
     </section>
 
+    <script>
+      const statsEl = document.querySelector('[data-count]')?.closest('section');
+      if (statsEl) {
+        const counters = statsEl.querySelectorAll('[data-count]');
+        function easeOutExpo(t) { return t === 1 ? 1 : 1 - Math.pow(2, -10 * t); }
+        function animateCounter(el) {
+          const target = parseInt(el.getAttribute('data-count'), 10);
+          const suffix = el.getAttribute('data-suffix') || '';
+          const duration = 1800;
+          const delay = parseInt(el.closest('.stat-item')?.style.transitionDelay || '0', 10);
+          let start = null;
+          setTimeout(() => {
+            function step(ts) {
+              if (!start) start = ts;
+              const p = Math.min((ts - start) / duration, 1);
+              el.textContent = Math.floor(easeOutExpo(p) * target) + suffix;
+              if (p < 1) requestAnimationFrame(step); else el.textContent = target + suffix;
+            }
+            requestAnimationFrame(step);
+          }, delay);
+        }
+        new IntersectionObserver((entries) => {
+          entries.forEach(e => { if (e.isIntersecting) { counters.forEach(animateCounter); } });
+        }, { threshold: 0.3 }).observe(statsEl);
+      }
+    </script>
     <Footer />
   </body>
 </html>

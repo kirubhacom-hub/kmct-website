@@ -28,6 +28,17 @@ import Footer from '../components/Footer.astro';
       opacity: 0;
       animation: heroSlide 25s infinite;
     }
+    @keyframes faqSlide {
+      0%   { opacity: 0; }
+      4%   { opacity: 1; }
+      20%  { opacity: 1; }
+      24%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .faq-slide {
+      opacity: 0;
+      animation: faqSlide 25s infinite;
+    }
   </style>
 </head>
 <body class="bg-kmct-light font-sans text-kmct-navy overflow-x-hidden">
@@ -62,7 +73,7 @@ import Footer from '../components/Footer.astro';
 
       <h1 class="font-serif text-5xl sm:text-6xl lg:text-[5.5rem] font-bold leading-[1.05] text-[#0a2542] tracking-tight mb-6">
         This is where you'll <br/>
-        <span class="text-teal-600 italic font-serif">actually live</span> for the next few years.
+        <span class="text-teal-600 font-serif">actually live</span> for the next few years.
       </h1>
       
       <p class="text-lg sm:text-xl text-gray-600 max-w-2xl leading-relaxed font-medium mb-10">
@@ -415,13 +426,11 @@ import Footer from '../components/Footer.astro';
       <!-- Right Side: Image Slider -->
       <div class="relative reveal-on-scroll" style="transition-delay: 200ms;">
          <div class="w-full h-96 sm:h-[550px] rounded-3xl overflow-hidden shadow-2xl relative z-10">
-          <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 0s;" alt="Hostel Common Area" />
-          <img src="https://images.unsplash.com/photo-1577416412292-747c6607f055?auto=format&fit=crop&w=800&q=80" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 5s;" alt="Students Studying" />
-          <img src="https://images.unsplash.com/photo-1555854877-c25dbad60161?auto=format&fit=crop&q=80&w=800" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 10s;" alt="Hostel Corridor" />
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 15s;" alt="Hostel Food Setup" />
-          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 20s;" alt="Campus Life" />
-          
-          <div class="absolute inset-0 bg-kmct-navy/10 mix-blend-multiply pointer-events-none"></div>
+          <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" class="faq-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 0s;" alt="Hostel Common Area" />
+          <img src="https://images.unsplash.com/photo-1577416412292-747c6607f055?auto=format&fit=crop&w=800&q=80" class="faq-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 5s;" alt="Students Studying" />
+          <img src="https://images.unsplash.com/photo-1555854877-c25dbad60161?auto=format&fit=crop&q=80&w=800" class="faq-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 10s;" alt="Hostel Corridor" />
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" class="faq-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 15s;" alt="Hostel Food Setup" />
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" class="faq-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 20s;" alt="Campus Life" />
          </div>
       </div>
       

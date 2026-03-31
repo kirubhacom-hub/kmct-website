@@ -367,8 +367,8 @@ import Footer from '../../components/Footer.astro';
             requestAnimationFrame(step);
           }, delay);
         }
-        new IntersectionObserver((entries) => {
-          entries.forEach(e => { if (e.isIntersecting) { counters.forEach(animateCounter); } });
+        new IntersectionObserver((entries, obs) => {
+          entries.forEach(e => { if (e.isIntersecting) { counters.forEach(animateCounter); obs.disconnect(); } });
         }, { threshold: 0.3 }).observe(statsEl);
       }
     </script>

@@ -16,6 +16,19 @@ import Footer from '../components/Footer.astro';
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @keyframes heroSlide {
+      0%   { opacity: 0; }
+      4%   { opacity: 0.2; }
+      20%  { opacity: 0.2; }
+      24%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .hero-slide {
+      opacity: 0;
+      animation: heroSlide 25s infinite;
+    }
+  </style>
 </head>
 <body class="bg-kmct-light font-sans text-kmct-navy overflow-x-hidden">
 
@@ -25,29 +38,34 @@ import Footer from '../components/Footer.astro';
   <!-- ════════════════════════════════════════
        HERO SECTION
   ════════════════════════════════════════ -->
-  <section class="relative overflow-hidden bg-kmct-navy pt-32 pb-24 md:pt-40 md:pb-32">
-    <!-- Background Image -->
-    <div class="absolute inset-0 z-0">
-      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=1920" alt="Hostel Campus" class="w-full h-full object-cover opacity-20 filter saturate-50" />
-      <div class="absolute inset-0 bg-gradient-to-t from-kmct-navy via-kmct-navy/80 to-transparent"></div>
+  <section class="relative overflow-hidden bg-white" style="padding-top: 120px;">
+
+    <!-- Hero image slider — crossfade at 20% opacity -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=1920" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 0s;" alt="" />
+      <img src="https://images.unsplash.com/photo-1555854877-c25dbad60161?auto=format&fit=crop&q=80&w=1920" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 5s;" alt="" />
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1920" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 10s;" alt="" />
+      <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1920" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 15s;" alt="" />
+      <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=1920" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 20s;" alt="" />
     </div>
-    
-    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10 text-center">
+    <div class="absolute inset-0 bg-gradient-to-b from-white/65 via-white/55 to-white/70 pointer-events-none"></div>
+
+    <div class="relative z-10 flex flex-col items-center text-center px-6 pt-20 pb-16 max-w-4xl mx-auto animate-fade-up">
       
       <!-- Key Features Pills -->
-      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-8 reveal-on-scroll">
-        <span class="px-4 py-1.5 rounded-full bg-white/10 text-white border border-white/20 font-bold text-xs uppercase tracking-widest backdrop-blur-sm">Separate Boys &amp; Girls Hostels</span>
-        <span class="px-4 py-1.5 rounded-full bg-white/10 text-white border border-white/20 font-bold text-xs uppercase tracking-widest backdrop-blur-sm">Furnished Rooms</span>
-        <span class="px-4 py-1.5 rounded-full bg-white/10 text-white border border-white/20 font-bold text-xs uppercase tracking-widest backdrop-blur-sm">4 Meals/Day</span>
-        <span class="px-4 py-1.5 rounded-full bg-white/10 text-white border border-white/20 font-bold text-xs uppercase tracking-widest backdrop-blur-sm">24/7 Security</span>
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-8">
+        <span class="px-5 py-2 rounded-full bg-teal-50 text-teal-800 border border-teal-200 font-bold text-xs uppercase tracking-widest backdrop-blur-sm shadow-sm">Separate Boys &amp; Girls Hostels</span>
+        <span class="px-5 py-2 rounded-full bg-teal-50 text-teal-800 border border-teal-200 font-bold text-xs uppercase tracking-widest backdrop-blur-sm shadow-sm hidden sm:inline-block">Furnished Rooms</span>
+        <span class="px-5 py-2 rounded-full bg-teal-50 text-teal-800 border border-teal-200 font-bold text-xs uppercase tracking-widest backdrop-blur-sm shadow-sm hidden sm:inline-block">4 Meals/Day</span>
+        <span class="px-5 py-2 rounded-full bg-teal-50 text-teal-800 border border-teal-200 font-bold text-xs uppercase tracking-widest backdrop-blur-sm shadow-sm hidden lg:inline-block">24/7 Security</span>
       </div>
 
-      <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white mb-6 reveal-on-scroll" style="transition-delay: 100ms;">
+      <h1 class="font-serif text-5xl sm:text-6xl lg:text-[5.5rem] font-bold leading-[1.05] text-[#0a2542] tracking-tight mb-6">
         This is where you'll <br/>
-        <span class="text-teal-400 italic">actually live</span> for the next few years.
+        <span class="text-teal-600 italic font-serif">actually live</span> for the next few years.
       </h1>
       
-      <p class="text-lg md:text-xl text-white/70 max-w-3xl mx-auto font-medium leading-relaxed reveal-on-scroll" style="transition-delay: 200ms;">
+      <p class="text-lg sm:text-xl text-gray-600 max-w-2xl leading-relaxed font-medium mb-10">
         Not just a hostel. An environment that shapes your growth in Kerala's largest unified professional campus, located near NIT Calicut.
       </p>
 
@@ -66,43 +84,100 @@ import Footer from '../components/Footer.astro';
         <div class="w-16 h-1 bg-teal-500 rounded-full mx-auto mt-8"></div>
       </div>
 
-      <div class="overflow-x-auto reveal-on-scroll" style="transition-delay: 150ms;">
-        <table class="w-full min-w-[600px] border-collapse bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-          <thead>
-            <tr class="bg-kmct-light border-b border-gray-200">
-              <th class="py-5 px-6 text-left font-bold text-sm uppercase tracking-widest text-gray-500 w-1/4">Feature</th>
-              <th class="py-5 px-6 text-left font-bold text-sm uppercase tracking-widest text-teal-700 bg-teal-50 w-3/8">KMCT Hostel</th>
-              <th class="py-5 px-6 text-left font-bold text-sm uppercase tracking-widest text-gray-400 w-3/8">Outside PG</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-100">
-            <tr class="hover:bg-gray-50/50 transition-colors">
-              <td class="py-5 px-6 font-bold text-kmct-navy">Meals</td>
-              <td class="py-5 px-6 font-medium text-teal-800 bg-teal-50/30 flex items-center gap-2"><svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 4 meals/day included</td>
-              <td class="py-5 px-6 text-gray-500 text-sm">Cook or pay separately</td>
-            </tr>
-            <tr class="hover:bg-gray-50/50 transition-colors">
-              <td class="py-5 px-6 font-bold text-kmct-navy">Security</td>
-              <td class="py-5 px-6 font-medium text-teal-800 bg-teal-50/30 flex items-center gap-2"><svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 24/7 security + resident warden</td>
-              <td class="py-5 px-6 text-gray-500 text-sm">No guarantee</td>
-            </tr>
-            <tr class="hover:bg-gray-50/50 transition-colors">
-              <td class="py-5 px-6 font-bold text-kmct-navy">Commute</td>
-              <td class="py-5 px-6 font-medium text-teal-800 bg-teal-50/30 flex items-center gap-2"><svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Easy walk to campus classes</td>
-              <td class="py-5 px-6 text-gray-500 text-sm">1-3 km daily commute</td>
-            </tr>
-            <tr class="hover:bg-gray-50/50 transition-colors">
-              <td class="py-5 px-6 font-bold text-kmct-navy">Accountability</td>
-              <td class="py-5 px-6 font-medium text-teal-800 bg-teal-50/30 flex items-center gap-2"><svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Full parent contact/warden logging</td>
-              <td class="py-5 px-6 text-gray-500 text-sm">No accountability</td>
-            </tr>
-            <tr class="hover:bg-gray-50/50 transition-colors">
-              <td class="py-5 px-6 font-bold text-kmct-navy border-b-0">Facilities</td>
-              <td class="py-5 px-6 font-medium text-teal-800 bg-teal-50/30 flex items-center gap-2"><svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Purified water, common areas, study peers</td>
-              <td class="py-5 px-6 text-gray-500 text-sm border-b-0">Varies wildly; often on your own</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="grid gap-4 max-w-5xl mx-auto reveal-on-scroll" style="transition-delay: 150ms;">
+        
+        <!-- Headers -->
+        <div class="hidden md:grid grid-cols-12 gap-6 px-6 py-2">
+          <div class="col-span-3 font-bold text-sm uppercase tracking-widest text-gray-400">Feature</div>
+          <div class="col-span-5 font-bold text-sm uppercase tracking-widest text-[#621B75]">KMCT Hostel</div>
+          <div class="col-span-4 font-bold text-sm uppercase tracking-widest text-gray-400 pl-4">Outside PG</div>
+        </div>
+
+        <!-- Row 1: Meals -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 items-center hover:border-purple-100 hover:shadow-md transition-all">
+          <div class="md:col-span-3 font-bold text-kmct-navy text-lg mb-2 md:mb-0">Meals</div>
+          <div class="md:col-span-5 flex items-center gap-3 bg-[#fcfafd] p-4 rounded-xl border border-purple-100/50">
+            <div class="w-8 h-8 rounded-full bg-[#f3e8f5] text-[#621B75] flex items-center justify-center shrink-0">
+               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <p class="font-bold text-kmct-navy">4 meals/day included</p>
+          </div>
+          <div class="md:col-span-4 mt-2 md:mt-0 pt-3 md:pt-0 border-t md:border-0 border-gray-100 pl-0 md:pl-4 flex items-center gap-3 opacity-70">
+            <div class="w-8 h-8 rounded-full bg-gray-50 text-gray-400 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </div>
+            <p class="text-gray-500 font-medium">Cook or pay separately</p>
+          </div>
+        </div>
+
+        <!-- Row 2: Security -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 items-center hover:border-purple-100 hover:shadow-md transition-all">
+          <div class="md:col-span-3 font-bold text-kmct-navy text-lg mb-2 md:mb-0">Security</div>
+          <div class="md:col-span-5 flex items-center gap-3 bg-[#fcfafd] p-4 rounded-xl border border-purple-100/50">
+            <div class="w-8 h-8 rounded-full bg-[#f3e8f5] text-[#621B75] flex items-center justify-center shrink-0">
+               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <p class="font-bold text-kmct-navy">24/7 security + resident warden</p>
+          </div>
+          <div class="md:col-span-4 mt-2 md:mt-0 pt-3 md:pt-0 border-t md:border-0 border-gray-100 pl-0 md:pl-4 flex items-center gap-3 opacity-70">
+            <div class="w-8 h-8 rounded-full bg-gray-50 text-gray-400 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </div>
+            <p class="text-gray-500 font-medium">No guarantee</p>
+          </div>
+        </div>
+
+        <!-- Row 3: Commute -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 items-center hover:border-purple-100 hover:shadow-md transition-all">
+          <div class="md:col-span-3 font-bold text-kmct-navy text-lg mb-2 md:mb-0">Commute</div>
+          <div class="md:col-span-5 flex items-center gap-3 bg-[#fcfafd] p-4 rounded-xl border border-purple-100/50">
+            <div class="w-8 h-8 rounded-full bg-[#f3e8f5] text-[#621B75] flex items-center justify-center shrink-0">
+               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <p class="font-bold text-kmct-navy">Easy walk to campus classes</p>
+          </div>
+          <div class="md:col-span-4 mt-2 md:mt-0 pt-3 md:pt-0 border-t md:border-0 border-gray-100 pl-0 md:pl-4 flex items-center gap-3 opacity-70">
+            <div class="w-8 h-8 rounded-full bg-gray-50 text-gray-400 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </div>
+            <p class="text-gray-500 font-medium">1-3 km daily commute in traffic</p>
+          </div>
+        </div>
+
+        <!-- Row 4: Accountability -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 items-center hover:border-purple-100 hover:shadow-md transition-all">
+          <div class="md:col-span-3 font-bold text-kmct-navy text-lg mb-2 md:mb-0">Accountability</div>
+          <div class="md:col-span-5 flex items-center gap-3 bg-[#fcfafd] p-4 rounded-xl border border-purple-100/50">
+            <div class="w-8 h-8 rounded-full bg-[#f3e8f5] text-[#621B75] flex items-center justify-center shrink-0">
+               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <p class="font-bold text-kmct-navy">Full parent contact &amp; warden logging</p>
+          </div>
+          <div class="md:col-span-4 mt-2 md:mt-0 pt-3 md:pt-0 border-t md:border-0 border-gray-100 pl-0 md:pl-4 flex items-center gap-3 opacity-70">
+            <div class="w-8 h-8 rounded-full bg-gray-50 text-gray-400 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </div>
+            <p class="text-gray-500 font-medium">No accountability</p>
+          </div>
+        </div>
+
+        <!-- Row 5: Facilities -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 items-center hover:border-purple-100 hover:shadow-md transition-all">
+          <div class="md:col-span-3 font-bold text-kmct-navy text-lg mb-2 md:mb-0">Facilities</div>
+          <div class="md:col-span-5 flex items-center gap-3 bg-[#fcfafd] p-4 rounded-xl border border-purple-100/50">
+            <div class="w-8 h-8 rounded-full bg-[#f3e8f5] text-[#621B75] flex items-center justify-center shrink-0">
+               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <p class="font-bold text-kmct-navy">Purified water, common areas, study peers</p>
+          </div>
+          <div class="md:col-span-4 mt-2 md:mt-0 pt-3 md:pt-0 border-t md:border-0 border-gray-100 pl-0 md:pl-4 flex items-center gap-3 opacity-70">
+            <div class="w-8 h-8 rounded-full bg-gray-50 text-gray-400 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </div>
+            <p class="text-gray-500 font-medium">Varies wildly; often on your own</p>
+          </div>
+        </div>
+
       </div>
 
     </div>

@@ -22,10 +22,10 @@ import Footer from '../../components/Footer.astro';
     <Header />
 
     <!-- HERO SECTION -->
-    <section class="relative overflow-hidden" style="padding-top: 120px; background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1920&h=1080'); background-size: cover; background-position: center top; background-color: white;">
+    <section class="relative overflow-hidden" style="padding-top: 120px; background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1920&h=1080'); background-size: cover; background-position: center top; background-color: white;">
       
       <!-- Centered hero content -->
-      <div class="relative z-10 flex flex-col items-center text-center px-6 pt-20 flex-1 lg:pb-16 max-w-5xl mx-auto animate-fade-up">
+      <div class="relative z-10 flex flex-col items-center text-center px-6 pt-20 pb-16 max-w-5xl mx-auto animate-fade-up">
         <!-- Pill badge -->
         <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#F3E8F5]/90 text-[#621B75] border border-[#621B75]/30 font-bold text-[0.7rem] tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
           <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
@@ -51,36 +51,109 @@ import Footer from '../../components/Footer.astro';
           </a>
         </div>
       </div>
+
+      <!-- Infinite auto-scroll image marquee -->
+      <div class="relative z-10 overflow-hidden pb-0" style="mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);">
+        <div class="marquee-track flex gap-4 w-max">
+          <!-- Set 1 -->
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=600&h=400" alt="Clinical Training" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Nursing Team" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=600&h=400" alt="Hospital Room" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&q=80&w=600&h=400" alt="Learning Setup" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=600&h=400" alt="Care" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=600&h=400" alt="Students" class="w-full h-full object-cover" />
+          </div>
+          <!-- Set 2 -->
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=600&h=400" alt="Clinical Training" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Nursing Team" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=600&h=400" alt="Hospital Room" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&q=80&w=600&h=400" alt="Learning Setup" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=600&h=400" alt="Care" class="w-full h-full object-cover" />
+          </div>
+          <div class="shrink-0 w-[280px] h-[200px] rounded-[1.5rem] overflow-hidden shadow-xl ring-1 ring-black/5">
+            <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=600&h=400" alt="Students" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section — Premium Legacy Design -->
+    <section id="stats-section" class="w-full bg-kmct-navy py-24 relative z-10 overflow-hidden shadow-2xl">
       
-      <!-- Stats / Information overlay -->
-      <div class="relative z-10 max-w-7xl mx-auto px-6 mb-0 translate-y-8">
-        <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-2xl flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-gray-100">
-          
-          <div class="w-full text-center px-4 flex flex-col items-center">
-            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="22" data-suffix="+">0</h3>
-            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Years Running</p>
+      <!-- Elegant gold/purple linear accent bar at top -->
+      <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#621B75] via-[#a34aba] to-[#621B75]"></div>
+
+      <!-- Subtle background texture center glow -->
+      <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image: radial-gradient(circle at 50% 50%, #ffffff 0%, transparent 70%);"></div>
+      
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-20">
+
+        <!-- Elegant Section Title with flanking fade-lines -->
+        <div class="flex items-center justify-center gap-4 sm:gap-8 mb-20 reveal-on-scroll">
+          <div class="h-[1px] bg-gradient-to-r from-transparent to-[#d97deb] w-16 sm:w-32 lg:w-48 opacity-50"></div>
+          <p class="text-center text-xs sm:text-sm font-bold uppercase tracking-[0.3em] text-[#d97deb] m-0">
+            Pioneering Nursing Education in Kozhikode
+          </p>
+          <div class="h-[1px] bg-gradient-to-l from-transparent to-[#d97deb] w-16 sm:w-32 lg:w-48 opacity-50"></div>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-y-16 gap-x-4 lg:gap-x-0 items-center lg:divide-x lg:divide-white/10">
+
+          <div class="flex flex-col items-center text-center stat-item px-4 reveal-on-scroll" style="transition-delay: 0ms;">
+             <div class="relative mb-5 flex items-baseline justify-center">
+               <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="22" data-suffix="+">0</span>
+             </div>
+             <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Years<br/>Running</span>
           </div>
-          
-          <div class="w-full text-center px-4 pt-6 md:pt-0 flex flex-col items-center">
-            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="1000" data-suffix="+">0</h3>
-            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Alumni</p>
+
+          <div class="flex flex-col items-center text-center stat-item px-4 reveal-on-scroll" style="transition-delay: 150ms;">
+             <div class="relative mb-5 flex items-baseline justify-center">
+               <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="1000" data-suffix="+">0</span>
+             </div>
+             <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Alumni</span>
           </div>
-          
-          <div class="w-full text-center px-4 pt-6 md:pt-0 flex flex-col items-center">
-            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="210" data-suffix="">0</h3>
-            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Current Students</p>
+
+          <div class="flex flex-col items-center text-center stat-item px-4 reveal-on-scroll" style="transition-delay: 300ms;">
+             <div class="relative mb-5 flex items-baseline justify-center">
+               <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="210" data-suffix="">0</span>
+             </div>
+             <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Current<br/>Students</span>
           </div>
-          
-          <div class="w-full text-center px-4 pt-6 md:pt-0 flex flex-col items-center">
-            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="55" data-suffix="">0</h3>
-            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">B.Sc Seats</p>
+
+          <div class="flex flex-col items-center text-center stat-item px-4 reveal-on-scroll" style="transition-delay: 450ms;">
+             <div class="relative mb-5 flex items-baseline justify-center">
+               <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="55" data-suffix="">0</span>
+             </div>
+             <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">B.Sc Seats</span>
           </div>
-          
-          <div class="w-full text-center px-4 pt-6 md:pt-0 flex flex-col items-center">
-            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="3" data-suffix="">0</h3>
-            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Govt. Hospitals<br/>For Training</p>
+
+          <div class="flex flex-col items-center text-center stat-item px-4 col-span-2 lg:col-span-1 reveal-on-scroll" style="transition-delay: 600ms;">
+             <div class="relative mb-5 flex items-baseline justify-center">
+               <span class="font-serif text-6xl lg:text-7xl font-bold text-white tabular-nums drop-shadow-lg" data-count="3" data-suffix="">0</span>
+             </div>
+             <span class="text-xs lg:text-sm font-bold text-white/60 uppercase tracking-[0.25em] leading-relaxed">Govt. Hospitals<br/>For Training</span>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -293,23 +366,21 @@ import Footer from '../../components/Footer.astro';
         function animateCounter(el) {
           const target = parseInt(el.getAttribute('data-count'), 10);
           const suffix = el.getAttribute('data-suffix') || '';
-          const duration = 2000;
+          const duration = 1800;
+          const delay = parseInt(el.closest('.stat-item')?.style.transitionDelay || '0', 10);
           let start = null;
-          requestAnimationFrame(function step(ts) {
-            if (!start) start = ts;
-            const progress = Math.min((ts - start) / duration, 1);
-            el.textContent = Math.floor(easeOutExpo(progress) * target) + suffix;
-            if (progress < 1) requestAnimationFrame(step);
-            else el.textContent = target + suffix;
-          });
+          setTimeout(() => {
+            function step(ts) {
+              if (!start) start = ts;
+              const p = Math.min((ts - start) / duration, 1);
+              el.textContent = Math.floor(easeOutExpo(p) * target) + suffix;
+              if (p < 1) requestAnimationFrame(step); else el.textContent = target + suffix;
+            }
+            requestAnimationFrame(step);
+          }, delay);
         }
-        new IntersectionObserver((entries, obs) => {
-          entries.forEach(e => { 
-            if (e.isIntersecting) { 
-              counters.forEach(animateCounter); 
-              obs.disconnect(); 
-            } 
-          });
+        new IntersectionObserver((entries) => {
+          entries.forEach(e => { if (e.isIntersecting) { counters.forEach(animateCounter); } });
         }, { threshold: 0.3 }).observe(statsSection);
       }
     </script>

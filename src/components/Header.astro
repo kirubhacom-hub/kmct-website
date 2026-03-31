@@ -26,6 +26,18 @@ const { activePage } = Astro.props;
 
     <div class="relative group hidden md:flex items-center h-full py-2">
       <button class="font-bold text-sm transition-colors text-kmct-navy group-hover:text-teal-600 flex items-center gap-1 focus:outline-none">
+        Campus Life
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3 group-hover:rotate-180 transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+      </button>
+      <div class="absolute top-full left-0 mt-0 pt-2 w-56 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+        <div class="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden flex flex-col">
+          <a href="/hostel" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors border-b border-gray-50 last:border-0">Hostel Life</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative group hidden md:flex items-center h-full py-2">
+      <button class="font-bold text-sm transition-colors text-kmct-navy group-hover:text-teal-600 flex items-center gap-1 focus:outline-none">
         Kallanthode Campuses
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3 group-hover:rotate-180 transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
       </button>
@@ -81,6 +93,16 @@ const { activePage } = Astro.props;
     <a href="/" class="mobile-link text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">Home</a>
     <a href="/about" class="mobile-link text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">About Us</a>
     
+    <div class="flex flex-col items-center w-full">
+      <button id="mobile-campuslife-btn" class="flex items-center justify-center gap-2 text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors w-full focus:outline-none">
+        Campus Life
+        <svg id="mobile-campuslife-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+      </button>
+      <div id="mobile-campuslife-menu" class="hidden flex-col gap-4 mt-4 w-full bg-gray-50/80 rounded-2xl p-5 border border-gray-100 shadow-inner">
+        <a href="/hostel" class="mobile-link text-base font-bold text-gray-600 hover:text-teal-600 transition-colors">Hostel Life</a>
+      </div>
+    </div>
+
     <div class="flex flex-col items-center w-full">
       <button id="mobile-campuses-btn" class="flex items-center justify-center gap-2 text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors w-full focus:outline-none">
         Kallanthode Campuses
@@ -156,6 +178,18 @@ const { activePage } = Astro.props;
           menuBtn.innerHTML = '<svg class="w-5 h-5 text-kmct-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>';
         }
       };
+      const mobileCampusLifeBtn = document.getElementById('mobile-campuslife-btn');
+      const mobileCampusLifeMenu = document.getElementById('mobile-campuslife-menu');
+      const mobileCampusLifeIcon = document.getElementById('mobile-campuslife-icon');
+
+      if (mobileCampusLifeBtn && mobileCampusLifeMenu && mobileCampusLifeIcon) {
+        mobileCampusLifeBtn.addEventListener('click', () => {
+          mobileCampusLifeMenu.classList.toggle('hidden');
+          mobileCampusLifeMenu.classList.toggle('flex');
+          mobileCampusLifeIcon.classList.toggle('rotate-180');
+        });
+      }
+
       const mobileCampusesBtn = document.getElementById('mobile-campuses-btn');
       const mobileCampusesMenu = document.getElementById('mobile-campuses-menu');
       const mobileCampusesIcon = document.getElementById('mobile-campuses-icon');

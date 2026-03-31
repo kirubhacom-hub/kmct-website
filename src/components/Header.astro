@@ -3,7 +3,7 @@
 // Shared navigation header used across all pages.
 // Pass `activePage` prop to highlight the current page link.
 interface Props {
-  activePage?: 'home' | 'about' | 'admissions';
+  activePage?: 'home' | 'about' | 'admissions' | 'contact';
 }
 const { activePage } = Astro.props;
 ---
@@ -55,6 +55,10 @@ const { activePage } = Astro.props;
       </div>
     </div>
     <a
+      href="/contact"
+      class={`hidden md:flex font-bold text-sm transition-colors ${activePage === 'contact' ? 'text-teal-600' : 'text-kmct-navy hover:text-teal-600'}`}
+    >Contact Us</a>
+    <a
       href="/admissions"
       class={`hidden md:flex font-bold text-sm transition-colors ${activePage === 'admissions' ? 'text-teal-600' : 'text-kmct-navy hover:text-teal-600'}`}
     >Admissions</a>
@@ -104,6 +108,7 @@ const { activePage } = Astro.props;
       </div>
     </div>
 
+    <a href="/contact" class="mobile-link text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">Contact Us</a>
     <a href="/admissions" class="mobile-link text-2xl font-serif font-bold text-kmct-navy hover:text-teal-600 transition-colors">Admissions</a>
   </nav>
   <div class="mt-12 text-center w-full px-8 pb-8">

@@ -351,13 +351,17 @@ import Footer from '../components/Footer.astro';
        FAQS
   ════════════════════════════════════════ -->
   <section class="py-24 bg-kmct-light relative">
-    <div class="max-w-3xl mx-auto px-6">
+    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
       
-      <div class="text-center mb-12 reveal-on-scroll">
-        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-kmct-navy">Got Hostel Questions?</h2>
-      </div>
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Left Side: FAQs -->
+        <div>
+          <div class="mb-10 reveal-on-scroll">
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-kmct-navy mb-3">Got Hostel Questions?</h2>
+            <p class="text-gray-600 font-medium leading-relaxed">Everything you need to know about life in the KMCT campus hostels, from food choices to campus rules.</p>
+          </div>
 
-      <div class="space-y-4">
+          <div class="space-y-4">
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden reveal-on-scroll" style="transition-delay: 0ms;">
           <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-kmct-navy list-none hover:bg-gray-50 transition-colors">
             Is living in the hostel mandatory?
@@ -406,7 +410,22 @@ import Footer from '../components/Footer.astro';
           </div>
         </details>
       </div>
+      </div>
 
+      <!-- Right Side: Image Slider -->
+      <div class="relative reveal-on-scroll" style="transition-delay: 200ms;">
+         <div class="w-full h-96 sm:h-[550px] rounded-3xl overflow-hidden shadow-2xl relative z-10">
+          <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 0s;" alt="Hostel Common Area" />
+          <img src="https://images.unsplash.com/photo-1577416412292-747c6607f055?auto=format&fit=crop&w=800&q=80" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 5s;" alt="Students Studying" />
+          <img src="https://images.unsplash.com/photo-1555854877-c25dbad60161?auto=format&fit=crop&q=80&w=800" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 10s;" alt="Hostel Corridor" />
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 15s;" alt="Hostel Food Setup" />
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" class="hero-slide absolute inset-0 w-full h-full object-cover" style="animation-delay: 20s;" alt="Campus Life" />
+          
+          <div class="absolute inset-0 bg-kmct-navy/10 mix-blend-multiply pointer-events-none"></div>
+         </div>
+      </div>
+      
+      </div>
     </div>
   </section>
 

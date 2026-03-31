@@ -1,0 +1,318 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>National Hospital College of Nursing - KMCT</title>
+    <meta name="description" content="Where nursing education meets real hospital experience. INC Recognised, KUHS Affiliated B.Sc Nursing college in Kozhikode." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-kmct-light font-sans text-kmct-navy overflow-x-hidden">
+    
+    <Header />
+
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden" style="padding-top: 120px; background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1920&h=1080'); background-size: cover; background-position: center top; background-color: white;">
+      
+      <!-- Centered hero content -->
+      <div class="relative z-10 flex flex-col items-center text-center px-6 pt-20 flex-1 lg:pb-16 max-w-5xl mx-auto animate-fade-up">
+        <!-- Pill badge -->
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#F3E8F5]/90 text-[#621B75] border border-[#621B75]/30 font-bold text-[0.7rem] tracking-widest uppercase shadow-sm mb-6 backdrop-blur-sm">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          ESTABLISHED 2002 &middot; INC RECOGNISED &middot; KUHS AFFILIATED
+        </div>
+
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-[#0a2542] tracking-tight mb-4 max-w-5xl drop-shadow-sm">
+          National Hospital College of <span class="text-[#621B75]">Nursing</span>, Kozhikode
+        </h1>
+        
+        <p class="text-xl sm:text-2xl font-serif text-[#621B75] italic mb-8 drop-shadow-sm">Where nursing education meets real hospital experience</p>
+        
+        <p class="text-lg sm:text-xl text-gray-600 max-w-4xl leading-relaxed font-medium mb-12">
+          If you're searching for an INC recognised B.Sc Nursing college in Kozhikode with clinical training at government hospitals, a KUHS affiliation, and a KNC approved degree, you have arrived at the right destination.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#admissions" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#621B75] text-white rounded-full font-bold text-sm lg:text-base hover:bg-[#4a1458] transition-all duration-300 shadow-[0_0_20px_rgba(98,27,117,0.3)] hover:-translate-y-1">
+            APPLY FOR ADMISSIONS 2026-27
+          </a>
+          <a href="https://wa.me/919745299888" target="_blank" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#621B75] border-2 border-[#621B75]/20 rounded-full font-bold text-sm lg:text-base hover:border-[#621B75]/50 hover:bg-[#F3E8F5] transition-all duration-300">
+            WHATSAPP TO APPLY
+          </a>
+        </div>
+      </div>
+      
+      <!-- Stats / Information overlay -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6 mb-0 translate-y-8">
+        <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-2xl flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+          
+          <div class="w-full text-center px-4 flex flex-col items-center">
+            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="22" data-suffix="+">0</h3>
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Years Running</p>
+          </div>
+          
+          <div class="w-full text-center px-4 pt-6 md:pt-0 flex flex-col items-center">
+            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="1000" data-suffix="+">0</h3>
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Alumni</p>
+          </div>
+          
+          <div class="w-full text-center px-4 pt-6 md:pt-0 flex flex-col items-center">
+            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="210" data-suffix="">0</h3>
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Current Students</p>
+          </div>
+          
+          <div class="w-full text-center px-4 pt-6 md:pt-0 flex flex-col items-center">
+            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="55" data-suffix="">0</h3>
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">B.Sc Seats</p>
+          </div>
+          
+          <div class="w-full text-center px-4 pt-6 md:pt-0 flex flex-col items-center">
+            <h3 class="font-serif text-4xl font-bold text-[#621B75] mb-2" data-count="3" data-suffix="">0</h3>
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Govt. Hospitals<br/>For Training</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMMES OFFERED -->
+    <section class="py-32 bg-white relative z-20 overflow-hidden" id="programmes">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center justify-center w-16 h-1 bg-[#621B75] rounded-full mb-6"></div>
+          <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">Choose Your Nursing Pathway</h2>
+          <p class="text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed">
+            Three rigorous programmes. All aligned strictly to the KUHS curriculum. All leading to a registered, professional nursing career.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden reveal-on-scroll">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse min-w-[700px]">
+              <thead>
+                <tr class="bg-[#621B75] text-white text-sm font-bold tracking-widest uppercase">
+                  <th class="p-6 font-sans">Programme</th>
+                  <th class="p-6 font-sans w-48">Duration</th>
+                  <th class="p-6 font-sans">Eligibility Requirement</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100 text-kmct-navy font-medium">
+                <tr class="hover:bg-[#F3E8F5]/50 transition-colors">
+                  <td class="p-6 font-bold text-xl">B.Sc Nursing</td>
+                  <td class="p-6 text-gray-600 text-[0.95rem]">4 Years</td>
+                  <td class="p-6 text-gray-600 text-[0.95rem] leading-relaxed">Plus Two (PCB) 50% aggregate + 50% English</td>
+                </tr>
+                <tr class="hover:bg-[#F3E8F5]/50 transition-colors">
+                  <td class="p-6 font-bold text-xl">General Nursing and Midwifery (GNM)</td>
+                  <td class="p-6 text-gray-600 text-[0.95rem]">3 Years + 6 Months</td>
+                  <td class="p-6 text-gray-600 text-[0.95rem] leading-relaxed">Plus Two passed with 40% aggregate</td>
+                </tr>
+                <tr class="hover:bg-[#F3E8F5]/50 transition-colors">
+                  <td class="p-6 font-bold text-xl">Post Basic B.Sc Nursing</td>
+                  <td class="p-6 text-gray-600 text-[0.95rem]">2 Years</td>
+                  <td class="p-6 text-gray-600 text-[0.95rem] leading-relaxed">GNM qualified + KNC registration + 1 year experience</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLINICAL EXCELLENCE -->
+    <section class="py-24 bg-kmct-light relative overflow-hidden">
+      <!-- Decorative background blur -->
+      <div class="absolute -left-64 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#621B75]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          
+          <div class="order-2 lg:order-1 relative rounded-[2rem] overflow-hidden shadow-2xl aspect-square lg:aspect-[4/5] border-[6px] border-white">
+             <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1000" alt="Clinical Training Nurses" class="w-full h-full object-cover">
+             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8 pb-12">
+               <span class="bg-white/20 backdrop-blur-md px-4 py-2 border border-white/30 text-white font-bold text-xs uppercase tracking-widest rounded-full">Hands-on Experience</span>
+             </div>
+          </div>
+          
+          <div class="order-1 lg:order-2 lg:pl-4 reveal-on-scroll">
+            <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">Where You'll Train</h2>
+            <div class="w-16 h-1 bg-[#621B75] rounded-full mb-8"></div>
+            
+            <p class="text-2xl font-serif text-[#621B75] italic mb-6 leading-tight">
+              Clinical Training at Government Hospitals—Not simulation labs. Real patients. Real wards. Real emergencies.
+            </p>
+            
+            <p class="text-lg text-gray-600 leading-relaxed font-medium mb-10">
+              We believe nursing cannot be entirely learned in a classroom. Our deep affiliations with major government medical institutions ensure you graduate with thousands of hours of real, unfiltered clinical experience.
+            </p>
+            
+            <h4 class="font-bold text-sm text-gray-400 uppercase tracking-widest mb-6">Primary Affiliated Locations</h4>
+            <ul class="space-y-5">
+              <li class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:border-[#621B75]/30 transition-colors">
+                <div class="shrink-0 w-12 h-12 bg-[#F3E8F5] text-[#621B75] rounded-xl flex items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg text-kmct-navy">Govt. Women & Child Hospital</h4>
+                  <p class="text-sm font-medium text-gray-500">Kozhikode City</p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:border-[#621B75]/30 transition-colors">
+                <div class="shrink-0 w-12 h-12 bg-[#F3E8F5] text-[#621B75] rounded-xl flex items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg text-kmct-navy">Govt. General Hospital</h4>
+                  <p class="text-sm font-medium text-gray-500">Kozhikode Beach</p>
+                </div>
+              </li>
+              <li class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:border-[#621B75]/30 transition-colors">
+                <div class="shrink-0 w-12 h-12 bg-[#F3E8F5] text-[#621B75] rounded-xl flex items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg text-kmct-navy">Taluk Hospital</h4>
+                  <p class="text-sm font-medium text-gray-500">Koyilandy</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPUS & HOSTEL -->
+    <section class="py-24 bg-white border-b border-gray-100 reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+        
+        <div class="text-center mb-16">
+          <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-4">10 Acres. 8 km from the City.</h2>
+          <p class="text-lg text-gray-500 font-medium">Everything you need, right where you need it.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100 group hover:bg-white hover:shadow-xl hover:border-[#621B75]/20 transition-all duration-300">
+             <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm text-[#621B75] group-hover:scale-110 transition-transform">
+               <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+             </div>
+             <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">Secure Women's Hostel</h4>
+             <p class="text-gray-600 leading-relaxed text-[0.95rem]">
+               A fully secure, supervised 100-bed capacity hostel within the campus premises. Ensuring safety and a perfectly focused environment.
+             </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100 group hover:bg-white hover:shadow-xl hover:border-[#621B75]/20 transition-all duration-300">
+             <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm text-[#621B75] group-hover:scale-110 transition-transform">
+               <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+             </div>
+             <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">Transparent Fees</h4>
+             <p class="text-gray-600 leading-relaxed text-[0.95rem]">
+               Annual hostel and mess fee is structured affordably at ₹26,400. Quality residence and food without the hidden costs.
+             </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100 group hover:bg-white hover:shadow-xl hover:border-[#621B75]/20 transition-all duration-300">
+             <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm text-[#621B75] group-hover:scale-110 transition-transform">
+               <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+             </div>
+             <h4 class="font-serif text-2xl font-bold text-kmct-navy mb-3">On-Campus Facilities</h4>
+             <p class="text-gray-600 leading-relaxed text-[0.95rem]">
+               Dedicated on-campus mess serving authentic Kerala cuisine, state-of-the-art simulation nursing labs, and a comprehensively stocked specialized library.
+             </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMISSIONS (CTA) -->
+    <section class="py-24 bg-kmct-navy relative overflow-hidden text-white" id="admissions">
+      <!-- Decor items -->
+      <div class="absolute -right-20 -top-20 w-80 h-80 bg-[#621B75] opacity-50 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10 text-center">
+        
+        <p class="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-5 py-2.5 rounded-full font-bold text-xs tracking-widest uppercase mb-8 backdrop-blur-sm shadow-xl">
+           <svg class="w-4 h-4 text-[#d97deb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+           Part of the KMCT Group institutional infrastructure
+        </p>
+
+        <h2 class="font-serif text-5xl lg:text-7xl font-bold leading-tight tracking-tight mb-8">
+          Ready for Admissions 2026-27?
+        </h2>
+        
+        <div class="max-w-2xl mx-auto mb-16">
+           <p class="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-sm text-center">
+             <span class="block text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">Under the leadership of</span>
+             <span class="block text-2xl font-serif font-bold text-white mb-1">Prof. Gimija K.R</span>
+             <span class="block text-[#d97deb] text-sm font-medium">Principal (M.Sc. Nursing)</span>
+           </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
+          <a href="https://wa.me/919745299888" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center bg-[#621B75] text-white px-8 py-5 rounded-full font-bold text-base hover:bg-[#4a1458] transition-all shadow-xl hover:-translate-y-1">
+             <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+             WhatsApp to Apply
+          </a>
+          <a href="tel:+910000000" class="w-full sm:w-auto inline-flex items-center justify-center bg-transparent border-[3px] border-white/20 text-white px-8 py-5 rounded-full font-bold text-base hover:border-white/50 hover:bg-white hover:text-kmct-navy transition-all duration-300">
+             Call Admissions: 0000000
+          </a>
+        </div>
+        
+        <p class="mt-8 text-sm text-gray-400 font-medium">
+          Official Email: <a href="mailto:collegeofnursing2001@gmail.com" class="text-[#d97deb] hover:text-white transition-colors underline underline-offset-4">collegeofnursing2001@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Scroll & Counter reveal scripts -->
+    <script>
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('is-visible');
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
+
+      const statsSection = document.querySelector('[data-count]')?.closest('section');
+      if (statsSection) {
+        const counters = statsSection.querySelectorAll('[data-count]');
+        function easeOutExpo(t) { return t === 1 ? 1 : 1 - Math.pow(2, -10 * t); }
+        function animateCounter(el) {
+          const target = parseInt(el.getAttribute('data-count'), 10);
+          const suffix = el.getAttribute('data-suffix') || '';
+          const duration = 2000;
+          let start = null;
+          requestAnimationFrame(function step(ts) {
+            if (!start) start = ts;
+            const progress = Math.min((ts - start) / duration, 1);
+            el.textContent = Math.floor(easeOutExpo(progress) * target) + suffix;
+            if (progress < 1) requestAnimationFrame(step);
+            else el.textContent = target + suffix;
+          });
+        }
+        new IntersectionObserver((entries, obs) => {
+          entries.forEach(e => { 
+            if (e.isIntersecting) { 
+              counters.forEach(animateCounter); 
+              obs.disconnect(); 
+            } 
+          });
+        }, { threshold: 0.3 }).observe(statsSection);
+      }
+    </script>
+    <Footer />
+  </body>
+</html>

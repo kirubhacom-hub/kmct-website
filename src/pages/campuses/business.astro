@@ -269,64 +269,68 @@ import Footer from '../../components/Footer.astro';
           <!-- LEFT: Image + Glassmorphic Stat Card -->
           <div class="ksb-image-col">
 
-            <!-- Background image panel -->
-            <div class="ksb-image-panel">
-              <img
-                src="https://images.unsplash.com/photo-1521737711867-e3cb130dd22a?auto=format&fit=crop&w=900&q=85"
-                alt="KSB students in a collaborative workspace"
-                class="ksb-panel-img"
-              />
-              <div class="ksb-panel-overlay"></div>
-            </div>
+            <!-- Stacked: image behind, card overlapping bottom -->
+            <div class="ksb-image-stack">
 
-            <!-- Glassmorphic stat card -->
-            <div class="ksb-glass-card">
-
-              <!-- Big stat -->
-              <div class="ksb-stat-row">
-                <span class="ksb-stat-number">74%</span>
-                <div class="ksb-stat-label">
-                  <span class="ksb-stat-label-main">Got Placed</span>
-                  <span class="ksb-stat-label-sub">Batch of 2024</span>
-                </div>
+              <!-- Background image panel -->
+              <div class="ksb-image-panel">
+                <img
+                  src="https://images.unsplash.com/photo-1521737711867-e3cb130dd22a?w=900&q=85&auto=format&fit=crop"
+                  alt="KSB students in a collaborative workspace"
+                  class="ksb-panel-img"
+                />
+                <div class="ksb-panel-overlay"></div>
               </div>
 
-              <!-- Package grid -->
-              <div class="ksb-pkg-grid">
-                <div class="ksb-pkg-item">
-                  <p class="ksb-pkg-eyebrow">Highest Package</p>
-                  <p class="ksb-pkg-value ksb-value-maroon">₹6 LPA</p>
+              <!-- Glassmorphic stat card — anchored to bottom of image -->
+              <div class="ksb-glass-card">
+
+                <!-- Big stat -->
+                <div class="ksb-stat-row">
+                  <span class="ksb-stat-number">74%</span>
+                  <div class="ksb-stat-label">
+                    <span class="ksb-stat-label-main">Got Placed</span>
+                    <span class="ksb-stat-label-sub">Batch of 2024</span>
+                  </div>
                 </div>
-                <div class="ksb-pkg-item">
-                  <p class="ksb-pkg-eyebrow">Average Package</p>
-                  <p class="ksb-pkg-value ksb-value-navy">₹3.6 LPA</p>
+
+                <!-- Package grid -->
+                <div class="ksb-pkg-grid">
+                  <div class="ksb-pkg-item">
+                    <p class="ksb-pkg-eyebrow">Highest Package</p>
+                    <p class="ksb-pkg-value ksb-value-maroon">₹6 LPA</p>
+                  </div>
+                  <div class="ksb-pkg-item">
+                    <p class="ksb-pkg-eyebrow">Average Package</p>
+                    <p class="ksb-pkg-value ksb-value-navy">₹3.6 LPA</p>
+                  </div>
                 </div>
-              </div>
 
-              <div class="ksb-divider"></div>
+                <div class="ksb-divider"></div>
 
-              <!-- Recruiter pills -->
-              <p class="ksb-recruiter-label">Top Recruiters</p>
-              <div class="ksb-pills">
-                <span class="ksb-pill">
-                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
-                  Calicut Bio Medicals
-                </span>
-                <span class="ksb-pill">
-                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM3 4h-.25C2.336 4 2 3.664 2 3.25V2.75C2 2.336 2.336 2 2.75 2H4a1 1 0 011 1v.5L6.5 10l.918 1.835A1 1 0 008.31 12H15a1 1 0 00.97-.757l1.5-6A1 1 0 0016.5 4H3z"/></svg>
-                  Tokyo Freight LLP
-                </span>
-                <span class="ksb-pill">
-                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
-                  Malabar Group
-                </span>
-                <span class="ksb-pill">
-                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
-                  IQ JITA
-                </span>
-              </div>
+                <!-- Recruiter pills -->
+                <p class="ksb-recruiter-label">Top Recruiters</p>
+                <div class="ksb-pills">
+                  <span class="ksb-pill">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
+                    Calicut Bio Medicals
+                  </span>
+                  <span class="ksb-pill">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM3 4h-.25C2.336 4 2 3.664 2 3.25V2.75C2 2.336 2.336 2 2.75 2H4a1 1 0 011 1v.5L6.5 10l.918 1.835A1 1 0 008.31 12H15a1 1 0 00.97-.757l1.5-6A1 1 0 0016.5 4H3z"/></svg>
+                    Tokyo Freight LLP
+                  </span>
+                  <span class="ksb-pill">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                    Malabar Group
+                  </span>
+                  <span class="ksb-pill">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
+                    IQ JITA
+                  </span>
+                </div>
 
-            </div><!-- /glass-card -->
+              </div><!-- /glass-card -->
+            </div><!-- /image-stack -->
           </div><!-- /image-col -->
 
           <!-- RIGHT: Text Content -->
@@ -493,15 +497,27 @@ import Footer from '../../components/Footer.astro';
         .ksb-grid {
           grid-template-columns: 1fr 1fr;
           gap: 4rem;
-          align-items: center;
+          align-items: start;
         }
-        /* Image col first on desktop, but second on mobile via order */
         .ksb-image-col { order: 1; }
         .ksb-text-col  { order: 2; }
       }
       /* Mobile: text first, then image card */
       .ksb-image-col { order: 2; }
       .ksb-text-col  { order: 1; }
+
+      /* ── Image Stack (image + overlapping card) ── */
+      .ksb-image-col {
+        min-width: 0;
+      }
+      .ksb-image-stack {
+        position: relative;
+        /* extra space at bottom for the card to extend into */
+        padding-bottom: 8rem;
+      }
+      @media (min-width: 768px) {
+        .ksb-image-stack { padding-bottom: 9rem; }
+      }
 
       /* ── Image Panel ── */
       .ksb-image-panel {
@@ -510,7 +526,7 @@ import Footer from '../../components/Footer.astro';
         overflow: hidden;
         height: 320px;
       }
-      @media (min-width: 768px) { .ksb-image-panel { height: 420px; } }
+      @media (min-width: 768px) { .ksb-image-panel { height: 400px; } }
       .ksb-panel-img {
         width: 100%;
         height: 100%;
@@ -519,32 +535,32 @@ import Footer from '../../components/Footer.astro';
         transition: transform 0.7s ease;
         transform: scale(1.04);
       }
-      .ksb-image-col:hover .ksb-panel-img { transform: scale(1.08); }
+      .ksb-image-stack:hover .ksb-panel-img { transform: scale(1.08); }
       .ksb-panel-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(10,37,66,0.15) 0%, rgba(10,37,66,0.45) 100%);
+        background: linear-gradient(180deg, rgba(10,37,66,0.1) 0%, rgba(10,37,66,0.5) 100%);
       }
 
-      /* ── Glassmorphic Card ── */
+      /* ── Glassmorphic Card — absolutely anchored to bottom-left of stack ── */
       .ksb-glass-card {
-        background: rgba(255,255,255,0.72);
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        right: 0;
+        background: rgba(255,255,255,0.90);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(255,255,255,0.55);
+        border: 1px solid rgba(255,255,255,0.7);
         border-radius: 20px;
-        box-shadow: 0 16px 48px rgba(10,37,66,0.14), 0 2px 8px rgba(10,37,66,0.06);
-        padding: 1.75rem;
-        margin-top: -3.5rem;
-        margin-left: 1.5rem;
-        margin-right: 0;
-        position: relative;
+        box-shadow: 0 20px 60px rgba(10,37,66,0.15), 0 4px 12px rgba(10,37,66,0.08);
+        padding: 1.5rem;
         z-index: 2;
       }
       @media (min-width: 768px) {
         .ksb-glass-card {
-          margin-left: 2.5rem;
-          margin-right: -1rem;
+          left: 1.5rem;
+          right: -0.5rem;
         }
       }
 

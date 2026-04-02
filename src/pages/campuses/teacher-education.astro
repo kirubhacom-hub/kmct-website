@@ -218,28 +218,259 @@ import Footer from '../../components/Footer.astro';
           </div>
         </div>
 
-        <!-- Campus Life & Marjani -->
-        <div class="bg-kmct-navy rounded-3xl p-10 lg:p-16 text-white shadow-2xl relative overflow-hidden">
-          <div class="absolute right-0 top-0 w-1/2 h-full">
-            <img src="https://images.unsplash.com/photo-1543844347-160161dc2dd6?auto=format&fit=crop&q=80&w=800&h=800" alt="Arts Festival" class="w-full h-full object-cover opacity-20 mix-blend-screen" style="mask-image: linear-gradient(to right, transparent, black);">
+        <!-- Campus Life & Placements — Premium 50/50 Split -->
+        <div class="cte-split-block">
+
+          <!-- ══ LEFT COLUMN: Stats & Heading ══ -->
+          <div class="cte-left-col">
+            <!-- Accent label -->
+            <p class="cte-placement-rate">60% Placement Rate</p>
+
+            <!-- Main heading -->
+            <h3 class="cte-main-heading">
+              Campus Life<br>
+              <span class="cte-ampersand">&amp;</span> Placements
+            </h3>
+
+            <!-- Description -->
+            <p class="cte-description">
+              2,100 Alumni Already Teaching Across Kerala. 60 graduates placed in the latest cycle.
+            </p>
+
+            <!-- Mini stat pills -->
+            <div class="cte-stat-pills">
+              <div class="cte-stat-pill">
+                <span class="cte-pill-num">100</span>
+                <span class="cte-pill-label">Seats per batch</span>
+              </div>
+              <div class="cte-stat-pill">
+                <span class="cte-pill-num">20+</span>
+                <span class="cte-pill-label">Years of trust</span>
+              </div>
+            </div>
           </div>
-          
-          <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p class="text-red-400 font-bold tracking-widest uppercase text-sm mb-4">60% Placement Rate</p>
-              <h3 class="font-serif text-4xl lg:text-5xl font-bold mb-6">Campus Life & Placements</h3>
-              <p class="text-lg font-medium text-white/90 mb-6 leading-relaxed">
-                2,100 Alumni Already Teaching Across Kerala. 60 graduates placed in the latest cycle.
+
+          <!-- ══ RIGHT COLUMN: Video + Glass Card ══ -->
+          <div class="cte-right-col">
+
+            <!-- Full-bleed background video (image poster fallback) -->
+            <video
+              class="cte-video-bg"
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=85"
+            >
+              <!-- No src — poster image acts as the visual -->
+            </video>
+
+            <!-- Dark overlay -->
+            <div class="cte-video-overlay"></div>
+
+            <!-- Glassmorphic Marjani Card -->
+            <div class="cte-marjani-card">
+              <p class="cte-card-eyebrow">Arts Festival</p>
+              <h4 class="cte-card-title"><em>Marjani</em></h4>
+              <p class="cte-card-subtitle">The Arts Festival of KMCT College of Teacher Education.</p>
+              <p class="cte-card-body">
+                Teaching requires more than subject knowledge. It requires communication, creativity, and the ability to engage a room. Marjani is the annual arts festival entirely student-organised. The skills built here make a good teacher visible in a school and valuable in an interview.
               </p>
             </div>
-            <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
-              <h4 class="font-serif text-3xl font-bold mb-4 italic">Marjani</h4>
-              <p class="text-white font-medium leading-relaxed">
-                <strong class="text-red-300">The Arts Festival of KMCT College of Teacher Education.</strong><br/> Teaching requires more than subject knowledge. It requires communication, creativity, and the ability to engage a room. Marjani is the annual arts festival entirely student-organised. The skills built here make a good teacher visible in a school and valuable in an interview.
-              </p>
-            </div>
-          </div>
-        </div>
+
+          </div><!-- /right-col -->
+        </div><!-- /cte-split-block -->
+
+        <style>
+          /* ═══════════════════════════════════════
+             CTE CAMPUS LIFE SPLIT BLOCK
+             ═══════════════════════════════════════ */
+          .cte-split-block {
+            display: flex;
+            flex-direction: column;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 32px 80px rgba(10,37,66,0.2), 0 8px 24px rgba(0,0,0,0.1);
+          }
+          @media (min-width: 768px) {
+            .cte-split-block {
+              flex-direction: row;
+              min-height: 560px;
+            }
+          }
+
+          /* ── LEFT COLUMN ── */
+          .cte-left-col {
+            background: #081c35;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+          }
+          @media (min-width: 768px) {
+            .cte-left-col {
+              padding: 4rem;
+              width: 50%;
+              flex: none;
+            }
+          }
+
+          .cte-placement-rate {
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.28em;
+            color: #ff7b6e;
+            margin: 0 0 1.5rem;
+            font-variant: small-caps;
+          }
+
+          .cte-main-heading {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            margin: 0 0 1.5rem;
+            letter-spacing: -0.02em;
+          }
+          .cte-ampersand {
+            font-style: italic;
+            color: #ff7b6e;
+            font-weight: 400;
+          }
+
+          .cte-description {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.75);
+            margin: 0 0 2rem;
+            font-weight: 400;
+          }
+
+          /* Mini stat pills */
+          .cte-stat-pills {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+          }
+          .cte-stat-pill {
+            display: flex;
+            flex-direction: column;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 14px;
+            padding: 0.85rem 1.25rem;
+            min-width: 100px;
+          }
+          .cte-pill-num {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 3px;
+          }
+          .cte-pill-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: rgba(255,255,255,0.45);
+          }
+
+          /* ── RIGHT COLUMN ── */
+          .cte-right-col {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 500px;
+            flex: 1;
+          }
+          @media (min-width: 768px) {
+            .cte-right-col {
+              width: 50%;
+              flex: none;
+              min-height: unset;
+            }
+          }
+
+          /* Full-bleed background */
+          .cte-video-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            z-index: 0;
+          }
+
+          /* Dark overlay */
+          .cte-video-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.48);
+            z-index: 1;
+          }
+
+          /* Glassmorphic Marjani card */
+          .cte-marjani-card {
+            position: relative;
+            z-index: 2;
+            background: rgba(25,35,55,0.40);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            padding: 2.5rem;
+            margin: 2rem;
+            max-width: 380px;
+          }
+
+          .cte-card-eyebrow {
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.55);
+            margin: 0 0 0.6rem;
+          }
+
+          .cte-card-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0 0 1rem;
+            line-height: 1.05;
+          }
+
+          .cte-card-subtitle {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #ff7b6e;
+            margin: 0 0 0.9rem;
+            line-height: 1.4;
+          }
+
+          .cte-card-body {
+            font-size: 0.88rem;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.82);
+            margin: 0;
+            font-weight: 400;
+          }
+
+          @media (max-width: 480px) {
+            .cte-left-col { padding: 2rem; }
+            .cte-marjani-card { padding: 1.75rem; margin: 1.25rem; }
+            .cte-main-heading { font-size: 2rem; }
+          }
+        </style>
 
       </div>
     </section>

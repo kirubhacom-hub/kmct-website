@@ -380,7 +380,7 @@ import Footer from '../../components/Footer.astro';
                   <span class="alum-logo-text">TCS</span>
                 </div>
                 <div class="alum-logo-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/320px-Wipro_Primary_Logo_Color_RGB.svg.png" alt="Wipro" loading="lazy">
+                  <span class="alum-logo-text">Wipro</span>
                 </div>
                 <div class="alum-logo-item">
                   <span class="alum-logo-text">6D Technologies</span>
@@ -451,6 +451,15 @@ import Footer from '../../components/Footer.astro';
     </section>
 
     <style>
+      /* ── Container ── */
+      .alumni-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 2.5rem;
+        position: relative;
+        z-index: 10;
+      }
+
       /* ═══════════════════════════════════════════
          ALUMNI ASYMMETRIC GRID — 12-col, 5+7 split
          ═══════════════════════════════════════════ */
@@ -459,6 +468,11 @@ import Footer from '../../components/Footer.astro';
         grid-template-columns: 5fr 7fr;   /* 5/12 + 7/12 */
         gap: 4rem;
         align-items: center;
+      }
+      /* Prevent children from blowing out the grid */
+      .alumni-col-left,
+      .alumni-col-right {
+        min-width: 0;
       }
       @media (max-width: 860px) {
         .alumni-asymm-grid {

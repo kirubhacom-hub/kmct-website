@@ -313,48 +313,202 @@ import Footer from '../../components/Footer.astro';
       </div>
     </section>
 
-    <!-- ALUMNI NETWORK & KARMA 2026 -->
-    <section class="py-24 bg-kmct-navy text-white relative">
-      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          
-          <div>
-            <h2 class="font-serif text-4xl lg:text-5xl font-bold mb-6">A Global Alumni Network</h2>
-            <div class="w-16 h-1 bg-teal-500 rounded-full mb-6"></div>
-            <p class="text-lg text-white/70 leading-relaxed font-medium mb-8">
-              With 25 years of graduates, our network spans the world's leading tech hubs. We don't just place you; we launch you. Trusted by Industry Giants.
+    <!-- ALUMNI NETWORK & KARMA 2026 — ASYMMETRIC REDESIGN -->
+    <section class="alumni-section py-24 text-white relative overflow-hidden" style="background-color: #071628;">
+
+      <!-- Subtle background texture blobs -->
+      <div class="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(15,118,110,0.12) 0%, transparent 70%);"></div>
+      <div class="absolute -bottom-40 -right-40 w-[400px] h-[400px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(30,64,175,0.1) 0%, transparent 70%);"></div>
+
+      <div class="max-w-[1280px] mx-auto px-6 sm:px-10 relative z-10">
+
+        <!-- 12-col asymmetric grid: left = 5, right = 7 -->
+        <div class="alumni-grid">
+
+          <!-- ─── LEFT COLUMN (5/12) — Alumni & Recruiters ─── -->
+          <div class="alumni-left">
+
+            <h2 class="font-serif font-bold leading-tight mb-5" style="font-size: clamp(2rem, 3.5vw, 3rem); color: #fff;">
+              A Global Alumni Network
+            </h2>
+
+            <!-- Teal accent line -->
+            <div style="width: 50px; height: 3px; background: #14b8a6; border-radius: 4px; margin-bottom: 1.5rem;"></div>
+
+            <p style="color: rgba(255,255,255,0.65); font-size: 1.05rem; line-height: 1.7; font-weight: 500; margin-bottom: 2rem;">
+              With 25 years of graduates, our network spans the world's leading tech hubs. We don't just place you — we launch you. Trusted by industry giants across India, the Gulf, and beyond.
             </p>
-            <p class="text-teal-400 font-bold tracking-widest uppercase text-sm mb-4">Our Top Recruiters Include</p>
-            <!-- Mock Recruiter Logos via text/boxes -->
-            <div class="flex flex-wrap gap-4 mt-4">
-              <span class="bg-white/10 px-6 py-3 rounded-lg font-bold border border-white/20">Adani Cement</span>
-              <span class="bg-white/10 px-6 py-3 rounded-lg font-bold border border-white/20">Infosys</span>
-              <span class="bg-white/10 px-6 py-3 rounded-lg font-bold border border-white/20">TCS</span>
-              <span class="bg-white/10 px-6 py-3 rounded-lg font-bold border border-white/20">Wipro</span>
-              <span class="bg-white/10 px-6 py-3 rounded-lg font-bold border border-white/20">6D Technologies</span>
-            </div>
-          </div>
 
-          <div class="bg-white/5 border border-white/10 rounded-3xl relative overflow-hidden backdrop-blur-md">
-            <!-- Video background -->
-            <div class="absolute inset-0 z-0">
-              <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-40">
-                <source src="https://assets.mixkit.co/videos/preview/mixkit-crowd-of-people-in-a-concert-4692-large.mp4" type="video/mp4">
-                <source src="https://assets.mixkit.co/videos/4692/mixkit-crowd-of-people-in-a-concert-4692-large.mp4" type="video/mp4">
-              </video>
-              <div class="absolute inset-0 bg-gradient-to-t from-kmct-navy via-kmct-navy/50 to-transparent"></div>
-            </div>
-            <div class="relative z-10 text-center py-16 px-8">
-              <p class="text-teal-400 font-bold uppercase tracking-widest text-sm mb-4">Tech Festival</p>
-              <h3 class="font-serif text-5xl font-bold mb-4">Karma 2026</h3>
-              <p class="text-2xl font-serif italic text-white/90 mb-6 drop-shadow">The Legend Goes Global</p>
-              <p class="text-white/80 max-w-sm mx-auto font-medium">Karma is the biggest student-run spectacle in the region. For 2026, we are dialling it up to eleven.</p>
-            </div>
-          </div>
+            <!-- Recruiter label -->
+            <p style="color: #14b8a6; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.22em; margin-bottom: 1.1rem;">
+              Our Top Recruiters Include
+            </p>
 
-        </div>
-      </div>
+            <!-- ── Infinite Logo Marquee ── -->
+            <div class="logo-marquee-wrap" style="overflow: hidden; mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);">
+              <div class="logo-marquee-track">
+                <!-- Set 1 -->
+                <div class="logo-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Adani_2012_logo.svg/320px-Adani_2012_logo.svg.png" alt="Adani" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                </div>
+                <div class="logo-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/320px-Infosys_logo.svg.png" alt="Infosys" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                </div>
+                <div class="logo-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/320px-Tata_Consultancy_Services_Logo.svg.png" alt="TCS" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                </div>
+                <div class="logo-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/320px-Wipro_Primary_Logo_Color_RGB.svg.png" alt="Wipro" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                </div>
+                <div class="logo-item">
+                  <span style="font-size:1.05rem; font-weight:800; letter-spacing:0.05em; color:#fff; opacity:0.85; white-space:nowrap;">6D Technologies</span>
+                </div>
+                <!-- Set 2 (mirror for seamless loop) -->
+                <div class="logo-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Adani_2012_logo.svg/320px-Adani_2012_logo.svg.png" alt="Adani" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                </div>
+                <div class="logo-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/320px-Infosys_logo.svg.png" alt="Infosys" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                </div>
+                <div class="logo-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/320px-Tata_Consultancy_Services_Logo.svg.png" alt="TCS" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                </div>
+                <div class="logo-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/320px-Wipro_Primary_Logo_Color_RGB.svg.png" alt="Wipro" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                </div>
+                <div class="logo-item">
+                  <span style="font-size:1.05rem; font-weight:800; letter-spacing:0.05em; color:#fff; opacity:0.85; white-space:nowrap;">6D Technologies</span>
+                </div>
+              </div>
+            </div><!-- /marquee wrap -->
+
+          </div><!-- /left -->
+
+          <!-- ─── RIGHT COLUMN (7/12) — Video Feature Card ─── -->
+          <div class="alumni-right">
+
+            <div class="video-feature-card" style="
+              background: #0d2035;
+              border: 1px solid rgba(255,255,255,0.1);
+              border-radius: 24px;
+              overflow: hidden;
+              box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            ">
+
+              <!-- ── Massive 16:9 Video area ── -->
+              <div class="video-container" style="position:relative; width:100%; padding-top:56.25%; border-radius:24px 24px 0 0; overflow:hidden;">
+
+                <!-- Placeholder image (campus crowd / tech event) -->
+                <img
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80"
+                  alt="Karma Tech Festival – KMCT"
+                  style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;"
+                />
+
+                <!-- Dark overlay so play button pops -->
+                <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(7,22,40,0.35) 0%, rgba(7,22,40,0.55) 100%);"></div>
+
+                <!-- Glassmorphic Play Button -->
+                <button
+                  id="karma-play-btn"
+                  aria-label="Play Karma 2026 highlights"
+                  style="
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 72px; height: 72px;
+                    border-radius: 50%;
+                    background: rgba(255,255,255,0.18);
+                    backdrop-filter: blur(12px);
+                    -webkit-backdrop-filter: blur(12px);
+                    border: 1.5px solid rgba(255,255,255,0.4);
+                    display: flex; align-items: center; justify-content: center;
+                    cursor: pointer;
+                    transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), background 0.2s ease;
+                    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+                  "
+                >
+                  <!-- Play triangle -->
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="white" style="margin-left:4px;">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </button>
+
+                <!-- Top-left badge -->
+                <div style="position:absolute; top:1rem; left:1rem; background:rgba(20,184,166,0.9); backdrop-filter:blur(8px); border-radius:50px; padding:0.35rem 0.9rem; font-size:0.7rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#fff;">
+                  ● Live 2026
+                </div>
+
+              </div><!-- /video-container -->
+
+              <!-- ── Compact Text Footer ── -->
+              <div style="padding: 1.5rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap;">
+
+                <!-- Left: Labels -->
+                <div style="flex-shrink:0;">
+                  <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.2em; color:#14b8a6; margin-bottom:0.3rem;">Tech Festival</p>
+                  <h3 class="font-serif" style="font-size:clamp(1.5rem, 3vw, 2rem); font-weight:800; color:#fff; line-height:1; margin:0;">Karma 2026</h3>
+                </div>
+
+                <!-- Divider -->
+                <div style="width:1px; height:48px; background:rgba(255,255,255,0.12); flex-shrink:0;"></div>
+
+                <!-- Right: Tagline text -->
+                <div style="flex:1; min-width:180px;">
+                  <p style="font-size:0.82rem; color:rgba(255,255,255,0.55); line-height:1.55; margin:0;">
+                    <strong style="color:rgba(255,255,255,0.85); font-weight:600;">The Legend Goes Global —</strong> Karma is the biggest student-run spectacle in the region. For 2026, we are dialling it up to eleven.
+                  </p>
+                </div>
+
+              </div><!-- /compact footer -->
+
+            </div><!-- /video-feature-card -->
+
+          </div><!-- /right -->
+
+        </div><!-- /alumni-grid -->
+      </div><!-- /container -->
     </section>
+
+    <style>
+      /* ── Alumni section grid ── */
+      .alumni-grid {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        gap: 3.5rem;
+        align-items: center;
+      }
+      @media (max-width: 900px) {
+        .alumni-grid { grid-template-columns: 1fr; gap: 3rem; }
+      }
+
+      /* ── Logo marquee ── */
+      .logo-marquee-track {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        width: max-content;
+        animation: logoScroll 22s linear infinite;
+      }
+      .logo-item {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+      }
+      @keyframes logoScroll {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-50%); }
+      }
+      .logo-marquee-wrap:hover .logo-marquee-track {
+        animation-play-state: paused;
+      }
+
+      /* ── Play button hover scale ── */
+      #karma-play-btn:hover {
+        transform: translate(-50%, -50%) scale(1.15) !important;
+        background: rgba(255,255,255,0.28) !important;
+      }
+    </style>
 
     <!-- ADMISSIONS (CTA) -->
     <!-- ADMISSIONS (CTA) -->

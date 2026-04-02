@@ -314,7 +314,7 @@ import Footer from '../../components/Footer.astro';
     </section>
 
     <!-- ALUMNI NETWORK & KARMA 2026 — ASYMMETRIC REDESIGN -->
-    <section class="py-24 text-white relative" id="alumni-section" style="background-color: #071628; overflow: clip;">
+    <section class="py-24 text-white relative overflow-hidden" id="alumni-section" style="background-color: #071628;">
 
       <!-- Ambient glow blobs -->
       <div class="absolute pointer-events-none" style="top:-160px; left:-160px; width:560px; height:560px; border-radius:50%; background:radial-gradient(circle, rgba(15,118,110,0.15) 0%, transparent 70%);"></div>
@@ -455,9 +455,15 @@ import Footer from '../../components/Footer.astro';
       .alumni-container {
         max-width: 1280px;
         margin: 0 auto;
-        padding: 0 2.5rem;
+        padding: 0 1.25rem;
         position: relative;
         z-index: 10;
+      }
+      @media (min-width: 640px) {
+        .alumni-container { padding: 0 2rem; }
+      }
+      @media (min-width: 1024px) {
+        .alumni-container { padding: 0 2.5rem; }
       }
 
       /* ═══════════════════════════════════════════

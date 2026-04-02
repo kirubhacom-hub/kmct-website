@@ -238,74 +238,607 @@ import Footer from '../../components/Footer.astro';
       </div>
     </section>
 
-    <!-- PLACEMENTS & ESPERANZA -->
-    <section class="py-24 bg-gray-50 relative overflow-hidden">
-      <!-- Decor -->
-      <div class="absolute right-0 bottom-0 w-1/2 h-1/2 bg-white skew-y-12 translate-y-24 shadow-xl z-0"></div>
+    <!-- NETWORK INSIDE THE INDUSTRY — Premium Redesign -->
+    <section class="ksb-network-section" id="network">
 
-      <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
-        
-        <!-- Placements -->
-        <div class="grid lg:grid-cols-2 gap-16 mb-24 items-center">
-          <div class="order-2 lg:order-1 relative p-8">
-             <div class="absolute top-0 left-0 w-32 h-32 bg-rose-100 rounded-tl-3xl -z-10"></div>
-             <div class="absolute bottom-0 right-0 w-32 h-32 bg-[#8A1538]/10 rounded-br-3xl -z-10"></div>
-             <div class="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-               <h3 class="font-serif text-3xl font-bold text-kmct-navy mb-8 border-b border-gray-100 pb-4">74% Got Placed in 2024</h3>
-               <div class="flex gap-8 mb-8">
-                 <div>
-                   <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">Highest Package</p>
-                   <p class="text-3xl font-bold text-[#8A1538]">₹6 LPA</p>
-                 </div>
-                 <div>
-                   <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">Average Package</p>
-                   <p class="text-3xl font-bold text-kmct-navy">₹3.6 LPA</p>
-                 </div>
-               </div>
-               <p class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">Top Recruiting Companies</p>
-               <div class="flex flex-wrap gap-3">
-                 <span class="px-4 py-2 bg-gray-50 rounded-lg text-sm font-semibold border border-gray-200">Calicut Bio Medicals</span>
-                 <span class="px-4 py-2 bg-gray-50 rounded-lg text-sm font-semibold border border-gray-200">Tokyo Freight LLP</span>
-                 <span class="px-4 py-2 bg-gray-50 rounded-lg text-sm font-semibold border border-gray-200">IQ JITA</span>
-                 <span class="px-4 py-2 bg-gray-50 rounded-lg text-sm font-semibold border border-gray-200">Malabar Group</span>
-               </div>
-             </div>
-          </div>
-          <div class="order-1 lg:order-2">
-            <h2 class="font-serif text-4xl lg:text-5xl font-bold text-kmct-navy mb-6">A Network Inside the Industry</h2>
-            <div class="w-16 h-1 bg-[#8A1538] rounded-full mb-6"></div>
-            <p class="text-lg text-gray-600 font-medium mb-6">
-              The cross-discipline environment at KMCT Kallanthode means your MBA cohort doesn't exist in a vacuum. Group projects pull in engineering perspectives.
-            </p>
-            <p class="text-lg text-gray-600 font-medium">
-              Placements connect you to technical firms as well as management roles. The network you build here cuts across multiple industries including logistics, healthcare, technology, and retail.
-            </p>
-          </div>
-        </div>
-
-        <!-- ESPERANZA Section -->
-        <div class="bg-[#8A1538] rounded-[2.5rem] p-10 lg:p-16 text-white shadow-2xl relative overflow-hidden">
-          <div class="absolute inset-0 z-0">
-             <img src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?auto=format&fit=crop&q=80&w=1200&h=800" class="w-full h-full object-cover mix-blend-overlay opacity-30">
-          </div>
-          <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p class="text-rose-200 font-bold tracking-widest uppercase text-sm mb-4">National Management Fest</p>
-              <h2 class="font-serif text-5xl lg:text-6xl font-medium mb-6 tracking-tight">ESPERANZA</h2>
-              <p class="text-xl font-medium text-white/90 mb-6 leading-relaxed">
-                Organised by KSB Students. Drawing student teams from B-schools across India to compete in business simulations, case study challenges, and finance competitions.
-              </p>
-            </div>
-            <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
-              <p class="text-white font-medium leading-relaxed">
-                Running ESPERANZA develops capabilities that no MBA module formally teaches: team leadership under pressure, event execution at scale, stakeholder management, and public performance. Recruiters consistently notice students who have delivered this kind of real-world responsibility.
-              </p>
-            </div>
-          </div>
-        </div>
-
+      <!-- Subtle data-stream background vectors -->
+      <div class="ksb-bg-vectors" aria-hidden="true">
+        <svg class="ksb-vector-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="streamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#8A1538;stop-opacity:0.06"/>
+              <stop offset="100%" style="stop-color:#0a2542;stop-opacity:0.04"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,200 Q360,100 720,200 T1440,200" stroke="url(#streamGrad)" stroke-width="1.5" fill="none"/>
+          <path d="M0,400 Q360,300 720,400 T1440,400" stroke="url(#streamGrad)" stroke-width="1.5" fill="none"/>
+          <path d="M0,600 Q360,500 720,600 T1440,600" stroke="url(#streamGrad)" stroke-width="1.5" fill="none"/>
+          <path d="M200,0 Q100,450 200,900" stroke="url(#streamGrad)" stroke-width="1" fill="none"/>
+          <path d="M800,0 Q700,450 800,900" stroke="url(#streamGrad)" stroke-width="1" fill="none"/>
+          <path d="M1300,0 Q1200,450 1300,900" stroke="url(#streamGrad)" stroke-width="1" fill="none"/>
+        </svg>
       </div>
+
+      <div class="ksb-container">
+
+        <!-- ═══════════════════════════════════════════
+             PART 1: Placements & Network Grid
+             ═══════════════════════════════════════════ -->
+        <div class="ksb-grid ksb-reveal">
+
+          <!-- LEFT: Image + Glassmorphic Stat Card -->
+          <div class="ksb-image-col">
+
+            <!-- Background image panel -->
+            <div class="ksb-image-panel">
+              <img
+                src="https://images.unsplash.com/photo-1521737711867-e3cb130dd22a?auto=format&fit=crop&w=900&q=85"
+                alt="KSB students in a collaborative workspace"
+                class="ksb-panel-img"
+              />
+              <div class="ksb-panel-overlay"></div>
+            </div>
+
+            <!-- Glassmorphic stat card -->
+            <div class="ksb-glass-card">
+
+              <!-- Big stat -->
+              <div class="ksb-stat-row">
+                <span class="ksb-stat-number">74%</span>
+                <div class="ksb-stat-label">
+                  <span class="ksb-stat-label-main">Got Placed</span>
+                  <span class="ksb-stat-label-sub">Batch of 2024</span>
+                </div>
+              </div>
+
+              <!-- Package grid -->
+              <div class="ksb-pkg-grid">
+                <div class="ksb-pkg-item">
+                  <p class="ksb-pkg-eyebrow">Highest Package</p>
+                  <p class="ksb-pkg-value ksb-value-maroon">₹6 LPA</p>
+                </div>
+                <div class="ksb-pkg-item">
+                  <p class="ksb-pkg-eyebrow">Average Package</p>
+                  <p class="ksb-pkg-value ksb-value-navy">₹3.6 LPA</p>
+                </div>
+              </div>
+
+              <div class="ksb-divider"></div>
+
+              <!-- Recruiter pills -->
+              <p class="ksb-recruiter-label">Top Recruiters</p>
+              <div class="ksb-pills">
+                <span class="ksb-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
+                  Calicut Bio Medicals
+                </span>
+                <span class="ksb-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM3 4h-.25C2.336 4 2 3.664 2 3.25V2.75C2 2.336 2.336 2 2.75 2H4a1 1 0 011 1v.5L6.5 10l.918 1.835A1 1 0 008.31 12H15a1 1 0 00.97-.757l1.5-6A1 1 0 0016.5 4H3z"/></svg>
+                  Tokyo Freight LLP
+                </span>
+                <span class="ksb-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+                  Malabar Group
+                </span>
+                <span class="ksb-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
+                  IQ JITA
+                </span>
+              </div>
+
+            </div><!-- /glass-card -->
+          </div><!-- /image-col -->
+
+          <!-- RIGHT: Text Content -->
+          <div class="ksb-text-col">
+            <h2 class="ksb-heading ksb-reveal-item">A Network<br>Inside the Industry</h2>
+            <div class="ksb-heading-underline ksb-reveal-item"></div>
+            <p class="ksb-body ksb-reveal-item">
+              The cross-discipline environment at KMCT Kallanthode means your MBA cohort doesn't exist in a vacuum. Group projects pull in engineering perspectives, and presentations are refined against peers from different disciplines.
+            </p>
+            <p class="ksb-body ksb-reveal-item">
+              Placements connect you to technical firms as well as management roles. The network you build here cuts across multiple industries — logistics, healthcare, technology, and retail — built on two decades of alumni relationships.
+            </p>
+          </div><!-- /text-col -->
+
+        </div><!-- /ksb-grid -->
+
+        <!-- ═══════════════════════════════════════════
+             PART 2: ESPERANZA Immersive Banner
+             ═══════════════════════════════════════════ -->
+        <div class="ksb-esperanza-wrap ksb-reveal">
+
+          <div class="ksb-esp-card">
+
+            <!-- Background: dark gradient + crowd image -->
+            <div class="ksb-esp-bg">
+              <img
+                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=80"
+                alt="ESPERANZA crowd"
+                class="ksb-esp-bg-img"
+              />
+              <div class="ksb-esp-gradient"></div>
+            </div>
+
+            <!-- Pause icon top-right -->
+            <button class="ksb-esp-pause" aria-label="Pause background">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+              </svg>
+            </button>
+
+            <!-- Inner grid -->
+            <div class="ksb-esp-grid">
+
+              <!-- Left: Text -->
+              <div class="ksb-esp-text">
+                <p class="ksb-esp-eyebrow">National Management Fest</p>
+                <h2 class="ksb-esp-title">ESPERANZA</h2>
+                <p class="ksb-esp-body">
+                  Organised by KSB Students. Drawing student teams from B-schools across India to compete in business simulations, case study challenges, and finance competitions.
+                </p>
+              </div>
+
+              <!-- Right: Glass feature list -->
+              <div class="ksb-esp-features">
+                <ul class="ksb-feature-list">
+                  <li class="ksb-feature-item">
+                    <div class="ksb-feature-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="ksb-feature-title">1,000+ Participants</p>
+                      <p class="ksb-feature-desc">B-school teams from across India competing live in Kozhikode annually.</p>
+                    </div>
+                  </li>
+                  <li class="ksb-feature-item">
+                    <div class="ksb-feature-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="ksb-feature-title">Student-Led Execution</p>
+                      <p class="ksb-feature-desc">Every event — simulations, panels, finance competitions — managed entirely by KSB students.</p>
+                    </div>
+                  </li>
+                  <li class="ksb-feature-item">
+                    <div class="ksb-feature-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="ksb-feature-title">Recruiter Visibility</p>
+                      <p class="ksb-feature-desc">Stakeholder management and real-world performance — exactly what top recruiters look for.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div><!-- /esp-grid -->
+          </div><!-- /esp-card -->
+        </div><!-- /esperanza-wrap -->
+
+      </div><!-- /container -->
     </section>
+
+    <style>
+      /* ══════════════════════════════════════
+         KSB NETWORK SECTION — BASE
+         ══════════════════════════════════════ */
+      .ksb-network-section {
+        position: relative;
+        padding: 5rem 0;
+        background: #f8f9fa;
+        overflow: hidden;
+      }
+      .ksb-bg-vectors {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .ksb-vector-svg {
+        width: 100%;
+        height: 100%;
+      }
+      .ksb-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+        position: relative;
+        z-index: 1;
+      }
+      @media (min-width: 640px)  { .ksb-container { padding: 0 2rem; } }
+      @media (min-width: 1024px) { .ksb-container { padding: 0 2.5rem; } }
+
+      /* ══════════════════════════════════════
+         SCROLL REVEAL
+         ══════════════════════════════════════ */
+      .ksb-reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+      }
+      .ksb-reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .ksb-reveal-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+      }
+      .ksb-reveal-item.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .ksb-reveal-item:nth-child(2) { transition-delay: 0.1s; }
+      .ksb-reveal-item:nth-child(3) { transition-delay: 0.2s; }
+      .ksb-reveal-item:nth-child(4) { transition-delay: 0.3s; }
+
+      /* ══════════════════════════════════════
+         PART 1 GRID
+         ══════════════════════════════════════ */
+      .ksb-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 4rem;
+      }
+      @media (min-width: 768px) {
+        .ksb-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+          align-items: center;
+        }
+        /* Image col first on desktop, but second on mobile via order */
+        .ksb-image-col { order: 1; }
+        .ksb-text-col  { order: 2; }
+      }
+      /* Mobile: text first, then image card */
+      .ksb-image-col { order: 2; }
+      .ksb-text-col  { order: 1; }
+
+      /* ── Image Panel ── */
+      .ksb-image-panel {
+        position: relative;
+        border-radius: 24px;
+        overflow: hidden;
+        height: 320px;
+      }
+      @media (min-width: 768px) { .ksb-image-panel { height: 420px; } }
+      .ksb-panel-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.7s ease;
+        transform: scale(1.04);
+      }
+      .ksb-image-col:hover .ksb-panel-img { transform: scale(1.08); }
+      .ksb-panel-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(10,37,66,0.15) 0%, rgba(10,37,66,0.45) 100%);
+      }
+
+      /* ── Glassmorphic Card ── */
+      .ksb-glass-card {
+        background: rgba(255,255,255,0.72);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255,255,255,0.55);
+        border-radius: 20px;
+        box-shadow: 0 16px 48px rgba(10,37,66,0.14), 0 2px 8px rgba(10,37,66,0.06);
+        padding: 1.75rem;
+        margin-top: -3.5rem;
+        margin-left: 1.5rem;
+        margin-right: 0;
+        position: relative;
+        z-index: 2;
+      }
+      @media (min-width: 768px) {
+        .ksb-glass-card {
+          margin-left: 2.5rem;
+          margin-right: -1rem;
+        }
+      }
+
+      .ksb-stat-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+      }
+      .ksb-stat-number {
+        font-family: 'Fraunces', Georgia, serif;
+        font-size: clamp(2.8rem, 6vw, 3.8rem);
+        font-weight: 800;
+        color: #0a2542;
+        line-height: 1;
+        flex-shrink: 0;
+      }
+      .ksb-stat-label { display: flex; flex-direction: column; gap: 2px; }
+      .ksb-stat-label-main {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #0a2542;
+        line-height: 1.2;
+      }
+      .ksb-stat-label-sub {
+        font-size: 0.72rem;
+        color: rgba(10,37,66,0.55);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      .ksb-pkg-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+        margin-bottom: 1.1rem;
+      }
+      .ksb-pkg-item {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 0.75rem 0.9rem;
+        border: 1px solid rgba(0,0,0,0.06);
+      }
+      .ksb-pkg-eyebrow {
+        font-size: 0.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: rgba(10,37,66,0.5);
+        margin: 0 0 0.2rem;
+      }
+      .ksb-pkg-value {
+        font-family: 'Fraunces', Georgia, serif;
+        font-size: 1.4rem;
+        font-weight: 800;
+        margin: 0;
+        line-height: 1;
+      }
+      .ksb-value-maroon { color: #8A1538; }
+      .ksb-value-navy   { color: #0a2542; }
+
+      .ksb-divider {
+        height: 1px;
+        background: rgba(10,37,66,0.08);
+        margin: 1rem 0;
+      }
+      .ksb-recruiter-label {
+        font-size: 0.62rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: rgba(10,37,66,0.45);
+        margin: 0 0 0.65rem;
+      }
+      .ksb-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+      .ksb-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        background: #f3f4f6;
+        border: 1px solid rgba(10,37,66,0.08);
+        border-radius: 99px;
+        padding: 0.3rem 0.75rem;
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: #374151;
+        white-space: nowrap;
+      }
+      .ksb-pill svg {
+        width: 12px;
+        height: 12px;
+        color: #8A1538;
+        flex-shrink: 0;
+      }
+
+      /* ── Right Text Column ── */
+      .ksb-heading {
+        font-family: 'Fraunces', Georgia, serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 800;
+        color: #0a2542;
+        line-height: 1.12;
+        margin: 0 0 1rem;
+      }
+      .ksb-heading-underline {
+        width: 52px;
+        height: 3px;
+        background: #8A1538;
+        border-radius: 99px;
+        margin-bottom: 1.5rem;
+      }
+      .ksb-body {
+        font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+        line-height: 1.75;
+        color: #4B5563;
+        margin-bottom: 1.25rem;
+        font-weight: 400;
+      }
+
+      /* ══════════════════════════════════════
+         PART 2: ESPERANZA BANNER
+         ══════════════════════════════════════ */
+      .ksb-esp-card {
+        border-radius: 24px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 32px 80px rgba(138,21,56,0.25), 0 8px 24px rgba(0,0,0,0.2);
+      }
+      .ksb-esp-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      .ksb-esp-bg-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        filter: blur(2px) saturate(0.7);
+        transform: scale(1.05);
+      }
+      .ksb-esp-gradient {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(13,7,40,0.92) 0%, rgba(138,21,56,0.88) 55%, rgba(80,7,30,0.95) 100%);
+      }
+
+      /* Pause button */
+      .ksb-esp-pause {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+        z-index: 20;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.12);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255,255,255,0.75);
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease;
+      }
+      .ksb-esp-pause:hover {
+        background: rgba(255,255,255,0.22);
+        color: #fff;
+      }
+
+      /* Inner grid */
+      .ksb-esp-grid {
+        position: relative;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2.5rem 2rem;
+      }
+      @media (min-width: 768px) {
+        .ksb-esp-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 3.5rem;
+          padding: 4rem;
+          align-items: center;
+        }
+      }
+
+      /* Left text */
+      .ksb-esp-eyebrow {
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.6);
+        margin: 0 0 0.8rem;
+      }
+      .ksb-esp-title {
+        font-family: 'Fraunces', Georgia, serif;
+        font-size: clamp(2.8rem, 6vw, 5rem);
+        font-weight: 700;
+        color: #fff;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        margin: 0 0 1.25rem;
+      }
+      .ksb-esp-body {
+        font-size: clamp(0.9rem, 1.6vw, 1rem);
+        line-height: 1.7;
+        color: rgba(255,255,255,0.78);
+        margin: 0;
+      }
+
+      /* Right glass feature list */
+      .ksb-esp-features {
+        background: rgba(255,255,255,0.10);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 16px;
+        padding: 2rem;
+      }
+      .ksb-feature-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .ksb-feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .ksb-feature-icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(255,255,255,0.12);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: rgba(255,255,255,0.9);
+      }
+      .ksb-feature-icon svg {
+        width: 18px;
+        height: 18px;
+      }
+      .ksb-feature-title {
+        font-size: 0.87rem;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 0.25rem;
+      }
+      .ksb-feature-desc {
+        font-size: 0.78rem;
+        line-height: 1.55;
+        color: rgba(255,255,255,0.6);
+        margin: 0;
+      }
+
+      @media (max-width: 480px) {
+        .ksb-network-section { padding: 3.5rem 0; }
+        .ksb-glass-card { padding: 1.25rem; margin-left: 0.75rem; }
+        .ksb-stat-number { font-size: 2.4rem; }
+        .ksb-esp-grid { padding: 2rem 1.25rem; }
+      }
+    </style>
+
+    <script>
+      /* ── Scroll reveal ── */
+      (function() {
+        const targets = document.querySelectorAll('.ksb-reveal, .ksb-reveal-item');
+        if (!targets.length) return;
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-visible');
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        targets.forEach(el => io.observe(el));
+      })();
+    </script>
 
     <!-- ADMISSIONS (CTA) -->
     <section class="py-24 bg-white relative overflow-hidden" id="admissions">

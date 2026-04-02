@@ -314,199 +314,342 @@ import Footer from '../../components/Footer.astro';
     </section>
 
     <!-- ALUMNI NETWORK & KARMA 2026 — ASYMMETRIC REDESIGN -->
-    <section class="alumni-section py-24 text-white relative overflow-hidden" style="background-color: #071628;">
+    <section class="py-24 text-white relative" id="alumni-section" style="background-color: #071628; overflow: clip;">
 
-      <!-- Subtle background texture blobs -->
-      <div class="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(15,118,110,0.12) 0%, transparent 70%);"></div>
-      <div class="absolute -bottom-40 -right-40 w-[400px] h-[400px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(30,64,175,0.1) 0%, transparent 70%);"></div>
+      <!-- Ambient glow blobs -->
+      <div class="absolute pointer-events-none" style="top:-160px; left:-160px; width:560px; height:560px; border-radius:50%; background:radial-gradient(circle, rgba(15,118,110,0.15) 0%, transparent 70%);"></div>
+      <div class="absolute pointer-events-none" style="bottom:-160px; right:-160px; width:480px; height:480px; border-radius:50%; background:radial-gradient(circle, rgba(30,64,175,0.12) 0%, transparent 70%);"></div>
 
-      <div class="max-w-[1280px] mx-auto px-6 sm:px-10 relative z-10">
+      <div class="alumni-container">
 
-        <!-- 12-col asymmetric grid: left = 5, right = 7 -->
-        <div class="alumni-grid">
+        <!-- 12-column asymmetric grid: left=5cols, right=7cols -->
+        <div class="alumni-asymm-grid">
 
-          <!-- ─── LEFT COLUMN (5/12) — Alumni & Recruiters ─── -->
-          <div class="alumni-left">
+          <!-- ══════════════════════════════════
+               LEFT COLUMN — Alumni & Recruiters
+               ══════════════════════════════════ -->
+          <div class="alumni-col-left">
 
-            <h2 class="font-serif font-bold leading-tight mb-5" style="font-size: clamp(2rem, 3.5vw, 3rem); color: #fff;">
-              A Global Alumni Network
+            <!-- Heading -->
+            <h2 style="font-family:'Fraunces', Georgia, serif; font-weight:700; font-size:clamp(2rem,3.2vw,2.8rem); color:#ffffff; line-height:1.18; margin:0 0 1.1rem;">
+              A Global Alumni<br>Network
             </h2>
 
-            <!-- Teal accent line -->
-            <div style="width: 50px; height: 3px; background: #14b8a6; border-radius: 4px; margin-bottom: 1.5rem;"></div>
+            <!-- 50px teal accent line -->
+            <div style="width:50px; height:3px; background:#14b8a6; border-radius:99px; margin-bottom:1.75rem;"></div>
 
-            <p style="color: rgba(255,255,255,0.65); font-size: 1.05rem; line-height: 1.7; font-weight: 500; margin-bottom: 2rem;">
-              With 25 years of graduates, our network spans the world's leading tech hubs. We don't just place you — we launch you. Trusted by industry giants across India, the Gulf, and beyond.
+            <!-- Body paragraph -->
+            <p style="font-size:1rem; line-height:1.75; color:rgba(255,255,255,0.62); font-weight:400; margin-bottom:2.25rem; max-width:38ch;">
+              With 25 years of graduates, our network spans the world's leading tech hubs. We don't just place you — we <em>launch</em> you. Trusted by industry giants across India, the Gulf, and beyond.
             </p>
 
-            <!-- Recruiter label -->
-            <p style="color: #14b8a6; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.22em; margin-bottom: 1.1rem;">
+            <!-- Recruiter subheading -->
+            <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.22em; color:#14b8a6; margin-bottom:1.1rem;">
               Our Top Recruiters Include
             </p>
 
             <!-- ── Infinite Logo Marquee ── -->
-            <div class="logo-marquee-wrap" style="overflow: hidden; mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);">
-              <div class="logo-marquee-track">
-                <!-- Set 1 -->
-                <div class="logo-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Adani_2012_logo.svg/320px-Adani_2012_logo.svg.png" alt="Adani" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+            <div class="alum-marquee-wrap">
+              <div class="alum-marquee-track">
+                <!-- Set A -->
+                <!-- Set A — using reliable CDN sources -->
+                <div class="alum-logo-item">
+                  <span class="alum-logo-text">Adani</span>
                 </div>
-                <div class="logo-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/320px-Infosys_logo.svg.png" alt="Infosys" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                <div class="alum-logo-item">
+                  <img src="https://cdn.brandfetch.io/iduDa2-K0K/w/400/h/400/theme/dark/symbol.png?c=1bfwsmEH6N5ycjFo9y5" alt="Infosys" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                  <span class="alum-logo-text" style="display:none;">Infosys</span>
                 </div>
-                <div class="logo-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/320px-Tata_Consultancy_Services_Logo.svg.png" alt="TCS" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                <div class="alum-logo-item">
+                  <span class="alum-logo-text">TCS</span>
                 </div>
-                <div class="logo-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/320px-Wipro_Primary_Logo_Color_RGB.svg.png" alt="Wipro" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                <div class="alum-logo-item">
+                  <span class="alum-logo-text">Wipro</span>
                 </div>
-                <div class="logo-item">
-                  <span style="font-size:1.05rem; font-weight:800; letter-spacing:0.05em; color:#fff; opacity:0.85; white-space:nowrap;">6D Technologies</span>
+                <div class="alum-logo-item">
+                  <span class="alum-logo-text">6D Technologies</span>
                 </div>
-                <!-- Set 2 (mirror for seamless loop) -->
-                <div class="logo-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Adani_2012_logo.svg/320px-Adani_2012_logo.svg.png" alt="Adani" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                <!-- Set B — mirror for seamless loop -->
+                <div class="alum-logo-item">
+                  <span class="alum-logo-text">Adani</span>
                 </div>
-                <div class="logo-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/320px-Infosys_logo.svg.png" alt="Infosys" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                <div class="alum-logo-item">
+                  <span class="alum-logo-text">Infosys</span>
                 </div>
-                <div class="logo-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/320px-Tata_Consultancy_Services_Logo.svg.png" alt="TCS" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                <div class="alum-logo-item">
+                  <span class="alum-logo-text">TCS</span>
                 </div>
-                <div class="logo-item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/320px-Wipro_Primary_Logo_Color_RGB.svg.png" alt="Wipro" style="height:32px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.85;">
+                <div class="alum-logo-item">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/320px-Wipro_Primary_Logo_Color_RGB.svg.png" alt="Wipro" loading="lazy">
                 </div>
-                <div class="logo-item">
-                  <span style="font-size:1.05rem; font-weight:800; letter-spacing:0.05em; color:#fff; opacity:0.85; white-space:nowrap;">6D Technologies</span>
+                <div class="alum-logo-item">
+                  <span class="alum-logo-text">6D Technologies</span>
                 </div>
               </div>
-            </div><!-- /marquee wrap -->
+            </div>
 
           </div><!-- /left -->
 
-          <!-- ─── RIGHT COLUMN (7/12) — Video Feature Card ─── -->
-          <div class="alumni-right">
+          <!-- ══════════════════════════════════
+               RIGHT COLUMN — Video Feature Card
+               ══════════════════════════════════ -->
+          <div class="alumni-col-right">
 
-            <div class="video-feature-card" style="
-              background: #0d2035;
-              border: 1px solid rgba(255,255,255,0.1);
-              border-radius: 24px;
-              overflow: hidden;
-              box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-            ">
+            <div class="karma-card">
 
-              <!-- ── Massive 16:9 Video area ── -->
-              <div class="video-container" style="position:relative; width:100%; padding-top:56.25%; border-radius:24px 24px 0 0; overflow:hidden;">
+              <!-- ── Hero 16:9 Video Container ── -->
+              <div class="karma-video-wrap">
 
-                <!-- Placeholder image (campus crowd / tech event) -->
+                <!-- Placeholder image -->
                 <img
-                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80"
-                  alt="Karma Tech Festival – KMCT"
-                  style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;"
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=85"
+                  alt="Karma 2026 Tech Festival – KMCT Engineering"
+                  class="karma-video-bg"
                 />
 
-                <!-- Dark overlay so play button pops -->
-                <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(7,22,40,0.35) 0%, rgba(7,22,40,0.55) 100%);"></div>
+                <!-- Gradient overlay -->
+                <div class="karma-video-overlay"></div>
 
                 <!-- Glassmorphic Play Button -->
-                <button
-                  id="karma-play-btn"
-                  aria-label="Play Karma 2026 highlights"
-                  style="
-                    position: absolute;
-                    top: 50%; left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 72px; height: 72px;
-                    border-radius: 50%;
-                    background: rgba(255,255,255,0.18);
-                    backdrop-filter: blur(12px);
-                    -webkit-backdrop-filter: blur(12px);
-                    border: 1.5px solid rgba(255,255,255,0.4);
-                    display: flex; align-items: center; justify-content: center;
-                    cursor: pointer;
-                    transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), background 0.2s ease;
-                    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
-                  "
-                >
-                  <!-- Play triangle -->
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="white" style="margin-left:4px;">
+                <button id="karma-play-btn" aria-label="Play Karma 2026 highlights reel">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" style="margin-left:4px; flex-shrink:0;">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
                 </button>
 
-                <!-- Top-left badge -->
-                <div style="position:absolute; top:1rem; left:1rem; background:rgba(20,184,166,0.9); backdrop-filter:blur(8px); border-radius:50px; padding:0.35rem 0.9rem; font-size:0.7rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#fff;">
-                  ● Live 2026
+                <!-- Live badge -->
+                <div class="karma-live-badge">
+                  <span class="karma-live-dot"></span> Live 2026
                 </div>
 
-              </div><!-- /video-container -->
+              </div><!-- /video-wrap -->
 
               <!-- ── Compact Text Footer ── -->
-              <div style="padding: 1.5rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap;">
+              <div class="karma-card-footer">
 
-                <!-- Left: Labels -->
-                <div style="flex-shrink:0;">
-                  <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.2em; color:#14b8a6; margin-bottom:0.3rem;">Tech Festival</p>
-                  <h3 class="font-serif" style="font-size:clamp(1.5rem, 3vw, 2rem); font-weight:800; color:#fff; line-height:1; margin:0;">Karma 2026</h3>
+                <div class="karma-footer-left">
+                  <p class="karma-eyebrow">Tech Festival</p>
+                  <h3 class="karma-title">Karma 2026</h3>
                 </div>
 
-                <!-- Divider -->
-                <div style="width:1px; height:48px; background:rgba(255,255,255,0.12); flex-shrink:0;"></div>
+                <div class="karma-footer-divider"></div>
 
-                <!-- Right: Tagline text -->
-                <div style="flex:1; min-width:180px;">
-                  <p style="font-size:0.82rem; color:rgba(255,255,255,0.55); line-height:1.55; margin:0;">
-                    <strong style="color:rgba(255,255,255,0.85); font-weight:600;">The Legend Goes Global —</strong> Karma is the biggest student-run spectacle in the region. For 2026, we are dialling it up to eleven.
+                <div class="karma-footer-right">
+                  <p class="karma-desc">
+                    <strong>The Legend Goes Global —</strong> Karma is the biggest student-run spectacle in the region. For 2026, we are dialling it up to eleven.
                   </p>
                 </div>
 
-              </div><!-- /compact footer -->
+              </div><!-- /footer -->
 
-            </div><!-- /video-feature-card -->
+            </div><!-- /karma-card -->
 
           </div><!-- /right -->
 
-        </div><!-- /alumni-grid -->
+        </div><!-- /alumni-asymm-grid -->
       </div><!-- /container -->
     </section>
 
     <style>
-      /* ── Alumni section grid ── */
-      .alumni-grid {
+      /* ═══════════════════════════════════════════
+         ALUMNI ASYMMETRIC GRID — 12-col, 5+7 split
+         ═══════════════════════════════════════════ */
+      .alumni-asymm-grid {
         display: grid;
-        grid-template-columns: 5fr 7fr;
-        gap: 3.5rem;
+        grid-template-columns: 5fr 7fr;   /* 5/12 + 7/12 */
+        gap: 4rem;
         align-items: center;
       }
-      @media (max-width: 900px) {
-        .alumni-grid { grid-template-columns: 1fr; gap: 3rem; }
+      @media (max-width: 860px) {
+        .alumni-asymm-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
       }
 
-      /* ── Logo marquee ── */
-      .logo-marquee-track {
+      /* ═══════════════
+         LOGO MARQUEE
+         ═══════════════ */
+      .alum-marquee-wrap {
+        overflow: hidden;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 14%, #000 86%, transparent 100%);
+        mask-image:         linear-gradient(to right, transparent 0%, #000 14%, #000 86%, transparent 100%);
+      }
+      .alum-marquee-track {
         display: flex;
         align-items: center;
-        gap: 3rem;
+        gap: 3.5rem;
         width: max-content;
-        animation: logoScroll 22s linear infinite;
+        animation: alumLogoScroll 24s linear infinite;
       }
-      .logo-item {
+      .alum-marquee-wrap:hover .alum-marquee-track {
+        animation-play-state: paused;
+      }
+      @keyframes alumLogoScroll {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-50%); }
+      }
+      .alum-logo-item {
         display: flex;
         align-items: center;
         flex-shrink: 0;
       }
-      @keyframes logoScroll {
-        from { transform: translateX(0); }
-        to   { transform: translateX(-50%); }
+      .alum-logo-item img {
+        height: 32px;
+        width: auto;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        opacity: 0.8;
       }
-      .logo-marquee-wrap:hover .logo-marquee-track {
-        animation-play-state: paused;
+      .alum-logo-text {
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        color: #fff;
+        opacity: 0.8;
+        white-space: nowrap;
       }
 
-      /* ── Play button hover scale ── */
+      /* ═══════════════════
+         KARMA FEATURE CARD
+         ═══════════════════ */
+      .karma-card {
+        background: #0d2137;
+        border: 1px solid rgba(255,255,255,0.10);
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.45), 0 4px 16px rgba(0,0,0,0.3);
+      }
+
+      /* 16:9 video hero */
+      .karma-video-wrap {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;   /* 16:9 ratio */
+        border-radius: 24px 24px 0 0;
+        overflow: hidden;
+      }
+      .karma-video-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.6s ease;
+      }
+      .karma-card:hover .karma-video-bg {
+        transform: scale(1.03);
+      }
+      .karma-video-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(160deg, rgba(7,22,40,0.28) 0%, rgba(7,22,40,0.62) 100%);
+      }
+
+      /* Glassmorphic play button */
+      #karma-play-btn {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 76px; height: 76px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.16);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1.5px solid rgba(255,255,255,0.38);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition:
+          transform 0.35s cubic-bezier(0.34,1.56,0.64,1),
+          background 0.2s ease,
+          box-shadow 0.2s ease;
+        box-shadow: 0 8px 36px rgba(0,0,0,0.4);
+      }
       #karma-play-btn:hover {
-        transform: translate(-50%, -50%) scale(1.15) !important;
-        background: rgba(255,255,255,0.28) !important;
+        transform: translate(-50%, -50%) scale(1.18) !important;
+        background: rgba(255,255,255,0.26) !important;
+        box-shadow: 0 12px 48px rgba(0,0,0,0.5) !important;
+      }
+
+      /* Live badge */
+      .karma-live-badge {
+        position: absolute;
+        top: 1rem; left: 1rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        background: rgba(13,148,136,0.88);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 50px;
+        padding: 0.3rem 0.85rem;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      .karma-live-dot {
+        width: 7px; height: 7px;
+        border-radius: 50%;
+        background: #fff;
+        animation: pulseDot 1.6s ease-in-out infinite;
+        flex-shrink: 0;
+      }
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50%       { opacity: 0.55; transform: scale(0.75); }
+      }
+
+      /* Card footer */
+      .karma-card-footer {
+        padding: 1.5rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .karma-footer-left { flex-shrink: 0; }
+      .karma-eyebrow {
+        font-size: 0.65rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        color: #14b8a6;
+        margin: 0 0 0.3rem;
+      }
+      .karma-title {
+        font-family: 'Fraunces', Georgia, serif;
+        font-size: clamp(1.5rem, 2.8vw, 2rem);
+        font-weight: 800;
+        color: #fff;
+        line-height: 1;
+        margin: 0;
+      }
+      .karma-footer-divider {
+        width: 1px;
+        height: 52px;
+        background: rgba(255,255,255,0.12);
+        flex-shrink: 0;
+      }
+      .karma-footer-right { flex: 1; min-width: 170px; }
+      .karma-desc {
+        font-size: 0.82rem;
+        line-height: 1.6;
+        color: rgba(255,255,255,0.52);
+        margin: 0;
+      }
+      .karma-desc strong {
+        color: rgba(255,255,255,0.82);
+        font-weight: 600;
+      }
+
+      @media (max-width: 500px) {
+        .karma-footer-divider { display: none; }
+        .karma-card-footer { gap: 1rem; }
       }
     </style>
 
